@@ -3,6 +3,7 @@ import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
+import TibberInvite from "@/components/TibberInvite";
 import { guide } from "@/lib/guides";
 
 const meta = guide("smart-styrning-hembatteri");
@@ -74,6 +75,8 @@ export default function Page() {
         Listan växer löpande – kontrollera i Tibber-appen under Power-ups vad som gäller för just din växelriktare.
         Tibber prioriterar alltid elbilsladdningen om du har en avresetid inställd.
       </p>
+
+      <TibberInvite />
 
       <h2>Alternativ 2: en aggregator eller ditt elbolag</h2>
       <p>

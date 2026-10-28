@@ -3,6 +3,7 @@ import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
+import TibberInvite from "@/components/TibberInvite";
 import { guide } from "@/lib/guides";
 
 const meta = guide("tibber-grid-rewards");
@@ -76,6 +77,8 @@ export default function Page() {
         <li>Låt Smartladdning vara påslagen hela tiden.</li>
         <li>Har du hembatteri: låt Smartstyrning sköta det i stället för att styra själv.</li>
       </ol>
+
+      <TibberInvite />
 
       <h2>Bra att veta</h2>
       <ul>

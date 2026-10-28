@@ -4,6 +4,7 @@ import ArticlePage from "@/components/ArticlePage";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
 import { Products } from "@/components/ProductCard";
+import TibberInvite from "@/components/TibberInvite";
 import { guide } from "@/lib/guides";
 
 const meta = guide("sa-fungerar-tibber");
@@ -153,6 +154,8 @@ export default function Page() {
         Oavsett elbolag kan det vara värt att räkna på din egen förbrukning först.{" "}
         <Link href="/kalkylator">Prova kalkylatorn</Link>.
       </p>
+
+      <TibberInvite />
 
       <Faq
         title="Vanliga frågor"

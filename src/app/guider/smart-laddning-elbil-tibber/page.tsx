@@ -4,6 +4,7 @@ import ArticlePage from "@/components/ArticlePage";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
 import { Products } from "@/components/ProductCard";
+import TibberInvite from "@/components/TibberInvite";
 import { guide } from "@/lib/guides";
 
 const meta = guide("smart-laddning-elbil-tibber");
@@ -99,6 +100,8 @@ export default function Page() {
         stund när elnätet behöver det, och du får betalt.{" "}
         <Link href="/guider/tibber-grid-rewards">Så fungerar Grid Rewards</Link>.
       </p>
+
+      <TibberInvite />
 
       <h2>Förvärmning</h2>
       <p>

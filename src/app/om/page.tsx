@@ -34,8 +34,13 @@ export default function AboutPage() {
       <p>
         Produktlänkarna går till Amazon. Som Amazon-partner kan vi få en liten ersättning när du köper något via dem.
         Det kostar dig ingenting extra, och ersättningen påverkar inte vilka produkter vi tar med eller i vilken ordning.
-        Vi har inga annonser och säljer ingen el.
       </p>
+      <p>
+        I guiderna om Tibber finns också en inbjudningslänk. Tecknar du elavtal via den får både du och Smartstyra en
+        bonus från Tibber. Vi skriver lika ärligt om Tibbers nackdelar som om fördelarna, och berättar när ett vanligt
+        rörligt avtal kan vara bättre för dig.
+      </p>
+      <p>Vi har inga annonser och säljer ingen el.</p>
 
       <h2>Kontakt</h2>
       <p>
