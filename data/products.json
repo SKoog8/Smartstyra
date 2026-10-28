@@ -52,6 +52,34 @@
         "Välj en mätare som klarar tre faser – nästan alla svenska villor har trefas."
       ],
       "checkedAt": "2026-10-28"
+    },
+    {
+      "slug": "golvtermostater",
+      "name": "Golvtermostater",
+      "title": "Bästa uppkopplade termostaterna för golvvärme",
+      "description": "Uppkopplade termostater för elektrisk golvvärme som sänker värmen när ingen behöver den.",
+      "intro": "Elektrisk golvvärme i badrum och hall står ofta på dygnet runt, året om. En uppkopplad golvtermostat låter dig schemalägga värmen, sänka den när ingen är hemma och – med rätt system – flytta den till billiga timmar. Termostaterna här ersätter den gamla i väggen och ska installeras av en elinstallatör.",
+      "tips": [
+        "Byte av golvvärmetermostat är elinstallationsarbete och ska göras av ett registrerat elinstallationsföretag.",
+        "Kontrollera att termostaten klarar golvvärmens effekt – de flesta klarar 16 A.",
+        "Behåll golvgivaren. Den skyddar golvet från att bli för varmt, särskilt under trägolv och mattor.",
+        "Välj efter vilket system du vill styra från: Tibber, Plejd-appen eller ett eget smart hem."
+      ],
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "slug": "smarta-relaer",
+      "name": "Smarta reläer",
+      "title": "Bästa smarta reläerna för elcentralen",
+      "description": "Reläer för DIN-skena som styr varmvattenberedare och andra fasta förbrukare via en kontaktor.",
+      "intro": "Fast anslutna förbrukare som varmvattenberedare, elpanna och motorvärmare kan inte sättas i ett smart uttag. I stället monterar en elinstallatör ett smart relä i elcentralen som styr en kontaktor – en kraftig brytare som klarar den höga effekten. Reläerna här passar på DIN-skena och kan styras efter schema eller elpris.",
+      "tips": [
+        "Allt arbete i elcentralen ska göras av ett registrerat elinstallationsföretag.",
+        "Reläet ska styra kontaktorns manöverkrets, inte bryta beredarens ström direkt.",
+        "Ett relä med energimätning visar om beredaren faktiskt går när den ska.",
+        "Välj ett relä som fungerar lokalt, så att styrningen fortsätter även om internet går ner."
+      ],
+      "checkedAt": "2026-10-28"
     }
   ],
   "products": [
@@ -63,9 +91,20 @@
       "badge": "Vårt val",
       "summary": "Litet uttag med energimätning som fungerar lokalt och går att styra från nästan alla smarta hem-system.",
       "bestFor": "Dig som vill ha kontroll och kanske kör Home Assistant",
-      "pros": ["Mäter förbrukningen", "Fungerar utan tillverkarens moln", "Stöds av Home Assistant och Homey"],
-      "cons": ["Kräver 2,4 GHz-wifi", "Appen är mer teknisk än konkurrenternas"],
-      "works": ["Wi-Fi", "Bluetooth", "Home Assistant"],
+      "pros": [
+        "Mäter förbrukningen",
+        "Fungerar utan tillverkarens moln",
+        "Stöds av Home Assistant och Homey"
+      ],
+      "cons": [
+        "Kräver 2,4 GHz-wifi",
+        "Appen är mer teknisk än konkurrenternas"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Bluetooth",
+        "Home Assistant"
+      ],
       "amazon": "https://www.amazon.se/s?k=Shelly+Plug+S+Gen3"
     },
     {
@@ -76,9 +115,20 @@
       "badge": "Budgetval",
       "summary": "Prisvärt uttag med energimätning och en lättanvänd app. Säljs ofta i flerpack.",
       "bestFor": "Dig som vill komma igång enkelt och billigt",
-      "pros": ["Lättanvänd app med scheman", "Mäter förbrukningen", "Billigt, särskilt i flerpack"],
-      "cons": ["Bygger på tillverkarens moln", "Kräver 2,4 GHz-wifi"],
-      "works": ["Wi-Fi", "Google Home", "Alexa"],
+      "pros": [
+        "Lättanvänd app med scheman",
+        "Mäter förbrukningen",
+        "Billigt, särskilt i flerpack"
+      ],
+      "cons": [
+        "Bygger på tillverkarens moln",
+        "Kräver 2,4 GHz-wifi"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Google Home",
+        "Alexa"
+      ],
       "amazon": "https://www.amazon.se/s?k=Tapo+P110"
     },
     {
@@ -89,9 +139,20 @@
       "badge": "För Apple-hem",
       "summary": "Uttag med Matter över Thread som styrs lokalt och fungerar i Apple Hem, Google Home och SmartThings.",
       "bestFor": "Dig som har Apple Hem eller ett Matter-hem",
-      "pros": ["Matter – fungerar i flera ekosystem", "Styrs lokalt utan moln", "Mäter förbrukningen"],
-      "cons": ["Dyrare än Wi-Fi-uttagen", "Kräver en Thread-router, t.ex. HomePod mini eller Apple TV"],
-      "works": ["Matter", "Thread", "Apple Hem"],
+      "pros": [
+        "Matter – fungerar i flera ekosystem",
+        "Styrs lokalt utan moln",
+        "Mäter förbrukningen"
+      ],
+      "cons": [
+        "Dyrare än Wi-Fi-uttagen",
+        "Kräver en Thread-router, t.ex. HomePod mini eller Apple TV"
+      ],
+      "works": [
+        "Matter",
+        "Thread",
+        "Apple Hem"
+      ],
       "amazon": "https://www.amazon.se/s?k=Eve+Energy+Matter"
     },
     {
@@ -102,9 +163,21 @@
       "badge": "Vårt val",
       "summary": "Elementtermostat med Matter över Thread, tydlig app och smarta scheman per rum.",
       "bestFor": "Dig som vill ha en helhetslösning som är lätt att komma igång med",
-      "pros": ["Lätt att installera med adaptrar för vanliga ventiler", "Bra app med rumsscheman", "Känner av öppet fönster"],
-      "cons": ["Kräver tado° Bridge X", "Vissa funktioner kräver abonnemang"],
-      "works": ["Matter", "Thread", "Apple Hem", "Google Home"],
+      "pros": [
+        "Lätt att installera med adaptrar för vanliga ventiler",
+        "Bra app med rumsscheman",
+        "Känner av öppet fönster"
+      ],
+      "cons": [
+        "Kräver tado° Bridge X",
+        "Vissa funktioner kräver abonnemang"
+      ],
+      "works": [
+        "Matter",
+        "Thread",
+        "Apple Hem",
+        "Google Home"
+      ],
       "amazon": "https://www.amazon.se/s?k=tado+Smart+Radiator+Thermostat+X"
     },
     {
@@ -114,9 +187,20 @@
       "category": "elementtermostater",
       "summary": "Elementtermostater med snygg design och stöd för Apple Hem. Startpaketet innehåller den gateway som behövs.",
       "bestFor": "Dig som vill ha ett genomtänkt system och inget abonnemang",
-      "pros": ["Inget abonnemang", "Fungerar med Apple Hem, Google och Alexa", "Snygg design"],
-      "cons": ["Dyrare per element", "Startpaketet behövs för första rummet"],
-      "works": ["Wi-Fi via gateway", "Apple Hem", "Google Home"],
+      "pros": [
+        "Inget abonnemang",
+        "Fungerar med Apple Hem, Google och Alexa",
+        "Snygg design"
+      ],
+      "cons": [
+        "Dyrare per element",
+        "Startpaketet behövs för första rummet"
+      ],
+      "works": [
+        "Wi-Fi via gateway",
+        "Apple Hem",
+        "Google Home"
+      ],
       "amazon": "https://www.amazon.se/s?k=Netatmo+smart+radiator+valve"
     },
     {
@@ -127,9 +211,20 @@
       "badge": "Budgetval",
       "summary": "Billig Zigbee-termostat som passar dig som redan har en Aqara-hubb eller Home Assistant.",
       "bestFor": "Dig som redan har en Zigbee-hubb",
-      "pros": ["Lågt pris per element", "Zigbee – fungerar med Home Assistant", "Känner av öppet fönster"],
-      "cons": ["Kräver en Zigbee-hubb", "Enklare app än tado° och Netatmo"],
-      "works": ["Zigbee", "Home Assistant", "Apple Hem via Aqara-hubb"],
+      "pros": [
+        "Lågt pris per element",
+        "Zigbee – fungerar med Home Assistant",
+        "Känner av öppet fönster"
+      ],
+      "cons": [
+        "Kräver en Zigbee-hubb",
+        "Enklare app än tado° och Netatmo"
+      ],
+      "works": [
+        "Zigbee",
+        "Home Assistant",
+        "Apple Hem via Aqara-hubb"
+      ],
       "amazon": "https://www.amazon.se/s?k=Aqara+Radiator+Thermostat+E1"
     },
     {
@@ -140,9 +235,21 @@
       "badge": "Vårt val",
       "summary": "Liten IR-styrenhet som gör luft-luft-värmepumpen smart: scheman, mobilstyrning och temperaturgivare.",
       "bestFor": "Dig med luft-luft-värmepump utan inbyggd Wi-Fi",
-      "pros": ["Stöd för de flesta värmepumpar med IR-fjärrkontroll", "Bra app med scheman", "Fungerar med Home Assistant"],
-      "cons": ["Vissa funktioner kräver abonnemang", "Måste ha fri sikt till inomhusdelen"],
-      "works": ["Wi-Fi", "Apple Hem", "Google Home", "Home Assistant"],
+      "pros": [
+        "Stöd för de flesta värmepumpar med IR-fjärrkontroll",
+        "Bra app med scheman",
+        "Fungerar med Home Assistant"
+      ],
+      "cons": [
+        "Vissa funktioner kräver abonnemang",
+        "Måste ha fri sikt till inomhusdelen"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Apple Hem",
+        "Google Home",
+        "Home Assistant"
+      ],
       "amazon": "https://www.amazon.se/s?k=Sensibo+Air"
     },
     {
@@ -152,9 +259,20 @@
       "category": "varmepumpsstyrning",
       "summary": "IR-styrenhet för värmepumpar och AC från samma tillverkare som tado°-termostaterna.",
       "bestFor": "Dig som redan har tado° hemma",
-      "pros": ["Samma app som tado°-termostaterna", "Stöd för många modeller", "Enkel installation"],
-      "cons": ["Vissa funktioner kräver abonnemang", "Måste ha fri sikt till inomhusdelen"],
-      "works": ["Wi-Fi", "Apple Hem", "Google Home"],
+      "pros": [
+        "Samma app som tado°-termostaterna",
+        "Stöd för många modeller",
+        "Enkel installation"
+      ],
+      "cons": [
+        "Vissa funktioner kräver abonnemang",
+        "Måste ha fri sikt till inomhusdelen"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Apple Hem",
+        "Google Home"
+      ],
       "amazon": "https://www.amazon.se/s?k=tado+Smart+AC+Control+V3%2B"
     },
     {
@@ -165,10 +283,173 @@
       "badge": "Vårt val",
       "summary": "Trefasmätare för DIN-skena som visar hela husets förbrukning i realtid, fas för fas.",
       "bestFor": "Dig som vill se hela husets förbrukning i detalj",
-      "pros": ["Mäter alla tre faserna", "Fungerar lokalt", "Stöds av Home Assistant"],
-      "cons": ["Ska installeras av elinstallatör", "Tar plats i elcentralen"],
-      "works": ["Wi-Fi", "Ethernet", "Home Assistant"],
+      "pros": [
+        "Mäter alla tre faserna",
+        "Fungerar lokalt",
+        "Stöds av Home Assistant"
+      ],
+      "cons": [
+        "Ska installeras av elinstallatör",
+        "Tar plats i elcentralen"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Ethernet",
+        "Home Assistant"
+      ],
       "amazon": "https://www.amazon.se/s?k=Shelly+Pro+3EM"
+    },
+    {
+      "id": "tibber-pulse-p1",
+      "name": "Tibber Pulse P1",
+      "brand": "Tibber",
+      "category": "energimatare",
+      "badge": "För Tibber-kunder",
+      "summary": "Läsare för elmätarens HAN-port som visar husets förbrukning i realtid i Tibber-appen och kan lastbalansera elbilsladdningen.",
+      "bestFor": "Dig som har eller funderar på Tibber",
+      "pros": [
+        "Ingen installation i elcentralen",
+        "Realtidsförbrukning i Tibber-appen",
+        "Möjliggör lastbalansering av laddbox"
+      ],
+      "cons": [
+        "Kräver elavtal med Tibber för full funktion",
+        "HAN-porten måste aktiveras hos nätbolaget",
+        "Det finns en HAN-variant med annan kontakt – kontrollera din mätare"
+      ],
+      "works": [
+        "HAN/P1",
+        "Wi-Fi",
+        "Tibber"
+      ],
+      "amazon": "https://www.amazon.se/dp/B09ZDSD4QN"
+    },
+    {
+      "id": "shelly-pro-1",
+      "name": "Shelly Pro 1",
+      "brand": "Shelly",
+      "category": "smarta-relaer",
+      "badge": "Vårt val",
+      "summary": "Smart relä för DIN-skena som styr en kontaktor – vanligt val för att styra varmvattenberedaren efter elpris.",
+      "bestFor": "Dig som vill styra beredaren från Home Assistant eller Homey",
+      "pros": [
+        "Fungerar lokalt utan moln",
+        "Wi-Fi och nätverkskabel",
+        "Stöds av Home Assistant och Homey"
+      ],
+      "cons": [
+        "Ska installeras av elinstallatör",
+        "Mäter inte förbrukningen"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Ethernet",
+        "Home Assistant",
+        "Homey"
+      ],
+      "amazon": "https://www.amazon.se/s?k=Shelly+Pro+1"
+    },
+    {
+      "id": "shelly-pro-1pm",
+      "name": "Shelly Pro 1PM",
+      "brand": "Shelly",
+      "category": "smarta-relaer",
+      "summary": "Som Shelly Pro 1 men med energimätning, så att du ser vad det som är kopplat till reläet drar.",
+      "bestFor": "Enfasförbrukare där du också vill mäta",
+      "pros": [
+        "Mäter förbrukningen",
+        "Fungerar lokalt utan moln",
+        "Stöds av Home Assistant och Homey"
+      ],
+      "cons": [
+        "Ska installeras av elinstallatör",
+        "Mäter bara en fas – en trefasberedare kräver annan mätning"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Ethernet",
+        "Home Assistant",
+        "Homey"
+      ],
+      "amazon": "https://www.amazon.se/s?k=Shelly+Pro+1PM"
+    },
+    {
+      "id": "ebeco-eb-therm-500",
+      "name": "Ebeco EB-Therm 500 med WiFi-modul",
+      "brand": "Ebeco",
+      "category": "golvtermostater",
+      "badge": "Fungerar med Tibber",
+      "summary": "Golvvärmetermostat med pekskärm. Med WiFi-modulen EB Connect kan den styras från Tibber-appen efter elpriset.",
+      "bestFor": "Dig som har Tibber och elektrisk golvvärme",
+      "pros": [
+        "Integration med Tibber",
+        "Svensk tillverkare",
+        "Styrs även från Ebecos egen app"
+      ],
+      "cons": [
+        "WiFi-modulen köps till",
+        "Ska installeras av elinstallatör"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Tibber"
+      ],
+      "shop": {
+        "name": "Tibber Store",
+        "url": "https://tibber.com/se/store/produkt/ebeco-ebtherm500-bundle"
+      }
+    },
+    {
+      "id": "plejd-trm-01",
+      "name": "Plejd TRM-01",
+      "brand": "Plejd",
+      "category": "golvtermostater",
+      "summary": "Termostat för elektrisk golvvärme som styrs från Plejd-appen, med dag- och nattsänkning och semesterläge.",
+      "bestFor": "Dig som har eller ska installera Plejd-belysning",
+      "pros": [
+        "Samma app som Plejds belysning",
+        "Klarar 16 A",
+        "Passar flera vanliga ramserier"
+      ],
+      "cons": [
+        "Semesterläge och fjärrstyrning kräver Plejd Gateway",
+        "Ingen direkt elprisstyrning i Plejd-appen"
+      ],
+      "works": [
+        "Bluetooth-mesh",
+        "Plejd Gateway"
+      ],
+      "shop": {
+        "name": "Plejd",
+        "url": "https://www.plejd.com/sv-se/produkter/trm-01"
+      }
+    },
+    {
+      "id": "heatit-z-trm6",
+      "name": "Heatit Z-TRM6",
+      "brand": "Heatit",
+      "category": "golvtermostater",
+      "badge": "För smarta hem",
+      "summary": "Z-Wave-termostat för golvvärme som passar dig som styr huset med Home Assistant, Homey eller en annan Z-Wave-central.",
+      "bestFor": "Dig med Home Assistant eller Homey",
+      "pros": [
+        "Z-Wave – styrs lokalt",
+        "Mäter förbrukningen",
+        "Fungerar med de flesta Z-Wave-centraler"
+      ],
+      "cons": [
+        "Kräver en Z-Wave-central",
+        "Ska installeras av elinstallatör"
+      ],
+      "works": [
+        "Z-Wave",
+        "Home Assistant",
+        "Homey"
+      ],
+      "shop": {
+        "name": "Heatit",
+        "url": "https://www.heatit.com/"
+      }
     }
   ]
 }

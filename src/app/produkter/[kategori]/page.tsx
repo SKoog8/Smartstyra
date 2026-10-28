@@ -62,7 +62,7 @@ export default async function CategoryPage({ params }: Props) {
           </aside>
         </div>
         <p className="mt-8 text-sm text-ink/60 max-w-2xl">
-          Länkarna går till Amazon. Köper du via dem kan vi få en liten ersättning, utan att det påverkar priset eller
+          Amazonlänkarna är affiliatelänkar. Köper du via dem kan vi få en liten ersättning, utan att det påverkar priset eller
           vilka produkter vi rekommenderar. <Link href="/produkter" className="underline">Alla produktkategorier</Link>.
         </p>
       </main>

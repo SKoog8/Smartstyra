@@ -4,11 +4,20 @@
 
 ## Guider
 
-- [Så flyttar du elförbrukningen till billigare timmar](https://smartstyra.se/guider/flytta-elforbrukningen-till-billiga-timmar): timpris, vad som går att flytta och effektavgiften.
-- [Smarta elementtermostater](https://smartstyra.se/guider/smarta-elementtermostater): sänk värmen rum för rum i hus med vattenburna element.
-- [Mät din elförbrukning](https://smartstyra.se/guider/mat-din-elforbrukning): grundlast, HAN-porten och smarta uttag med energimätning.
+- [Så fungerar Tibber – och allt du kan koppla in](https://smartstyra.se/guider/sa-fungerar-tibber): Kvartspris, appen, Pulse och Power-ups: en genomgång av hur Tibber fungerar och vilka värmepumpar, element, laddboxar och batterier som går att styra.
+- [Tibber Grid Rewards: få betalt för att elbilen och batteriet hjälper elnätet](https://smartstyra.se/guider/tibber-grid-rewards): Så fungerar Grid Rewards, vad som krävs, hur mycket det kan ge och vad det betyder för laddningen av din bil.
+- [Smart laddning av elbilen med Tibber](https://smartstyra.se/guider/smart-laddning-elbil-tibber): Koppla bilen eller laddboxen till Tibber, ställ in avresetid och låt laddningen hamna på dygnets billigaste timmar – utan att säkringen går.
+- [Styr varmvattenberedaren efter elpriset med en kontaktor](https://smartstyra.se/guider/styr-varmvattenberedaren-med-kontaktor): Varmvattenberedaren är en av husets största elförbrukare och perfekt att flytta i tid. Så fungerar styrning med kontaktor och smart relä.
+- [Koppla hembatteriet till smart styrning](https://smartstyra.se/guider/smart-styrning-hembatteri): Ett batteri som bara lagrar solel står still halva året. Med smart styrning laddar det när elen är billig och tjänar pengar på att stötta elnätet.
+- [Uppkopplade golvtermostater: sluta värma badrumsgolvet i onödan](https://smartstyra.se/guider/uppkopplade-golvtermostater): Elektrisk golvvärme går ofta dygnet runt, året om. Så byter du till en uppkopplad termostat och styr värmen efter schema och elpris.
+- [Adax WiFi-element: styr elementen från mobilen och efter elpriset](https://smartstyra.se/guider/adax-wifi-element): Så fungerar Adax WiFi-element, vad appen kan, och hur du kopplar dem till Tibber eller Home Assistant för att värma på billiga timmar.
+- [Plejd: smart belysning som installeras som vanlig el](https://smartstyra.se/guider/plejd-smart-belysning): Så fungerar Plejd, vilka produkter som finns, vad gatewayen behövs till – och hur mycket el smart belysning egentligen sparar.
+- [Styr spabadet med ControlMySpa – och värm vattnet när elen är billig](https://smartstyra.se/guider/controlmyspa-spabad): Ett spabad kan dra lika mycket el som en elbil. Så använder du ControlMySpa för att schemalägga värmen och vilka vägar som finns till elprisstyrning.
+- [Så flyttar du elförbrukningen till billigare timmar](https://smartstyra.se/guider/flytta-elforbrukningen-till-billiga-timmar): Med timpris kan samma kilowattimme kosta helt olika mycket under dygnet. Så tar du vara på det – med och utan smarta prylar.
+- [Smarta elementtermostater: sänk värmen där ingen är](https://smartstyra.se/guider/smarta-elementtermostater): En grad lägre inomhus ger ungefär fem procent lägre uppvärmningskostnad. Så får du det att hända rum för rum – utan att frysa.
+- [Mät först: så hittar du det som drar mest el i huset](https://smartstyra.se/guider/mat-din-elforbrukning): Elmätarens HAN-port, smarta uttag och ett enkelt nattest visar var elen tar vägen – innan du lägger pengar på åtgärder.
 
 ## Verktyg och produkter
 
 - [Kalkylator](https://smartstyra.se/kalkylator): uppskatta besparingen av lägre temperatur, flyttad förbrukning och mindre standby.
-- [Produkter](https://smartstyra.se/produkter): smarta uttag, elementtermostater, värmepumpsstyrning och energimätare.
+- [Produkter](https://smartstyra.se/produkter): smarta uttag, elementtermostater, golvtermostater, värmepumpsstyrning, smarta reläer och energimätare.
