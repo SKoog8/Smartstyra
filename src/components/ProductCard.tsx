@@ -1,4 +1,4 @@
-import { amazonUrl, product as findProduct, type Product } from "@/lib/products";
+import { buyLink, product as findProduct, type Product } from "@/lib/products";
 
 function Check({ ok }: { ok: boolean }) {
   return (
@@ -14,6 +14,7 @@ function Check({ ok }: { ok: boolean }) {
 }
 
 export default function ProductCard({ product, rank }: { product: Product; rank?: number }) {
+  const buy = buyLink(product);
   return (
     <div className="not-prose bg-white rounded-3xl p-6 sm:p-7">
       <div className="flex flex-wrap items-start justify-between gap-3">
@@ -62,8 +63,13 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
             </li>
           ))}
         </ul>
-        <a href={amazonUrl(product)} target="_blank" rel="sponsored nofollow noopener" className="btn-leaf py-2.5 text-[0.95rem]">
-          Se pris på Amazon
+        <a
+          href={buy.url}
+          target="_blank"
+          rel={buy.sponsored ? "sponsored nofollow noopener" : "noopener"}
+          className="btn-leaf py-2.5 text-[0.95rem]"
+        >
+          {buy.label}
           <span aria-hidden="true">→</span>
         </a>
       </div>
@@ -79,7 +85,7 @@ export function Products({ ids }: { ids: string[] }) {
         <ProductCard key={id} product={findProduct(id)} />
       ))}
       <p className="text-sm text-ink/60">
-        Länkarna går till Amazon. Köper du via dem kan vi få en liten ersättning, utan att priset påverkas.
+        Amazonlänkarna är affiliatelänkar. Köper du via dem kan vi få en liten ersättning, utan att priset påverkas.
       </p>
     </div>
   );

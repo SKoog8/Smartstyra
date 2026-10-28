@@ -14,6 +14,96 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "sa-fungerar-tibber",
+    title: "Så fungerar Tibber – och allt du kan koppla in",
+    description:
+      "Kvartspris, appen, Pulse och Power-ups: en genomgång av hur Tibber fungerar och vilka värmepumpar, element, laddboxar och batterier som går att styra.",
+    updated: "2026-10-28",
+    minutes: 8,
+    tone: "sky",
+    theme: "Flytta i tid",
+  },
+  {
+    slug: "tibber-grid-rewards",
+    title: "Tibber Grid Rewards: få betalt för att elbilen och batteriet hjälper elnätet",
+    description:
+      "Så fungerar Grid Rewards, vad som krävs, hur mycket det kan ge och vad det betyder för laddningen av din bil.",
+    updated: "2026-10-28",
+    minutes: 6,
+    tone: "butter",
+    theme: "Flytta i tid",
+  },
+  {
+    slug: "smart-laddning-elbil-tibber",
+    title: "Smart laddning av elbilen med Tibber",
+    description:
+      "Koppla bilen eller laddboxen till Tibber, ställ in avresetid och låt laddningen hamna på dygnets billigaste timmar – utan att säkringen går.",
+    updated: "2026-10-28",
+    minutes: 7,
+    tone: "mint",
+    theme: "Flytta i tid",
+  },
+  {
+    slug: "styr-varmvattenberedaren-med-kontaktor",
+    title: "Styr varmvattenberedaren efter elpriset med en kontaktor",
+    description:
+      "Varmvattenberedaren är en av husets största elförbrukare och perfekt att flytta i tid. Så fungerar styrning med kontaktor och smart relä.",
+    updated: "2026-10-28",
+    minutes: 7,
+    tone: "clay",
+    theme: "Flytta i tid",
+  },
+  {
+    slug: "smart-styrning-hembatteri",
+    title: "Koppla hembatteriet till smart styrning",
+    description:
+      "Ett batteri som bara lagrar solel står still halva året. Med smart styrning laddar det när elen är billig och tjänar pengar på att stötta elnätet.",
+    updated: "2026-10-28",
+    minutes: 7,
+    tone: "sky",
+    theme: "Flytta i tid",
+  },
+  {
+    slug: "uppkopplade-golvtermostater",
+    title: "Uppkopplade golvtermostater: sluta värma badrumsgolvet i onödan",
+    description:
+      "Elektrisk golvvärme går ofta dygnet runt, året om. Så byter du till en uppkopplad termostat och styr värmen efter schema och elpris.",
+    updated: "2026-10-28",
+    minutes: 6,
+    tone: "butter",
+    theme: "Styr automatiskt",
+  },
+  {
+    slug: "adax-wifi-element",
+    title: "Adax WiFi-element: styr elementen från mobilen och efter elpriset",
+    description:
+      "Så fungerar Adax WiFi-element, vad appen kan, och hur du kopplar dem till Tibber eller Home Assistant för att värma på billiga timmar.",
+    updated: "2026-10-28",
+    minutes: 6,
+    tone: "clay",
+    theme: "Styr automatiskt",
+  },
+  {
+    slug: "plejd-smart-belysning",
+    title: "Plejd: smart belysning som installeras som vanlig el",
+    description:
+      "Så fungerar Plejd, vilka produkter som finns, vad gatewayen behövs till – och hur mycket el smart belysning egentligen sparar.",
+    updated: "2026-10-28",
+    minutes: 6,
+    tone: "mint",
+    theme: "Styr automatiskt",
+  },
+  {
+    slug: "controlmyspa-spabad",
+    title: "Styr spabadet med ControlMySpa – och värm vattnet när elen är billig",
+    description:
+      "Ett spabad kan dra lika mycket el som en elbil. Så använder du ControlMySpa för att schemalägga värmen och vilka vägar som finns till elprisstyrning.",
+    updated: "2026-10-28",
+    minutes: 6,
+    tone: "sky",
+    theme: "Flytta i tid",
+  },
+  {
     slug: "flytta-elforbrukningen-till-billiga-timmar",
     title: "Så flyttar du elförbrukningen till billigare timmar",
     description:

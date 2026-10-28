@@ -51,7 +51,8 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-6 text-sm text-white/50 leading-relaxed">
           © {new Date().getFullYear()} Smartstyra. Länkarna till butiker är affiliatelänkar – köper du något via dem kan
           vi få en liten ersättning, utan att det kostar dig något extra.
-          {amazonTag && " Som Amazon-partner tjänar Smartstyra pengar på kvalificerande köp."}{" "}
+          {amazonTag && " Som Amazon-partner tjänar Smartstyra pengar på kvalificerande köp."} Länken till Tibber är en
+          inbjudningslänk som ger både dig och oss en bonus.{" "}
           <Link href="/om#finansiering" className="underline hover:text-white">
             Så finansieras sajten
           </Link>
