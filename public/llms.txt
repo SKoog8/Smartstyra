@@ -1,0 +1,14 @@
+# Smartstyra
+
+> Svenska guider för villaägare som vill sänka elförbrukningen och flytta den till billigare timmar, med rekommendationer på smarta prylar.
+
+## Guider
+
+- [Så flyttar du elförbrukningen till billigare timmar](https://smartstyra.se/guider/flytta-elforbrukningen-till-billiga-timmar): timpris, vad som går att flytta och effektavgiften.
+- [Smarta elementtermostater](https://smartstyra.se/guider/smarta-elementtermostater): sänk värmen rum för rum i hus med vattenburna element.
+- [Mät din elförbrukning](https://smartstyra.se/guider/mat-din-elforbrukning): grundlast, HAN-porten och smarta uttag med energimätning.
+
+## Verktyg och produkter
+
+- [Kalkylator](https://smartstyra.se/kalkylator): uppskatta besparingen av lägre temperatur, flyttad förbrukning och mindre standby.
+- [Produkter](https://smartstyra.se/produkter): smarta uttag, elementtermostater, värmepumpsstyrning och energimätare.

@@ -1,0 +1,174 @@
+{
+  "amazonTag": "",
+  "categories": [
+    {
+      "slug": "smarta-uttag",
+      "name": "Smarta uttag",
+      "title": "Bästa smarta uttagen med energimätning",
+      "description": "Smarta uttag som visar exakt vad en apparat drar och kan slå av och på efter schema eller elpris.",
+      "intro": "Ett smart uttag med energimätning är det billigaste sättet att ta reda på vad en enskild apparat kostar dig – och det enklaste sättet att låta den gå när elen är billig. Alla uttag här mäter förbrukningen, inte bara slår av och på.",
+      "tips": [
+        "Kontrollera att uttaget klarar apparatens effekt. Element, värmefläktar och motorvärmare ligger nära gränsen för vad ett vanligt smart uttag tål.",
+        "Välj system efter vad du redan har: Wi-Fi fungerar direkt, Zigbee och Thread kräver en hubb men belastar inte routern.",
+        "Ett uttag som fungerar lokalt, utan tillverkarens moln, fortsätter att följa sitt schema även om internet går ner."
+      ],
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "slug": "elementtermostater",
+      "name": "Elementtermostater",
+      "title": "Bästa smarta termostaterna för element",
+      "description": "Smarta termostater för vattenburna element som sänker värmen i rum som inte används.",
+      "intro": "Smarta elementtermostater ersätter termostathuvudet på vattenburna element. De sänker värmen i rum som står tomma och höjer den igen innan du kommer hem. Alla här passar de vanligaste ventilerna med medföljande adaptrar.",
+      "tips": [
+        "Smarta elementtermostater passar vattenburna element. Har du direktverkande elelement behöver du en annan lösning.",
+        "Kontrollera vilken ventil du har innan du köper – de flesta följer standarden M30 × 1,5, men äldre ventiler kan kräva en adapter.",
+        "Räkna med en termostat per element. Börja gärna med sovrum och rum som sällan används."
+      ],
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "slug": "varmepumpsstyrning",
+      "name": "Värmepumpsstyrning",
+      "title": "Bästa styrningen för luft-luft-värmepumpen",
+      "description": "Gör din luft-luft-värmepump smart: styr den från mobilen, efter schema och efter elpriset.",
+      "intro": "De flesta luft-luft-värmepumpar styrs med en IR-fjärrkontroll. En smart styrenhet härmar fjärrkontrollen och låter dig styra pumpen från mobilen, efter schema eller via ett smart hem-system – utan att du behöver öppna inomhusdelen.",
+      "tips": [
+        "Styrenheten måste se inomhusdelen, eftersom den skickar IR-signaler precis som fjärrkontrollen.",
+        "Kontrollera att din värmepumpsmodell finns med i tillverkarens lista över modeller som stöds.",
+        "Har din värmepump inbyggd Wi-Fi eller en officiell Wi-Fi-modul är det oftast det bästa alternativet."
+      ],
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "slug": "energimatare",
+      "name": "Energimätare",
+      "title": "Bästa energimätarna för hela huset",
+      "description": "Mät hela husets förbrukning i realtid, fas för fas, direkt i elcentralen.",
+      "intro": "En energimätare i elcentralen visar hela husets förbrukning i realtid, uppdelat per fas. Det gör det lätt att se vad som händer när värmepumpen startar eller elbilen laddar. Mätarna här installeras i elcentralen och ska monteras av en elinstallatör.",
+      "tips": [
+        "Allt arbete i elcentralen ska göras av ett registrerat elinstallationsföretag.",
+        "Har du en elmätare med HAN-port kan en HAN-läsare ge nästan samma information utan installation i elcentralen.",
+        "Välj en mätare som klarar tre faser – nästan alla svenska villor har trefas."
+      ],
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "products": [
+    {
+      "id": "shelly-plug-s-gen3",
+      "name": "Shelly Plug S Gen3",
+      "brand": "Shelly",
+      "category": "smarta-uttag",
+      "badge": "Vårt val",
+      "summary": "Litet uttag med energimätning som fungerar lokalt och går att styra från nästan alla smarta hem-system.",
+      "bestFor": "Dig som vill ha kontroll och kanske kör Home Assistant",
+      "pros": ["Mäter förbrukningen", "Fungerar utan tillverkarens moln", "Stöds av Home Assistant och Homey"],
+      "cons": ["Kräver 2,4 GHz-wifi", "Appen är mer teknisk än konkurrenternas"],
+      "works": ["Wi-Fi", "Bluetooth", "Home Assistant"],
+      "amazon": "https://www.amazon.se/s?k=Shelly+Plug+S+Gen3"
+    },
+    {
+      "id": "tapo-p110",
+      "name": "TP-Link Tapo P110",
+      "brand": "TP-Link",
+      "category": "smarta-uttag",
+      "badge": "Budgetval",
+      "summary": "Prisvärt uttag med energimätning och en lättanvänd app. Säljs ofta i flerpack.",
+      "bestFor": "Dig som vill komma igång enkelt och billigt",
+      "pros": ["Lättanvänd app med scheman", "Mäter förbrukningen", "Billigt, särskilt i flerpack"],
+      "cons": ["Bygger på tillverkarens moln", "Kräver 2,4 GHz-wifi"],
+      "works": ["Wi-Fi", "Google Home", "Alexa"],
+      "amazon": "https://www.amazon.se/s?k=Tapo+P110"
+    },
+    {
+      "id": "eve-energy",
+      "name": "Eve Energy",
+      "brand": "Eve",
+      "category": "smarta-uttag",
+      "badge": "För Apple-hem",
+      "summary": "Uttag med Matter över Thread som styrs lokalt och fungerar i Apple Hem, Google Home och SmartThings.",
+      "bestFor": "Dig som har Apple Hem eller ett Matter-hem",
+      "pros": ["Matter – fungerar i flera ekosystem", "Styrs lokalt utan moln", "Mäter förbrukningen"],
+      "cons": ["Dyrare än Wi-Fi-uttagen", "Kräver en Thread-router, t.ex. HomePod mini eller Apple TV"],
+      "works": ["Matter", "Thread", "Apple Hem"],
+      "amazon": "https://www.amazon.se/s?k=Eve+Energy+Matter"
+    },
+    {
+      "id": "tado-x-radiator",
+      "name": "tado° Smart Radiator Thermostat X",
+      "brand": "tado°",
+      "category": "elementtermostater",
+      "badge": "Vårt val",
+      "summary": "Elementtermostat med Matter över Thread, tydlig app och smarta scheman per rum.",
+      "bestFor": "Dig som vill ha en helhetslösning som är lätt att komma igång med",
+      "pros": ["Lätt att installera med adaptrar för vanliga ventiler", "Bra app med rumsscheman", "Känner av öppet fönster"],
+      "cons": ["Kräver tado° Bridge X", "Vissa funktioner kräver abonnemang"],
+      "works": ["Matter", "Thread", "Apple Hem", "Google Home"],
+      "amazon": "https://www.amazon.se/s?k=tado+Smart+Radiator+Thermostat+X"
+    },
+    {
+      "id": "netatmo-valves",
+      "name": "Netatmo smarta elementtermostater",
+      "brand": "Netatmo",
+      "category": "elementtermostater",
+      "summary": "Elementtermostater med snygg design och stöd för Apple Hem. Startpaketet innehåller den gateway som behövs.",
+      "bestFor": "Dig som vill ha ett genomtänkt system och inget abonnemang",
+      "pros": ["Inget abonnemang", "Fungerar med Apple Hem, Google och Alexa", "Snygg design"],
+      "cons": ["Dyrare per element", "Startpaketet behövs för första rummet"],
+      "works": ["Wi-Fi via gateway", "Apple Hem", "Google Home"],
+      "amazon": "https://www.amazon.se/s?k=Netatmo+smart+radiator+valve"
+    },
+    {
+      "id": "aqara-e1",
+      "name": "Aqara Radiator Thermostat E1",
+      "brand": "Aqara",
+      "category": "elementtermostater",
+      "badge": "Budgetval",
+      "summary": "Billig Zigbee-termostat som passar dig som redan har en Aqara-hubb eller Home Assistant.",
+      "bestFor": "Dig som redan har en Zigbee-hubb",
+      "pros": ["Lågt pris per element", "Zigbee – fungerar med Home Assistant", "Känner av öppet fönster"],
+      "cons": ["Kräver en Zigbee-hubb", "Enklare app än tado° och Netatmo"],
+      "works": ["Zigbee", "Home Assistant", "Apple Hem via Aqara-hubb"],
+      "amazon": "https://www.amazon.se/s?k=Aqara+Radiator+Thermostat+E1"
+    },
+    {
+      "id": "sensibo-air",
+      "name": "Sensibo Air",
+      "brand": "Sensibo",
+      "category": "varmepumpsstyrning",
+      "badge": "Vårt val",
+      "summary": "Liten IR-styrenhet som gör luft-luft-värmepumpen smart: scheman, mobilstyrning och temperaturgivare.",
+      "bestFor": "Dig med luft-luft-värmepump utan inbyggd Wi-Fi",
+      "pros": ["Stöd för de flesta värmepumpar med IR-fjärrkontroll", "Bra app med scheman", "Fungerar med Home Assistant"],
+      "cons": ["Vissa funktioner kräver abonnemang", "Måste ha fri sikt till inomhusdelen"],
+      "works": ["Wi-Fi", "Apple Hem", "Google Home", "Home Assistant"],
+      "amazon": "https://www.amazon.se/s?k=Sensibo+Air"
+    },
+    {
+      "id": "tado-ac",
+      "name": "tado° Smart AC Control V3+",
+      "brand": "tado°",
+      "category": "varmepumpsstyrning",
+      "summary": "IR-styrenhet för värmepumpar och AC från samma tillverkare som tado°-termostaterna.",
+      "bestFor": "Dig som redan har tado° hemma",
+      "pros": ["Samma app som tado°-termostaterna", "Stöd för många modeller", "Enkel installation"],
+      "cons": ["Vissa funktioner kräver abonnemang", "Måste ha fri sikt till inomhusdelen"],
+      "works": ["Wi-Fi", "Apple Hem", "Google Home"],
+      "amazon": "https://www.amazon.se/s?k=tado+Smart+AC+Control+V3%2B"
+    },
+    {
+      "id": "shelly-pro-3em",
+      "name": "Shelly Pro 3EM",
+      "brand": "Shelly",
+      "category": "energimatare",
+      "badge": "Vårt val",
+      "summary": "Trefasmätare för DIN-skena som visar hela husets förbrukning i realtid, fas för fas.",
+      "bestFor": "Dig som vill se hela husets förbrukning i detalj",
+      "pros": ["Mäter alla tre faserna", "Fungerar lokalt", "Stöds av Home Assistant"],
+      "cons": ["Ska installeras av elinstallatör", "Tar plats i elcentralen"],
+      "works": ["Wi-Fi", "Ethernet", "Home Assistant"],
+      "amazon": "https://www.amazon.se/s?k=Shelly+Pro+3EM"
+    }
+  ]
+}

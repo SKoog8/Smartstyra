@@ -1,0 +1,9 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# Lokala inställningar – se .env.example
+.env.local
+
+.claude/settings.local.json
