@@ -63,7 +63,7 @@
         "Byte av golvvärmetermostat är elinstallationsarbete och ska göras av ett registrerat elinstallationsföretag.",
         "Kontrollera att termostaten klarar golvvärmens effekt – de flesta klarar 16 A.",
         "Behåll golvgivaren. Den skyddar golvet från att bli för varmt, särskilt under trägolv och mattor.",
-        "Välj efter vilket system du vill styra från: Tibber, Plejd-appen eller ett eget smart hem."
+        "Välj efter vilket system du vill styra från: Tibber, Plejd-appen, Apple Hem, Google Home eller Home Assistant."
       ],
       "checkedAt": "2026-10-28"
     },
@@ -425,31 +425,29 @@
       }
     },
     {
-      "id": "heatit-z-trm6",
-      "name": "Heatit Z-TRM6",
-      "brand": "Heatit",
+      "id": "aqara-w500",
+      "name": "Aqara Floor Heating Thermostat W500",
+      "brand": "Aqara",
       "category": "golvtermostater",
-      "badge": "För smarta hem",
-      "summary": "Z-Wave-termostat för golvvärme som passar dig som styr huset med Home Assistant, Homey eller en annan Z-Wave-central.",
-      "bestFor": "Dig med Home Assistant eller Homey",
+      "badge": "Prisvärd",
+      "summary": "Termostat för elektrisk golvvärme med Zigbee och Thread, energimätning och scheman. Klarar golvvärme upp till 16 A.",
+      "bestFor": "Dig med Apple Hem, Google Home eller Home Assistant",
       "pros": [
-        "Z-Wave – styrs lokalt",
         "Mäter förbrukningen",
-        "Fungerar med de flesta Z-Wave-centraler"
+        "Matter över Thread – fungerar i flera ekosystem",
+        "Fungerar med Home Assistant"
       ],
       "cons": [
-        "Kräver en Z-Wave-central",
+        "Scheman och avancerade funktioner kräver en Aqara-hubb",
         "Ska installeras av elinstallatör"
       ],
       "works": [
-        "Z-Wave",
-        "Home Assistant",
-        "Homey"
+        "Zigbee",
+        "Thread",
+        "Matter",
+        "Home Assistant"
       ],
-      "shop": {
-        "name": "Heatit",
-        "url": "https://www.heatit.com/"
-      }
+      "amazon": "https://www.amazon.se/dp/B0G23137YW"
     }
   ]
 }

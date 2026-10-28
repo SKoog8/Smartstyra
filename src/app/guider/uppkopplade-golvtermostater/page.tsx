@@ -71,10 +71,12 @@ export default function Page() {
         termostat TRM-01. Den styrs i samma app som belysningen och har dag- och nattsänkning. Semesterläge och
         fjärrstyrning kräver Plejd Gateway.
       </p>
-      <h3>Med ett eget smart hem: Z-Wave</h3>
+      <h3>Med Apple Hem, Google Home eller Home Assistant: Aqara W500</h3>
       <p>
-        Styr du huset med Home Assistant eller Homey är en Z-Wave-termostat som Heatit Z-TRM6 ett bra val. Då kan du
-        bygga egna regler, till exempel att golvet bara värms under de billigaste timmarna före morgonduschen.
+        Aqara Floor Heating Thermostat W500 är en prisvärd termostat för elektrisk golvvärme som mäter förbrukningen.
+        Via Matter över Thread kan du styra den från Apple Hem, Google Home och andra Matter-system. För scheman och
+        de mer avancerade funktionerna behövs en Aqara-hubb. Styr du huset med Home Assistant kan du bygga egna regler,
+        till exempel att golvet bara värms under de billigaste timmarna före morgonduschen.
       </p>
 
       <h2>Installation</h2>
@@ -90,7 +92,7 @@ export default function Page() {
       </ul>
 
       <h2>Termostaterna vi rekommenderar</h2>
-      <Products ids={["ebeco-eb-therm-500", "plejd-trm-01", "heatit-z-trm6"]} />
+      <Products ids={["ebeco-eb-therm-500", "plejd-trm-01", "aqara-w500"]} />
 
       <Faq
         title="Vanliga frågor"
@@ -104,8 +106,8 @@ export default function Page() {
             a: "Nej. Termostaten är fast ansluten och bytet ska göras av ett registrerat elinstallationsföretag.",
           },
           {
-            q: "Fungerar Aqara-termostaten för golvvärme?",
-            a: "Aqara Radiator Thermostat E1 är gjord för vattenburna element med termostatventil, inte för elektrisk golvvärme.",
+            q: "Vilken Aqara-termostat ska jag välja?",
+            a: "För elektrisk golvvärme är det Aqara Floor Heating Thermostat W500, som ersätter termostaten i väggen. Aqara Radiator Thermostat E1 är i stället gjord för vattenburna element med termostatventil.",
           },
         ]}
       />
