@@ -1,15 +1,11 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
 import { OWNER_NAME } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
 const subtitle = "Vem som står bakom sajten, hur vi väljer produkter och hur sajten finansieras.";
 
-export const metadata: Metadata = {
-  title: "Om Smartstyra",
-  description: subtitle,
-  alternates: { canonical: "/om" },
-};
+export const metadata = pageMetadata("Om Smartstyra", subtitle, "/om");
 
 export default function AboutPage() {
   return (

@@ -1,14 +1,10 @@
-import type { Metadata } from "next";
 import ArticlePage from "@/components/ArticlePage";
 import ContactForm from "@/components/ContactForm";
+import { pageMetadata } from "@/lib/metadata";
 
 const subtitle = "Frågor, tips på guider eller något som inte stämmer? Skriv till oss.";
 
-export const metadata: Metadata = {
-  title: "Kontakt",
-  description: subtitle,
-  alternates: { canonical: "/kontakt" },
-};
+export const metadata = pageMetadata("Kontakt", subtitle, "/kontakt");
 
 export default function ContactPage() {
   return (

@@ -1,17 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageIntro from "@/components/PageIntro";
 import CategoryIcon from "@/components/CategoryIcon";
 import { CATEGORIES, YEAR, productsIn } from "@/lib/products";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: `Smarta prylar som sänker elräkningen ${YEAR}`,
-  description:
-    "Smarta uttag, elementtermostater, värmepumpsstyrning och energimätare som vi rekommenderar – med för- och nackdelar.",
-  alternates: { canonical: "/produkter" },
-};
+export const metadata = pageMetadata(`Smarta prylar som sänker elräkningen ${YEAR}`, "Smarta uttag, elementtermostater, värmepumpsstyrning och energimätare som vi rekommenderar – med för- och nackdelar.", "/produkter");
 
 const TONES = ["bg-mint", "bg-sky", "bg-butter", "bg-clay"];
 

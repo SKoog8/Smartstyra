@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PageIntro from "@/components/PageIntro";
 import ProductCard from "@/components/ProductCard";
 import JsonLd from "@/components/JsonLd";
+import { pageMetadata } from "@/lib/metadata";
 import { CATEGORIES, YEAR, category, productsIn } from "@/lib/products";
 import { SITE_URL } from "@/lib/site";
 
@@ -20,11 +21,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const c = category((await params).kategori);
   if (!c) return {};
-  return {
-    title: `${c.title} ${YEAR}`,
-    description: c.description,
-    alternates: { canonical: `/produkter/${c.slug}` },
-  };
+  return pageMetadata(`${c.title} ${YEAR}`, c.description, `/produkter/${c.slug}`);
 }
 
 export default async function CategoryPage({ params }: Props) {

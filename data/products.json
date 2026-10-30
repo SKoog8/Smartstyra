@@ -89,12 +89,12 @@
       "brand": "Shelly",
       "category": "smarta-uttag",
       "badge": "Vårt val",
-      "summary": "Litet uttag med energimätning som fungerar lokalt och går att styra från nästan alla smarta hem-system.",
+      "summary": "Litet uttag med energimätning som fungerar lokalt, har stöd för Matter och klarar upp till 2 500 W.",
       "bestFor": "Dig som vill ha kontroll och kanske kör Home Assistant",
       "pros": [
         "Mäter förbrukningen",
-        "Fungerar utan tillverkarens moln",
-        "Stöds av Home Assistant och Homey"
+        "Matter – fungerar i Apple Hem, Google Home och SmartThings",
+        "Fungerar utan tillverkarens moln"
       ],
       "cons": [
         "Kräver 2,4 GHz-wifi",
@@ -102,10 +102,10 @@
       ],
       "works": [
         "Wi-Fi",
-        "Bluetooth",
+        "Matter",
         "Home Assistant"
       ],
-      "amazon": "https://www.amazon.se/s?k=Shelly+Plug+S+Gen3"
+      "amazon": "https://www.amazon.se/dp/B0DJFCQRWL"
     },
     {
       "id": "tapo-p110",
@@ -129,7 +129,7 @@
         "Google Home",
         "Alexa"
       ],
-      "amazon": "https://www.amazon.se/s?k=Tapo+P110"
+      "amazon": "https://www.amazon.se/dp/B09BFT7NZJ"
     },
     {
       "id": "eve-energy",
@@ -157,11 +157,11 @@
     },
     {
       "id": "tado-x-radiator",
-      "name": "tado° Smart Radiator Thermostat X",
+      "name": "tado° Smart Radiator Thermostat X – startpaket",
       "brand": "tado°",
       "category": "elementtermostater",
       "badge": "Vårt val",
-      "summary": "Elementtermostat med Matter över Thread, tydlig app och smarta scheman per rum.",
+      "summary": "Startpaket med elementtermostat och tado° Bridge X. Matter över Thread, tydlig app och smarta scheman per rum.",
       "bestFor": "Dig som vill ha en helhetslösning som är lätt att komma igång med",
       "pros": [
         "Lätt att installera med adaptrar för vanliga ventiler",
@@ -169,7 +169,7 @@
         "Känner av öppet fönster"
       ],
       "cons": [
-        "Kräver tado° Bridge X",
+        "Fler element kräver fler termostater",
         "Vissa funktioner kräver abonnemang"
       ],
       "works": [
@@ -178,7 +178,7 @@
         "Apple Hem",
         "Google Home"
       ],
-      "amazon": "https://www.amazon.se/s?k=tado+Smart+Radiator+Thermostat+X"
+      "amazon": "https://www.amazon.se/dp/B0CWPHPNFG"
     },
     {
       "id": "netatmo-valves",
@@ -225,7 +225,7 @@
         "Home Assistant",
         "Apple Hem via Aqara-hubb"
       ],
-      "amazon": "https://www.amazon.se/s?k=Aqara+Radiator+Thermostat+E1"
+      "amazon": "https://www.amazon.se/dp/B0B6DTSGSJ"
     },
     {
       "id": "sensibo-air",
@@ -250,7 +250,7 @@
         "Google Home",
         "Home Assistant"
       ],
-      "amazon": "https://www.amazon.se/s?k=Sensibo+Air"
+      "amazon": "https://www.amazon.se/dp/B08T9XXFRW"
     },
     {
       "id": "tado-ac",
@@ -273,7 +273,7 @@
         "Apple Hem",
         "Google Home"
       ],
-      "amazon": "https://www.amazon.se/s?k=tado+Smart+AC+Control+V3%2B"
+      "amazon": "https://www.amazon.se/dp/B07PDZSYCM"
     },
     {
       "id": "shelly-pro-3em",
@@ -297,7 +297,7 @@
         "Ethernet",
         "Home Assistant"
       ],
-      "amazon": "https://www.amazon.se/s?k=Shelly+Pro+3EM"
+      "amazon": "https://www.amazon.se/dp/B0BVKZ4NGM"
     },
     {
       "id": "tibber-pulse-p1",
@@ -347,7 +347,7 @@
         "Home Assistant",
         "Homey"
       ],
-      "amazon": "https://www.amazon.se/s?k=Shelly+Pro+1"
+      "amazon": "https://www.amazon.se/dp/B0B4HMM362"
     },
     {
       "id": "shelly-pro-1pm",
@@ -371,7 +371,7 @@
         "Home Assistant",
         "Homey"
       ],
-      "amazon": "https://www.amazon.se/s?k=Shelly+Pro+1PM"
+      "amazon": "https://www.amazon.se/dp/B0B4HL537H"
     },
     {
       "id": "ebeco-eb-therm-500",

@@ -1,18 +1,13 @@
-import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageIntro from "@/components/PageIntro";
 import GuideCard from "@/components/GuideCard";
 import { GUIDES, type GuideMeta } from "@/lib/guides";
+import { pageMetadata } from "@/lib/metadata";
 
 const THEMES: GuideMeta["theme"][] = ["Flytta i tid", "Styr automatiskt", "Använd mindre"];
 
-export const metadata: Metadata = {
-  title: "Guider: sänk elförbrukningen i villan",
-  description:
-    "Guider om hur du använder mindre el, flyttar förbrukningen till billiga timmar och låter smarta prylar sköta resten.",
-  alternates: { canonical: "/guider" },
-};
+export const metadata = pageMetadata("Guider: sänk elförbrukningen i villan", "Guider om hur du använder mindre el, flyttar förbrukningen till billiga timmar och låter smarta prylar sköta resten.", "/guider");
 
 export default function GuidesPage() {
   return (

@@ -1,15 +1,11 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
 import { OWNER_NAME } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
 const subtitle = "Vilka uppgifter Smartstyra hanterar – och vilka vi inte samlar in.";
 
-export const metadata: Metadata = {
-  title: "Integritetspolicy och kakor",
-  description: subtitle,
-  alternates: { canonical: "/integritet" },
-};
+export const metadata = pageMetadata("Integritetspolicy och kakor", subtitle, "/integritet");
 
 export default function PrivacyPage() {
   return (
