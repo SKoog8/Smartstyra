@@ -1,19 +1,15 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
 import { Products } from "@/components/ProductCard";
 import { guide } from "@/lib/guides";
+import { pageMetadata } from "@/lib/metadata";
 
 const meta = guide("uppkopplade-golvtermostater");
 const path = `/guider/${meta.slug}`;
 
-export const metadata: Metadata = {
-  title: meta.title,
-  description: meta.description,
-  alternates: { canonical: path },
-};
+export const metadata = pageMetadata(meta.title, meta.description, path, true);
 
 export default function Page() {
   return (

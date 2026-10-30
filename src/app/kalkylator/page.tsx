@@ -1,16 +1,11 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageIntro from "@/components/PageIntro";
 import SavingsCalculator from "@/components/SavingsCalculator";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Räkna ut hur mycket du kan sänka elräkningen",
-  description:
-    "Räkna på vad lägre inomhustemperatur, flyttad förbrukning och mindre standby kan spara i just ditt hus.",
-  alternates: { canonical: "/kalkylator" },
-};
+export const metadata = pageMetadata("Räkna ut hur mycket du kan sänka elräkningen", "Räkna på vad lägre inomhustemperatur, flyttad förbrukning och mindre standby kan spara i just ditt hus.", "/kalkylator");
 
 export default function CalculatorPage() {
   return (
