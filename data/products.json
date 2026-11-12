@@ -12,7 +12,12 @@
         "Välj system efter vad du redan har: Wi-Fi fungerar direkt, Zigbee och Thread kräver en hubb men belastar inte routern.",
         "Ett uttag som fungerar lokalt, utan tillverkarens moln, fortsätter att följa sitt schema även om internet går ner."
       ],
-      "checkedAt": "2026-10-28"
+      "checkedAt": "2026-10-28",
+      "metaDescription": "Vi jämför smarta uttag med energimätning: Shelly, Tapo och Eve. Se vad apparaterna drar och styr dem efter schema eller elpris.",
+      "guides": [
+        "flytta-elforbrukningen-till-billiga-timmar",
+        "mat-din-elforbrukning"
+      ]
     },
     {
       "slug": "elementtermostater",
@@ -25,7 +30,11 @@
         "Kontrollera vilken ventil du har innan du köper – de flesta följer standarden M30 × 1,5, men äldre ventiler kan kräva en adapter.",
         "Räkna med en termostat per element. Börja gärna med sovrum och rum som sällan används."
       ],
-      "checkedAt": "2026-10-28"
+      "checkedAt": "2026-10-28",
+      "metaDescription": "Smarta elementtermostater för vattenburna element – tado°, Netatmo och Aqara jämförda. Sänk värmen i rum som inte används och spara el.",
+      "guides": [
+        "smarta-elementtermostater"
+      ]
     },
     {
       "slug": "varmepumpsstyrning",
@@ -38,7 +47,12 @@
         "Kontrollera att din värmepumpsmodell finns med i tillverkarens lista över modeller som stöds.",
         "Har din värmepump inbyggd Wi-Fi eller en officiell Wi-Fi-modul är det oftast det bästa alternativet."
       ],
-      "checkedAt": "2026-10-28"
+      "checkedAt": "2026-10-28",
+      "metaDescription": "Gör luft-luft-värmepumpen smart med Sensibo eller tado°. Styr den från mobilen, efter schema och efter elpriset – utan att öppna pumpen.",
+      "guides": [
+        "sa-fungerar-tibber",
+        "flytta-elforbrukningen-till-billiga-timmar"
+      ]
     },
     {
       "slug": "energimatare",
@@ -51,7 +65,12 @@
         "Har du en elmätare med HAN-port kan en HAN-läsare ge nästan samma information utan installation i elcentralen.",
         "Välj en mätare som klarar tre faser – nästan alla svenska villor har trefas."
       ],
-      "checkedAt": "2026-10-28"
+      "checkedAt": "2026-10-28",
+      "metaDescription": "Energimätare som visar hela husets elförbrukning i realtid: Tibber Pulse för HAN-porten och Shelly Pro 3EM för elcentralen.",
+      "guides": [
+        "mat-din-elforbrukning",
+        "sa-fungerar-tibber"
+      ]
     },
     {
       "slug": "golvtermostater",
@@ -65,7 +84,11 @@
         "Behåll golvgivaren. Den skyddar golvet från att bli för varmt, särskilt under trägolv och mattor.",
         "Välj efter vilket system du vill styra från: Tibber, Plejd-appen, Apple Hem, Google Home eller Home Assistant."
       ],
-      "checkedAt": "2026-10-28"
+      "checkedAt": "2026-10-28",
+      "metaDescription": "Uppkopplade termostater för elektrisk golvvärme: Ebeco, Plejd och Aqara. Schemalägg badrumsgolvet och värm när elen är billig.",
+      "guides": [
+        "uppkopplade-golvtermostater"
+      ]
     },
     {
       "slug": "smarta-relaer",
@@ -79,7 +102,11 @@
         "Ett relä med energimätning visar om beredaren faktiskt går när den ska.",
         "Välj ett relä som fungerar lokalt, så att styrningen fortsätter även om internet går ner."
       ],
-      "checkedAt": "2026-10-28"
+      "checkedAt": "2026-10-28",
+      "metaDescription": "Smarta reläer för DIN-skena som styr varmvattenberedaren och andra fasta förbrukare via kontaktor – efter schema eller elpris.",
+      "guides": [
+        "styr-varmvattenberedaren-med-kontaktor"
+      ]
     }
   ],
   "products": [

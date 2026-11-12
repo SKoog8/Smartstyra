@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/metadata";
 const meta = guide("uppkopplade-golvtermostater");
 const path = `/guider/${meta.slug}`;
 
-export const metadata = pageMetadata(meta.title, meta.description, path, true);
+export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true);
 
 export default function Page() {
   return (

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,6 +11,8 @@ import JsonLd from "@/components/JsonLd";
 import { GUIDES } from "@/lib/guides";
 import { CATEGORIES } from "@/lib/products";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 const WAYS = [
   {
@@ -195,10 +198,10 @@ export default function Home() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "WebSite",
-          name: SITE_NAME,
-          url: SITE_URL,
-          inLanguage: "sv-SE",
+          "@graph": [
+            { "@type": "WebSite", name: SITE_NAME, url: SITE_URL, inLanguage: "sv-SE" },
+            { "@type": "Organization", name: SITE_NAME, url: SITE_URL, logo: `${SITE_URL}/apple-icon` },
+          ],
         }}
       />
       <Footer />

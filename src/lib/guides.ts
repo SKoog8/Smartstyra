@@ -1,7 +1,11 @@
 export interface GuideMeta {
   slug: string;
   title: string;
+  /** Kortare titel för sökresultaten, när rubriken blir längre än Google visar (runt 60 tecken med sajtnamnet). */
+  seoTitle?: string;
   description: string;
+  /** Datum då guiden publicerades (ÅÅÅÅ-MM-DD) */
+  published: string;
   /** Datum då innehållet senast gicks igenom (ÅÅÅÅ-MM-DD) */
   updated: string;
   minutes: number;
@@ -18,6 +22,7 @@ export const GUIDES: GuideMeta[] = [
     title: "Så fungerar Tibber – och allt du kan koppla in",
     description:
       "Kvartspris, appen, Pulse och Power-ups: en genomgång av hur Tibber fungerar och vilka värmepumpar, element, laddboxar och batterier som går att styra.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 8,
     tone: "sky",
@@ -26,8 +31,10 @@ export const GUIDES: GuideMeta[] = [
   {
     slug: "tibber-grid-rewards",
     title: "Tibber Grid Rewards: få betalt för att elbilen och batteriet hjälper elnätet",
+    seoTitle: "Tibber Grid Rewards – så fungerar det",
     description:
       "Så fungerar Grid Rewards, vad som krävs, hur mycket det kan ge och vad det betyder för laddningen av din bil.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 6,
     tone: "butter",
@@ -38,6 +45,7 @@ export const GUIDES: GuideMeta[] = [
     title: "Smart laddning av elbilen med Tibber",
     description:
       "Koppla bilen eller laddboxen till Tibber, ställ in avresetid och låt laddningen hamna på dygnets billigaste timmar – utan att säkringen går.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 7,
     tone: "mint",
@@ -46,8 +54,10 @@ export const GUIDES: GuideMeta[] = [
   {
     slug: "styr-varmvattenberedaren-med-kontaktor",
     title: "Styr varmvattenberedaren efter elpriset med en kontaktor",
+    seoTitle: "Styr varmvattenberedaren efter elpriset",
     description:
       "Varmvattenberedaren är en av husets största elförbrukare och perfekt att flytta i tid. Så fungerar styrning med kontaktor och smart relä.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 7,
     tone: "clay",
@@ -58,6 +68,7 @@ export const GUIDES: GuideMeta[] = [
     title: "Koppla hembatteriet till smart styrning",
     description:
       "Ett batteri som bara lagrar solel står still halva året. Med smart styrning laddar det när elen är billig och tjänar pengar på att stötta elnätet.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 7,
     tone: "sky",
@@ -66,8 +77,10 @@ export const GUIDES: GuideMeta[] = [
   {
     slug: "uppkopplade-golvtermostater",
     title: "Uppkopplade golvtermostater: sluta värma badrumsgolvet i onödan",
+    seoTitle: "Uppkopplad golvtermostat – styr golvvärmen smart",
     description:
       "Elektrisk golvvärme går ofta dygnet runt, året om. Så byter du till en uppkopplad termostat och styr värmen efter schema och elpris.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 6,
     tone: "butter",
@@ -76,8 +89,10 @@ export const GUIDES: GuideMeta[] = [
   {
     slug: "adax-wifi-element",
     title: "Adax WiFi-element: styr elementen från mobilen och efter elpriset",
+    seoTitle: "Adax WiFi-element: styr efter elpriset",
     description:
       "Så fungerar Adax WiFi-element, vad appen kan, och hur du kopplar dem till Tibber eller Home Assistant för att värma på billiga timmar.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 6,
     tone: "clay",
@@ -86,8 +101,10 @@ export const GUIDES: GuideMeta[] = [
   {
     slug: "plejd-smart-belysning",
     title: "Plejd: smart belysning som installeras som vanlig el",
+    seoTitle: "Plejd smart belysning – så fungerar det",
     description:
       "Så fungerar Plejd, vilka produkter som finns, vad gatewayen behövs till – och hur mycket el smart belysning egentligen sparar.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 6,
     tone: "mint",
@@ -96,8 +113,10 @@ export const GUIDES: GuideMeta[] = [
   {
     slug: "controlmyspa-spabad",
     title: "Styr spabadet med ControlMySpa – och värm vattnet när elen är billig",
+    seoTitle: "ControlMySpa: styr spabadet efter elpriset",
     description:
       "Ett spabad kan dra lika mycket el som en elbil. Så använder du ControlMySpa för att schemalägga värmen och vilka vägar som finns till elprisstyrning.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 6,
     tone: "sky",
@@ -106,8 +125,10 @@ export const GUIDES: GuideMeta[] = [
   {
     slug: "flytta-elforbrukningen-till-billiga-timmar",
     title: "Så flyttar du elförbrukningen till billigare timmar",
+    seoTitle: "Flytta elförbrukningen till billiga timmar",
     description:
       "Med timpris kan samma kilowattimme kosta helt olika mycket under dygnet. Så tar du vara på det – med och utan smarta prylar.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 7,
     tone: "butter",
@@ -116,8 +137,10 @@ export const GUIDES: GuideMeta[] = [
   {
     slug: "smarta-elementtermostater",
     title: "Smarta elementtermostater: sänk värmen där ingen är",
+    seoTitle: "Smarta elementtermostater – sänk värmen rum för rum",
     description:
       "En grad lägre inomhus ger ungefär fem procent lägre uppvärmningskostnad. Så får du det att hända rum för rum – utan att frysa.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 6,
     tone: "clay",
@@ -126,8 +149,10 @@ export const GUIDES: GuideMeta[] = [
   {
     slug: "mat-din-elforbrukning",
     title: "Mät först: så hittar du det som drar mest el i huset",
+    seoTitle: "Mät elförbrukningen och hitta eltjuvarna",
     description:
       "Elmätarens HAN-port, smarta uttag och ett enkelt nattest visar var elen tar vägen – innan du lägger pengar på åtgärder.",
+    published: "2026-10-28",
     updated: "2026-10-28",
     minutes: 6,
     tone: "mint",
@@ -147,3 +172,13 @@ export const TONE: Record<GuideMeta["tone"], string> = {
   butter: "bg-butter",
   clay: "bg-clay",
 };
+
+/** Andra guider att läsa härnäst: först de med samma tema, sedan övriga. */
+export function relatedGuides(slug: string, count = 3): GuideMeta[] {
+  const current = guide(slug);
+  const others = GUIDES.filter((g) => g.slug !== slug);
+  return [...others.filter((g) => g.theme === current.theme), ...others.filter((g) => g.theme !== current.theme)].slice(
+    0,
+    count
+  );
+}

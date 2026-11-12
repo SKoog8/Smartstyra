@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/metadata";
 
 const subtitle = "Vem som står bakom sajten, hur vi väljer produkter och hur sajten finansieras.";
 
-export const metadata = pageMetadata("Om Smartstyra", subtitle, "/om");
+export const metadata = pageMetadata("Om oss", subtitle, "/om");
 
 export default function AboutPage() {
   return (
