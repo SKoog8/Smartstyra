@@ -140,12 +140,13 @@ export default function Page() {
         </p>
       </Callout>
 
-      <h2>Se upp för effektavgiften</h2>
+      <h2>Har ditt nätbolag effektavgift?</h2>
       <p>
-        Allt fler nätbolag tar betalt för din högsta effekt under månaden, ofta beräknat på några enskilda timmar. Om
-        elbilen, beredaren och tvättmaskinen startar samtidigt i den billigaste timmen kan du spara på elpriset men
-        betala mer i effektavgift. Kontrollera vad ditt nätbolag har för tariff och sprid ut de stora förbrukarna över
-        flera billiga timmar.
+        Vissa nätbolag tar betalt för din högsta effekt under månaden, ofta beräknat på några enskilda timmar. Kravet på
+        att alla nätbolag ska ha en sådan avgift togs bort 2026, men flera har kvar den. Om elbilen, beredaren och
+        tvättmaskinen startar samtidigt i den billigaste timmen kan du då spara på elpriset men betala mer i
+        effektavgift. Kontrollera vad ditt nätbolag har för tariff och sprid ut de stora förbrukarna över flera billiga
+        timmar. <Link href="/guider/effektavgift">Läs mer om effektavgiften</Link>.
       </p>
 
       <h2>Smarta uttag som klarar jobbet</h2>

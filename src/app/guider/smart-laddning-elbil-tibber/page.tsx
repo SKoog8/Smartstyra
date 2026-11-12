@@ -77,10 +77,11 @@ export default function Page() {
       </p>
       <Products ids={["tibber-pulse-p1"]} />
 
-      <h2>Se upp för effektavgiften</h2>
+      <h2>Om ditt nätbolag har effektavgift</h2>
       <p>
         Om ditt nätbolag tar betalt för din högsta effekt kan det kosta mer än det smakar att ladda på full effekt
-        under den billigaste timmen. Med Effektkontroll kan du sätta en gräns för hur mycket huset får dra totalt.
+        under den billigaste timmen. Med Effektkontroll kan du sätta en gräns för hur mycket huset får dra totalt.{" "}
+        <Link href="/guider/effektavgift">Har ditt nätbolag effektavgift?</Link>
       </p>
 
       <Callout title="Räkneexempel" tone="butter">

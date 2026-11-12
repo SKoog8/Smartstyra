@@ -4,6 +4,11 @@
 
 ## Guider
 
+- [Effektavgift 2026: kravet är borta – så vet du vad som gäller för dig](https://smartstyra.se/guider/effektavgift): Kravet på att alla nätbolag ska ta ut effektavgift upphävdes i juni 2026. Så ser du om ditt nätbolag har kvar den – och hur du håller nere avgiften om det har det.
+- [Kvartspris på el: så fungerar det – och när det lönar sig](https://smartstyra.se/guider/kvartspris): Sedan oktober 2025 sätts elpriset per kvart. Så skiljer sig kvartspris från timpris och rörligt månadspris, och så ser du om det lönar sig för dig.
+- [Tibber Pulse: så fungerar den – och behöver du en?](https://smartstyra.se/guider/tibber-pulse): Tibber Pulse läser av elmätaren i realtid och skyddar säkringen när elbilen laddar. Så väljer du rätt modell, så installerar du den och det här kan den – med och utan elavtal hos Tibber.
+- [Styr bergvärmepumpen efter elpriset](https://smartstyra.se/guider/styr-bergvarmepumpen-efter-elpriset): Bergvärmepumpen är husets största elförbrukare. Så flyttar du värmen till billiga timmar med NIBE myUplink, Tibber eller Ngenic Tune – utan att det blir kallt inne.
+- [Solceller och batteri 2026: så får du ut mest av solelen](https://smartstyra.se/guider/solceller-och-batteri): 60-öringen är borta och grönt avdrag har ändrats. Så räknar du på solceller och batteri nu – och varför smart styrning gör störst skillnad.
 - [Så fungerar Tibber – och allt du kan koppla in](https://smartstyra.se/guider/sa-fungerar-tibber): Kvartspris, appen, Pulse och Power-ups: en genomgång av hur Tibber fungerar och vilka värmepumpar, element, laddboxar och batterier som går att styra.
 - [Tibber Grid Rewards: få betalt för att elbilen och batteriet hjälper elnätet](https://smartstyra.se/guider/tibber-grid-rewards): Så fungerar Grid Rewards, vad som krävs, hur mycket det kan ge och vad det betyder för laddningen av din bil.
 - [Smart laddning av elbilen med Tibber](https://smartstyra.se/guider/smart-laddning-elbil-tibber): Koppla bilen eller laddboxen till Tibber, ställ in avresetid och låt laddningen hamna på dygnets billigaste timmar – utan att säkringen går.

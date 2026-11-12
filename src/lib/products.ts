@@ -12,6 +12,8 @@ export interface Category {
   tips: string[];
   /** Guider som hör till kategorin (slug), länkas från topplistan */
   guides: string[];
+  /** Vanliga frågor som visas under topplistan */
+  faq: { q: string; a: string }[];
   /** Datum då urvalet senast gicks igenom (ÅÅÅÅ-MM-DD) */
   checkedAt: string;
 }

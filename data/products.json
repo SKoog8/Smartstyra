@@ -17,6 +17,20 @@
       "guides": [
         "flytta-elforbrukningen-till-billiga-timmar",
         "mat-din-elforbrukning"
+      ],
+      "faq": [
+        {
+          "q": "Vilket smart uttag passar Home Assistant?",
+          "a": "Shelly Plug S Gen3 fungerar lokalt utan tillverkarens moln och har en färdig integration i Home Assistant. Eve Energy fungerar också lokalt via Matter, men kräver en Thread-router."
+        },
+        {
+          "q": "Kan jag koppla ett element eller en värmefläkt till ett smart uttag?",
+          "a": "Bara om uttaget klarar effekten. Kontrollera uttagets maxeffekt mot apparatens märkskylt, och låt hellre en elinstallatör styra stora fasta förbrukare med ett relä."
+        },
+        {
+          "q": "Drar ett smart uttag ström själv?",
+          "a": "Ja, men lite – oftast under en watt. Det är betydligt mindre än vad det kan spara genom att slå av något som står i standby."
+        }
       ]
     },
     {
@@ -34,6 +48,20 @@
       "metaDescription": "Smarta elementtermostater för vattenburna element – tado°, Netatmo och Aqara jämförda. Sänk värmen i rum som inte används och spara el.",
       "guides": [
         "smarta-elementtermostater"
+      ],
+      "faq": [
+        {
+          "q": "Passar smarta elementtermostater direktverkande el?",
+          "a": "Nej. De är gjorda för vattenburna element med termostatventil. Direktverkande elelement styrs med egen uppkopplad termostat eller med ett relä."
+        },
+        {
+          "q": "Behöver jag en hubb?",
+          "a": "Oftast ja. tado° kräver Bridge X, Netatmo har en gateway i startpaketet och Aqara kräver en Zigbee-hubb. Räkna med hubben i kostnaden för det första rummet."
+        },
+        {
+          "q": "Hur mycket kan jag spara?",
+          "a": "Varje grad lägre inomhustemperatur ger ungefär fem procent lägre uppvärmningskostnad. Störst nytta gör termostaterna i rum som ofta står tomma och i sovrum som kan vara svalare på natten."
+        }
       ]
     },
     {
@@ -52,6 +80,20 @@
       "guides": [
         "sa-fungerar-tibber",
         "flytta-elforbrukningen-till-billiga-timmar"
+      ],
+      "faq": [
+        {
+          "q": "Fungerar Sensibo med min luft-luft-värmepump?",
+          "a": "Sensibo fungerar med de flesta värmepumpar som styrs med IR-fjärrkontroll. Kontrollera din modell i tillverkarens lista innan du köper."
+        },
+        {
+          "q": "Kan styrningen följa elpriset?",
+          "a": "Ja, via till exempel Tibber eller ett smart hem-system som Home Assistant. Då kan värmepumpen värma lite extra när elen är billig."
+        },
+        {
+          "q": "Behöver jag öppna värmepumpen för att installera?",
+          "a": "Nej. Styrenheten skickar IR-signaler som fjärrkontrollen, så den behöver bara stå med fri sikt till inomhusdelen."
+        }
       ]
     },
     {
@@ -70,6 +112,20 @@
       "guides": [
         "mat-din-elforbrukning",
         "sa-fungerar-tibber"
+      ],
+      "faq": [
+        {
+          "q": "Ska jag välja HAN-läsare eller mätare i elcentralen?",
+          "a": "En HAN-läsare som Tibber Pulse är enklast – du sätter den i elmätaren själv. En mätare i elcentralen, som Shelly Pro 3EM, ger mer detaljer och fungerar oberoende av elmätaren, men ska installeras av elinstallatör."
+        },
+        {
+          "q": "Hur aktiverar jag HAN-porten?",
+          "a": "Be ditt nätbolag aktivera den. Det är kostnadsfritt och går ofta att göra på deras Mina sidor."
+        },
+        {
+          "q": "Kan jag se förbrukningen per fas?",
+          "a": "Ja. Både HAN-porten och trefasmätare som Shelly Pro 3EM visar förbrukningen fas för fas, vilket är bra om du laddar elbil eller har en liten huvudsäkring."
+        }
       ]
     },
     {
@@ -88,6 +144,20 @@
       "metaDescription": "Uppkopplade termostater för elektrisk golvvärme: Ebeco, Plejd och Aqara. Schemalägg badrumsgolvet och värm när elen är billig.",
       "guides": [
         "uppkopplade-golvtermostater"
+      ],
+      "faq": [
+        {
+          "q": "Kan jag byta golvvärmetermostat själv?",
+          "a": "Nej. Termostaten är fast ansluten och bytet ska göras av ett registrerat elinstallationsföretag."
+        },
+        {
+          "q": "Vilken termostat fungerar med Tibber?",
+          "a": "Ebeco EB-Therm 500 med WiFi-modulen EB Connect kan styras från Tibber-appen efter elpriset."
+        },
+        {
+          "q": "Vilken passar Apple Hem?",
+          "a": "Aqara Floor Heating Thermostat W500 fungerar med Apple Hem via Matter. För scheman och avancerade funktioner behövs en Aqara-hubb."
+        }
       ]
     },
     {
@@ -106,6 +176,20 @@
       "metaDescription": "Smarta reläer för DIN-skena som styr varmvattenberedaren och andra fasta förbrukare via kontaktor – efter schema eller elpris.",
       "guides": [
         "styr-varmvattenberedaren-med-kontaktor"
+      ],
+      "faq": [
+        {
+          "q": "Varför behövs en kontaktor?",
+          "a": "En varmvattenberedare drar mer ström än ett litet relä är gjort för att bryta hela tiden. Reläet styr i stället kontaktorn, som är byggd för att slå av och på stora laster."
+        },
+        {
+          "q": "Kan jag installera reläet själv?",
+          "a": "Nej. Allt arbete i elcentralen ska göras av ett registrerat elinstallationsföretag."
+        },
+        {
+          "q": "Hur styr jag reläet efter elpriset?",
+          "a": "Reläerna kan schemaläggas i Shellys app. För styrning efter morgondagens elpriser används ofta Home Assistant eller Homey."
+        }
       ]
     }
   ],
@@ -116,7 +200,7 @@
       "brand": "Shelly",
       "category": "smarta-uttag",
       "badge": "Vårt val",
-      "summary": "Litet uttag med energimätning som fungerar lokalt, har stöd för Matter och klarar upp till 2 500 W.",
+      "summary": "Litet uttag med energimätning som fungerar lokalt, har stöd för Matter och klarar upp till 2 500 W.",
       "bestFor": "Dig som vill ha kontroll och kanske kör Home Assistant",
       "pros": [
         "Mäter förbrukningen",

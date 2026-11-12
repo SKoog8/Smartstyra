@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageIntro from "@/components/PageIntro";
 import ProductCard from "@/components/ProductCard";
+import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
 import { pageMetadata } from "@/lib/metadata";
 import { guide } from "@/lib/guides";
@@ -68,6 +69,9 @@ export default async function CategoryPage({ params }: Props) {
               {new Date(c.checkedAt).toLocaleDateString("sv-SE", { dateStyle: "long", timeZone: "Europe/Stockholm" })}.
             </p>
           </aside>
+        </div>
+        <div className="max-w-3xl">
+          <Faq title="Vanliga frågor" items={c.faq} />
         </div>
         <p className="mt-8 text-sm text-ink/60 max-w-2xl">
           Amazonlänkarna är affiliatelänkar. Köper du via dem kan vi få en liten ersättning, utan att det påverkar priset eller
