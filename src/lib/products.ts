@@ -6,8 +6,12 @@ export interface Category {
   /** Rubrik på topplistan, utan år */
   title: string;
   description: string;
+  /** Längre beskrivning för sökresultaten (120–160 tecken) */
+  metaDescription: string;
   intro: string;
   tips: string[];
+  /** Guider som hör till kategorin (slug), länkas från topplistan */
+  guides: string[];
   /** Datum då urvalet senast gicks igenom (ÅÅÅÅ-MM-DD) */
   checkedAt: string;
 }

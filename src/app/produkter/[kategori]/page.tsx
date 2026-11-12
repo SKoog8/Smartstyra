@@ -7,6 +7,7 @@ import PageIntro from "@/components/PageIntro";
 import ProductCard from "@/components/ProductCard";
 import JsonLd from "@/components/JsonLd";
 import { pageMetadata } from "@/lib/metadata";
+import { guide } from "@/lib/guides";
 import { CATEGORIES, YEAR, category, productsIn } from "@/lib/products";
 import { SITE_URL } from "@/lib/site";
 
@@ -21,7 +22,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const c = category((await params).kategori);
   if (!c) return {};
-  return pageMetadata(`${c.title} ${YEAR}`, c.description, `/produkter/${c.slug}`);
+  return pageMetadata(`${c.title} ${YEAR}`, c.metaDescription, `/produkter/${c.slug}`);
 }
 
 export default async function CategoryPage({ params }: Props) {
@@ -52,6 +53,16 @@ export default async function CategoryPage({ params }: Props) {
                 </li>
               ))}
             </ul>
+            <h2 className="mt-8 text-xl font-extrabold">Läs guiden</h2>
+            <ul className="mt-3 space-y-2">
+              {c.guides.map((slug) => (
+                <li key={slug}>
+                  <Link href={`/guider/${slug}`} className="text-volt underline decoration-volt/40 underline-offset-[3px] hover:decoration-volt">
+                    {guide(slug).title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
             <p className="mt-6 text-sm text-white/60">
               Urvalet gicks igenom{" "}
               {new Date(c.checkedAt).toLocaleDateString("sv-SE", { dateStyle: "long", timeZone: "Europe/Stockholm" })}.
@@ -66,14 +77,26 @@ export default async function CategoryPage({ params }: Props) {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "ItemList",
-          name: `${c.title} ${YEAR}`,
-          url: `${SITE_URL}/produkter/${c.slug}`,
-          itemListElement: products.map((p, i) => ({
-            "@type": "ListItem",
-            position: i + 1,
-            name: p.name,
-          })),
+          "@graph": [
+            {
+              "@type": "ItemList",
+              name: `${c.title} ${YEAR}`,
+              url: `${SITE_URL}/produkter/${c.slug}`,
+              itemListElement: products.map((p, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                name: p.name,
+              })),
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Start", item: `${SITE_URL}/` },
+                { "@type": "ListItem", position: 2, name: "Produkter", item: `${SITE_URL}/produkter` },
+                { "@type": "ListItem", position: 3, name: c.name, item: `${SITE_URL}/produkter/${c.slug}` },
+              ],
+            },
+          ],
         }}
       />
       <Footer />
