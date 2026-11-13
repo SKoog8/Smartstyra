@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
+import TestLink from "@/components/TestLink";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
 import { guide } from "@/lib/guides";
@@ -18,6 +19,8 @@ export default function Page() {
         perfekta att styra rum för rum. Adax WiFi-element har uppkopplingen inbyggd, så du kan styra dem från mobilen,
         schemalägga dem och låta en app välja de billigaste timmarna.
       </p>
+      <TestLink slug="adax-neo-wifi" />
+
 
       <h2>Vad är Adax WiFi?</h2>
       <p>

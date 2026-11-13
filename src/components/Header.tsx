@@ -4,6 +4,7 @@ import Logo from "./Logo";
 const NAV = [
   ["/guider", "Guider"],
   ["/produkter", "Produkter"],
+  ["/tester", "Tester"],
   ["/kalkylator", "Räkna på det"],
   ["/om", "Om oss"],
 ];

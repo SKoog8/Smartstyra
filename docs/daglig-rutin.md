@@ -44,7 +44,8 @@ Kopiera en befintlig guide som mall, t.ex. `src/app/guider/effektavgift/page.tsx
 
 **Ärlighet – viktigt**
 
-- Smartstyra har **inte** testat produkterna. Skriv aldrig "vi har testat", "i vårt test" eller "bäst i test".
+- Bara produkterna i `src/lib/tests.ts` är testade hemma (av Martin). Dem får du länka till med `<TestLink slug="..." />`.
+  Skriv aldrig att någon annan produkt är testad, och aldrig "bäst i test". Hitta inte på erfarenheter.
 - Hitta inte på siffror, priser, besparingar eller citat. Räkneexempel ska visa hur man räknar, med
   tydliga antaganden.
 - Produktkort (`<Products ids={[...]} />`) får bara använda produkter som redan finns i

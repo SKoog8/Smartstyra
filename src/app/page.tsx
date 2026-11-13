@@ -4,12 +4,14 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PriceDay from "@/components/PriceDay";
 import GuideCard from "@/components/GuideCard";
+import TestCard from "@/components/TestCard";
 import CategoryIcon from "@/components/CategoryIcon";
 import NewsletterForm from "@/components/NewsletterForm";
 import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
 import { GUIDES } from "@/lib/guides";
 import { CATEGORIES } from "@/lib/products";
+import { TESTS } from "@/lib/tests";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
@@ -104,6 +106,23 @@ export default function Home() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {GUIDES.slice(0, 3).map((g) => (
               <GuideCard key={g.slug} guide={g} />
+            ))}
+          </div>
+        </section>
+
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-20 sm:pt-28">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <h2 className="text-3xl sm:text-5xl font-extrabold text-ink leading-[1.05]">Testat hemma</h2>
+              <p className="mt-3 text-lg text-ink/70 max-w-xl">Prylar vi använder i vår egen villa – köpta själva.</p>
+            </div>
+            <Link href="/tester" className="font-semibold text-leaf hover:text-leaf-dark">
+              Alla tester →
+            </Link>
+          </div>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {TESTS.slice(0, 3).map((t) => (
+              <TestCard key={t.slug} test={t} />
             ))}
           </div>
         </section>

@@ -20,10 +20,20 @@ export default function AboutPage() {
       <h2>Hur vi väljer produkter</h2>
       <p>
         Vi rekommenderar bara produkter som hjälper dig att använda mindre el eller styra den smartare, och vi skriver
-        ut nackdelarna lika tydligt som fördelarna. Urvalet bygger på tillverkarnas specifikationer, kompatibilitet med
-        vanliga smarta hem-system och vad som fungerar i svenska hus. Vi har inte testat alla produkter själva och
-        skriver aldrig att vi har gjort det när vi inte har det.
+        ut nackdelarna lika tydligt som fördelarna.
       </p>
+      <ul>
+        <li>
+          <strong>Testat hemma.</strong> En del produkter använder Martin, som är elektriker, i sin egen villa. De är
+          köpta för egna pengar, och testerna beskriver hur de fungerar i vardagen. De är märkta{" "}
+          <Link href="/tester">Testat hemma</Link>.
+        </li>
+        <li>
+          <strong>Jämförda.</strong> Övriga produkter har vi inte testat själva. Där bygger urvalet på tillverkarnas
+          specifikationer, kompatibilitet med vanliga smarta hem-system och vad som fungerar i svenska hus. Vi skriver
+          aldrig att vi har testat något när vi inte har det.
+        </li>
+      </ul>
       <p>Varje lista har ett datum för när urvalet senast gicks igenom. Hittar du något som inte stämmer – hör av dig.</p>
 
       <h2 id="finansiering">Så finansieras sajten</h2>
