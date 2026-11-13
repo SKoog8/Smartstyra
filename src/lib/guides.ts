@@ -18,6 +18,65 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "effektavgift",
+    title: "Effektavgift 2026: kravet är borta – så vet du vad som gäller för dig",
+    seoTitle: "Effektavgift 2026 – vad gäller nu?",
+    description:
+      "Kravet på effektavgift upphävdes i juni 2026. Så ser du om ditt nätbolag har kvar den – och hur du håller nere avgiften om det har det.",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    minutes: 6,
+    tone: "clay",
+    theme: "Flytta i tid",
+  },
+  {
+    slug: "kvartspris",
+    title: "Kvartspris på el: så fungerar det – och när det lönar sig",
+    seoTitle: "Kvartspris på el – så fungerar det",
+    description:
+      "Sedan oktober 2025 sätts elpriset per kvart. Så skiljer sig kvartspris från timpris och rörligt månadspris, och så ser du om det lönar sig för dig.",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    minutes: 6,
+    tone: "butter",
+    theme: "Flytta i tid",
+  },
+  {
+    slug: "tibber-pulse",
+    title: "Tibber Pulse: så fungerar den – och behöver du en?",
+    seoTitle: "Tibber Pulse – så fungerar den",
+    description:
+      "Tibber Pulse visar elförbrukningen i realtid och skyddar säkringen när elbilen laddar. Så väljer du rätt modell och det här kan den – med och utan Tibber.",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    minutes: 6,
+    tone: "mint",
+    theme: "Använd mindre",
+  },
+  {
+    slug: "styr-bergvarmepumpen-efter-elpriset",
+    title: "Styr bergvärmepumpen efter elpriset",
+    description:
+      "Så flyttar du bergvärmepumpens värme till billiga timmar med NIBE myUplink, Tibber eller Ngenic Tune – utan att det blir kallt inne.",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    minutes: 7,
+    tone: "sky",
+    theme: "Styr automatiskt",
+  },
+  {
+    slug: "solceller-och-batteri",
+    title: "Solceller och batteri 2026: så får du ut mest av solelen",
+    seoTitle: "Solceller och batteri 2026 – lönar det sig?",
+    description:
+      "60-öringen är borta och grönt avdrag har ändrats. Så räknar du på solceller och batteri nu – och varför smart styrning gör störst skillnad.",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    minutes: 7,
+    tone: "butter",
+    theme: "Flytta i tid",
+  },
+  {
     slug: "sa-fungerar-tibber",
     title: "Så fungerar Tibber – och allt du kan koppla in",
     description:
@@ -46,7 +105,7 @@ export const GUIDES: GuideMeta[] = [
     description:
       "Koppla bilen eller laddboxen till Tibber, ställ in avresetid och låt laddningen hamna på dygnets billigaste timmar – utan att säkringen går.",
     published: "2026-10-28",
-    updated: "2026-10-28",
+    updated: "2026-11-12",
     minutes: 7,
     tone: "mint",
     theme: "Flytta i tid",
@@ -129,7 +188,7 @@ export const GUIDES: GuideMeta[] = [
     description:
       "Med timpris kan samma kilowattimme kosta helt olika mycket under dygnet. Så tar du vara på det – med och utan smarta prylar.",
     published: "2026-10-28",
-    updated: "2026-10-28",
+    updated: "2026-11-12",
     minutes: 7,
     tone: "butter",
     theme: "Flytta i tid",
