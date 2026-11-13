@@ -40,7 +40,10 @@ Alla produkter och produktkategorier ligger i `data/products.json`.
 2. Skapa `src/app/guider/<slug>/page.tsx` – kopiera en befintlig guide som mall.
    Produktkort läggs in med `<Products ids={["tapo-p110"]} />`, faktarutor med `<Callout>`.
 3. Kopiera `opengraph-image.tsx` från en befintlig guide och byt slug.
-4. Guiden kommer automatiskt med i guidelistan, startsidan och sitemapen. Lägg gärna till den i `public/llms.txt`.
+4. Guiden kommer automatiskt med i guidelistan, startsidan, sitemapen och `llms.txt`.
+5. Kör `node scripts/check-seo.mjs` för att kontrollera titel, beskrivning och filer.
+
+En ny guide skrivs också automatiskt varje morgon – se `docs/daglig-rutin.md` och idélistan i `docs/guide-ideer.md`.
 
 ## Kontaktformulär och nyhetsbrev
 
