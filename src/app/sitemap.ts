@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { GUIDES } from "@/lib/guides";
 import { CATEGORIES } from "@/lib/products";
+import { TESTS } from "@/lib/tests";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -19,6 +20,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: c.checkedAt,
       changeFrequency: "monthly" as const,
       priority: 0.7,
+    })),
+    { url: `${SITE_URL}/tester`, changeFrequency: "monthly", priority: 0.7 },
+    ...TESTS.map((t) => ({
+      url: `${SITE_URL}/tester/${t.slug}`,
+      lastModified: t.updated,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     })),
     { url: `${SITE_URL}/kalkylator`, changeFrequency: "yearly", priority: 0.6 },
     { url: `${SITE_URL}/om`, changeFrequency: "yearly", priority: 0.3 },

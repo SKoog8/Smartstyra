@@ -1,5 +1,6 @@
 import { GUIDES } from "@/lib/guides";
 import { SITE_URL } from "@/lib/site";
+import { TESTS } from "@/lib/tests";
 
 // Sammanfattning av sajten för AI-tjänster. Byggs från guidelistan, så nya guider kommer med automatiskt.
 export const dynamic = "force-static";
@@ -13,6 +14,10 @@ export function GET() {
     "## Guider",
     "",
     ...GUIDES.map((g) => `- [${g.title}](${SITE_URL}/guider/${g.slug}): ${g.description}`),
+    "",
+    "## Testat hemma",
+    "",
+    ...TESTS.map((t) => `- [${t.title}](${SITE_URL}/tester/${t.slug}): ${t.description}`),
     "",
     "## Verktyg och produkter",
     "",

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { buyLink, product as findProduct, type Product } from "@/lib/products";
 
 function Check({ ok }: { ok: boolean }) {
@@ -25,9 +26,19 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
           </p>
           <h3 className="text-xl sm:text-2xl font-extrabold text-ink leading-tight mt-0.5">{product.name}</h3>
         </div>
-        {product.badge && (
-          <span className="rounded-full bg-volt px-3 py-1 text-sm font-semibold text-ink">{product.badge}</span>
-        )}
+        <div className="flex flex-wrap gap-2">
+          {product.test && (
+            <Link
+              href={`/tester/${product.test}`}
+              className="rounded-full bg-forest px-3 py-1 text-sm font-semibold text-white hover:bg-forest-light"
+            >
+              Testat hemma →
+            </Link>
+          )}
+          {product.badge && (
+            <span className="rounded-full bg-volt px-3 py-1 text-sm font-semibold text-ink">{product.badge}</span>
+          )}
+        </div>
       </div>
 
       <p className="mt-3 text-ink/80 leading-relaxed">{product.summary}</p>

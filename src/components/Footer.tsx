@@ -8,6 +8,7 @@ const COLUMNS: [string, [string, string][]][] = [
     [
       ["/guider", "Alla guider"],
       ["/produkter", "Produkter vi rekommenderar"],
+      ["/tester", "Testat hemma"],
       ["/kalkylator", "Räkna på din besparing"],
     ],
   ],

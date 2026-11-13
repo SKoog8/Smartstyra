@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
+import TestLink from "@/components/TestLink";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
 import { guide } from "@/lib/guides";
@@ -18,6 +19,8 @@ export default function Page() {
         byggs in i husets elinstallation. Dimrar och reläer monteras bakom dina vanliga strömbrytare, så allt ser ut och
         fungerar som förut – men går också att styra från mobilen, med scheman och sensorer.
       </p>
+      <TestLink slug="plejd-golvtermostat-och-rela" />
+
 
       <h2>Så fungerar Plejd</h2>
       <ul>

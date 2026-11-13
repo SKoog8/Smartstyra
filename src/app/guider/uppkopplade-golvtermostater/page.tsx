@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
+import TestLink from "@/components/TestLink";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
 import { Products } from "@/components/ProductCard";
@@ -19,6 +20,8 @@ export default function Page() {
         när ingen är hemma och mitt i juli. En uppkopplad golvtermostat ger dig varmt golv när du vill ha det och ett
         svalare golv resten av tiden.
       </p>
+      <TestLink slug="plejd-golvtermostat-och-rela" />
+
 
       <h2>Elektrisk eller vattenburen golvvärme?</h2>
       <p>

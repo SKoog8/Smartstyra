@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
+import TestLink from "@/components/TestLink";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
 import { guide } from "@/lib/guides";
@@ -18,6 +19,8 @@ export default function Page() {
         lätt flera tusen kWh om året – i nivå med en elbil. Samtidigt är tusen liter varmt vatten ett utmärkt
         värmelager. Den som styr när värmaren får gå kan sänka kostnaden rejält.
       </p>
+      <TestLink slug="controlmyspa" />
+
 
       <h2>Vad är ControlMySpa?</h2>
       <p>

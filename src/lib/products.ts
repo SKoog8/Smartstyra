@@ -33,6 +33,8 @@ export interface Product {
   amazon?: string;
   /** Annan butik eller tillverkare, för produkter som inte säljs på Amazon. */
   shop?: { name: string; url: string };
+  /** Slug för ett test under /tester, om produkten är testad hemma */
+  test?: string;
 }
 
 // Året i titlar som "Bästa smarta uttagen 2026". Sidorna byggs om vid varje driftsättning.

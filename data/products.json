@@ -364,6 +364,31 @@
       "amazon": "https://www.amazon.se/dp/B08T9XXFRW"
     },
     {
+      "id": "sensibo-sky",
+      "name": "Sensibo Sky",
+      "brand": "Sensibo",
+      "category": "varmepumpsstyrning",
+      "summary": "Sensibos äldre IR-styrenhet för luft-luft-värmepumpar, med scheman, temperaturgivare och integration med Tibber.",
+      "bestFor": "Dig som vill styra värmepumpen via Tibber",
+      "pros": [
+        "Fungerar med Tibber och Home Assistant",
+        "Stöd för de flesta värmepumpar med IR-fjärrkontroll",
+        "Givare för temperatur och luftfuktighet"
+      ],
+      "cons": [
+        "Äldre modell – Sensibo Air är efterföljaren",
+        "Bara 2,4 GHz-wifi",
+        "Måste ha fri sikt till inomhusdelen"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Tibber",
+        "Home Assistant"
+      ],
+      "amazon": "https://www.amazon.se/dp/B01MU2YSR4",
+      "test": "sensibo-sky"
+    },
+    {
       "id": "tado-ac",
       "name": "tado° Smart AC Control V3+",
       "brand": "tado°",
@@ -533,7 +558,8 @@
       "shop": {
         "name": "Plejd",
         "url": "https://www.plejd.com/sv-se/produkter/trm-01"
-      }
+      },
+      "test": "plejd-golvtermostat-och-rela"
     },
     {
       "id": "aqara-w500",
