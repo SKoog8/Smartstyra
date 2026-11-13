@@ -60,8 +60,9 @@ export default function Page() {
         <li>På sommaren värmer jag med solel, och på vintern på natten.</li>
       </ul>
       <p>
-        Jag styr badet både i ControlMySpa-appen och via{" "}
-        <Link href="/tester/home-assistant">Home Assistant</Link>. Uppkopplingen har varit stabil.
+        Schemana har jag lagt upp i ControlMySpa-appen. Badet finns också i{" "}
+        <Link href="/tester/home-assistant">Home Assistant</Link>, där jag ser temperatur och förbrukning tillsammans
+        med resten av huset. Uppkopplingen har varit stabil.
       </p>
 
       <h2>Vad det har gett</h2>

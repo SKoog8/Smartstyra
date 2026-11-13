@@ -61,8 +61,9 @@ export default function Page() {
 
       <h2>Det här styr jag</h2>
       <p>
-        Spabadet är det tydligaste exemplet. När det är perioder med väldigt högt elpris sänker jag temperaturen
-        direkt från mobilen, och på sommaren värmer jag badet med solel från taket.{" "}
+        Spabadet är ett bra exempel. Schemana ligger i ControlMySpa-appen, men i Home Assistant ser jag badets
+        temperatur och förbrukning bredvid resten av huset. När det är perioder med väldigt högt elpris sänker jag
+        temperaturen från mobilen, och på sommaren värmer jag badet med solel från taket.{" "}
         <Link href="/tester/controlmyspa">Läs mitt test av ControlMySpa</Link>.
       </p>
 

@@ -54,7 +54,7 @@ export const TESTS: TestMeta[] = [
     title: "Test: Plejd golvtermostat och kronrelä",
     seoTitle: "Plejd golvtermostat och relä – testat",
     description:
-      "Martin, som är elektriker, har installerat Plejds golvtermostat och ett kronrelä som styr varmvattenberedaren. Så fungerar de i vardagen.",
+      "Martin, som är elektriker, har installerat Plejds golvtermostat och ett kronrelä som styr varmvattenberedaren via en kontaktor. Så fungerar de.",
     used: "sedan installationen",
     published: "2026-11-13",
     updated: "2026-11-13",
@@ -66,7 +66,7 @@ export const TESTS: TestMeta[] = [
     title: "Test: Sensibo Sky på en Panasonic-värmepump",
     seoTitle: "Sensibo Sky – testat hemma",
     description:
-      "Sensibo Sky har styrt Martins luft-luft-värmepump från Panasonic i ett år, via Tibber. Så gick installationen och så fungerar den.",
+      "Sensibo Sky har styrt Martins luft-luft-värmepump från Panasonic i ett år, via Tibber. Så gick installationen och så har den fungerat.",
     used: "i ett år",
     published: "2026-11-13",
     updated: "2026-11-13",

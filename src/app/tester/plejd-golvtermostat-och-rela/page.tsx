@@ -14,8 +14,8 @@ export default function Page() {
     <ArticlePage title={meta.title} subtitle={meta.description} path={path}>
       <TestBox meta={meta} />
       <p>
-        Jag har Plejds golvtermostat TRM-01 och ett kronrelä REL-02 som styr varmvattenberedaren. Eftersom jag är
-        elektriker installerade jag dem själv. Båda styrs i Plejd-appen.
+        Jag har Plejds golvtermostat TRM-01 och ett kronrelä REL-02 som styr varmvattenberedaren via en kontaktor.
+        Eftersom jag är elektriker installerade jag dem själv. Båda styrs i Plejd-appen.
       </p>
 
       <h2>Fakta</h2>
@@ -64,8 +64,9 @@ export default function Page() {
         elinstallatör.
       </p>
       <p>
-        Ska ett relä styra en varmvattenberedare måste installationen vara dimensionerad för beredarens effekt. Låt
-        elinstallatören avgöra om reläet räcker eller om det behövs en kontaktor.{" "}
+        Reläet slår inte av och på beredaren direkt. Det styr en kontaktor i elcentralen, som i sin tur bryter
+        strömmen till beredaren. Kontaktorn är byggd för att slå av och på stora laster, och det är så en
+        varmvattenberedare bör styras.{" "}
         <Link href="/guider/styr-varmvattenberedaren-med-kontaktor">Så styr du varmvattenberedaren</Link>.
       </p>
 

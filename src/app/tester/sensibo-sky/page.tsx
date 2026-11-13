@@ -14,8 +14,8 @@ export default function Page() {
     <ArticlePage title={meta.title} subtitle={meta.description} path={path}>
       <TestBox meta={meta} />
       <p>
-        Sensibo Sky har styrt min luft-luft-värmepump från Panasonic i ett år. Jag låter Tibber sköta styrningen via
-        sin Sensibo-integration.
+        Sensibo Sky har styrt min luft-luft-värmepump från Panasonic i ett år. Den har fungerat bra, och den
+        integrerar bra direkt i Tibber, som sköter styrningen efter elpriset.
       </p>
 
       <h2>Fakta</h2>
@@ -64,15 +64,16 @@ export default function Page() {
 
       <h2>Så styr jag värmepumpen</h2>
       <p>
-        Jag använder Tibber-integrationen. Då sköter Tibber värmepumpen efter elpriset tillsammans med resten av
-        huset.{" "}
+        Jag använder Tibber-integrationen. Den gick att koppla in direkt, och sedan sköter Tibber värmepumpen efter
+        elpriset tillsammans med resten av huset. Det finns också en integration för Home Assistant, men den har jag
+        inte provat.{" "}
         <Link href="/guider/sa-fungerar-tibber">Så fungerar Tibber</Link>.
       </p>
 
       <h2>Bra och mindre bra</h2>
       <ul>
         <li>Gör en vanlig värmepump smart utan att öppna den</li>
-        <li>Fungerar med både Tibber och Home Assistant</li>
+        <li>Integrerar bra direkt i Tibber</li>
         <li>Sensibo vet inte säkert vad värmepumpen gör – tar någon i fjärrkontrollen kan appen visa fel läge</li>
         <li>Bara 2,4 GHz-wifi</li>
       </ul>
