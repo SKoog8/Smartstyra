@@ -31,7 +31,7 @@ export default function TestsPage() {
         <section className="article max-w-3xl mt-16">
           <h2>Så testar vi</h2>
           <p>
-            Testerna på Smartstyra skrivs av Martin, som är elektriker och bor i en villa på 175 kvadratmeter från
+            Testerna på Smartstyra skrivs av <Link href="/om/martin">Martin</Link>, som är elektriker och bor i en villa på 175 kvadratmeter från
             70-talet. Huset har solceller, ett elavtal med kvartspris och använder ungefär 24 000 kWh el om året. Alla
             produkter är köpta för egna pengar – ingen tillverkare har betalat för ett test eller lånat ut något.
           </p>

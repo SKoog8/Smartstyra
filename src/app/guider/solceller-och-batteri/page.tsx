@@ -109,6 +109,16 @@ export default function Page() {
         </li>
       </ol>
 
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Skatteverket: <a href="https://www.skatteverket.se/privat/fastigheterochbostad/gronteknik.4.676f4884175c97df4192860.html">Skattereduktion för installation av grön teknik</a>
+        </li>
+        <li>
+          Skatteverket: <a href="https://www4.skatteverket.se/rattsligvagledning/edition/2026.14/420580.html">Rättslig vägledning om grön teknik</a>
+        </li>
+      </ul>
+
       <Faq
         title="Vanliga frågor"
         items={[

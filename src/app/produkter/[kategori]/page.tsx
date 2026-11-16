@@ -70,6 +70,15 @@ export default async function CategoryPage({ params }: Props) {
             </p>
           </aside>
         </div>
+        <section className="article max-w-3xl mt-16">
+          <h2>Köpråd: så väljer du {c.name.toLowerCase()}</h2>
+          {c.advice.map((a) => (
+            <div key={a.h}>
+              <h3>{a.h}</h3>
+              <p>{a.p}</p>
+            </div>
+          ))}
+        </section>
         <div className="max-w-3xl">
           <Faq title="Vanliga frågor" items={c.faq} />
         </div>

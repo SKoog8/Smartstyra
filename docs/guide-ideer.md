@@ -2,11 +2,16 @@
 
 Den dagliga rutinen (`docs/daglig-rutin.md`) tar den första punkten som inte är avbockad. Bocka av med
 `[x]` och skriv guidens slug efter när den är publicerad. Lägg gärna till nya idéer längst ner – helst
-sådant villaägare faktiskt söker på.
+sådant villaägare faktiskt söker på. De första punkterna är sökningar där forum i dag ligger överst i
+Google – där har en tydlig guide störst chans att ranka.
 
 ## Att skriva
 
-- [ ] Ställ in värmekurvan på värmepumpen – så sänker du förbrukningen utan att frysa
+- [ ] Ställ in värmekurvan på NIBE-värmepumpen – så sänker du förbrukningen utan att frysa (sökord: "ställa in värmekurva NIBE")
+- [ ] Styr varmvattenberedaren med Shelly efter elpriset (sökord: "Shelly varmvattenberedare")
+- [ ] Elpriset från Nord Pool i Home Assistant – och automationer som följer det (sökord: "Home Assistant elpris Nord Pool")
+- [ ] Tibber Pulse i Home Assistant: realtidsförbrukning och automationer (sökord: "Tibber Pulse Home Assistant")
+- [ ] Lönar sig spabad? Så mycket el drar ett spabad och så sänker du kostnaden (sökord: "spabad elkostnad")
 - [ ] Luft-luft-värmepump på vintern: rätt inställningar för lägst elräkning
 - [ ] Välj laddbox till elbilen: lastbalansering, appar och smart laddning
 - [ ] Ladda elbilen smart utan Tibber: laddboxens egna appar och elprisstyrning

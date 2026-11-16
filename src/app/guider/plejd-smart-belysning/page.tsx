@@ -71,7 +71,8 @@ export default function Page() {
       <h2>Golvvärme med Plejd</h2>
       <p>
         Plejd har en egen termostat för elektrisk golvvärme, TRM-01, som styrs i samma app med dag- och nattsänkning.{" "}
-        <Link href="/guider/uppkopplade-golvtermostater">Läs guiden om golvtermostater</Link>.
+        <Link href="/guider/uppkopplade-golvtermostater">Läs guiden om golvtermostater</Link> eller{" "}
+        <Link href="/produkter/golvtermostater">jämför golvtermostaterna</Link>.
       </p>
 
       <h2>Installation och kostnad</h2>
@@ -87,6 +88,19 @@ export default function Page() {
         integrationer. För Home Assistant finns integrationer som utvecklats av användare. Kontrollera på plejd.com
         vilka integrationer som stöds just nu innan du bygger din lösning kring en viss tjänst.
       </p>
+
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Plejd: <a href="https://www.plejd.com/sv-se/produkter">Produkter</a>
+        </li>
+        <li>
+          Plejd: <a href="https://www.plejd.com/sv-se/produkter/trm-01">TRM-01</a>
+        </li>
+        <li>
+          Elsäkerhetsverket: <a href="https://elsakerhetsverket.se/privatpersoner/anlita-ett-elinstallationsforetag">Anlita ett elinstallationsföretag</a>
+        </li>
+      </ul>
 
       <Faq
         title="Vanliga frågor"

@@ -88,6 +88,16 @@ export default function Page() {
         </li>
       </ul>
 
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Tibber: <a href="https://tibber.com/se/grid-rewards">Grid Rewards</a>
+        </li>
+        <li>
+          Tibbers kundtjänst: <a href="https://support.tibber.com/hc/sv/articles/48351672784401-Grid-Rewards-f%C3%B6r-elbilar">Grid Rewards för elbilar</a>
+        </li>
+      </ul>
+
       <Faq
         title="Vanliga frågor"
         items={[

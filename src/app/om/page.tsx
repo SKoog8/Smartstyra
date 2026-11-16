@@ -24,7 +24,7 @@ export default function AboutPage() {
       </p>
       <ul>
         <li>
-          <strong>Testat hemma.</strong> En del produkter använder Martin, som är elektriker, i sin egen villa. De är
+          <strong>Testat hemma.</strong> En del produkter använder <Link href="/om/martin">Martin, som är elektriker</Link>, i sin egen villa. De är
           köpta för egna pengar, och testerna beskriver hur de fungerar i vardagen. De är märkta{" "}
           <Link href="/tester">Testat hemma</Link>.
         </li>

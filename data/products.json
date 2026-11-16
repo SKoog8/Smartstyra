@@ -31,6 +31,24 @@
           "q": "Drar ett smart uttag ström själv?",
           "a": "Ja, men lite – oftast under en watt. Det är betydligt mindre än vad det kan spara genom att slå av något som står i standby."
         }
+      ],
+      "advice": [
+        {
+          "h": "Börja med att mäta",
+          "p": "Det smartaste första köpet är ofta ett enda uttag som du flyttar runt. Sätt det på frysen en vecka, på tv-bänken en vecka och på varmvattenpumpen i bastun en vecka. Då vet du vad varje apparat faktiskt drar, både när den används och i standby, och kan avgöra var det lönar sig att styra. Mätningen är också det som gör uttagen användbara efter köpet: du ser direkt om ett schema fungerar."
+        },
+        {
+          "h": "Effekten avgör vad du kan styra",
+          "p": "Ett smart uttag klarar oftast runt 10 ampere, vilket räcker för lampor, tv, laddare, avfuktare och de flesta köksapparater. Värmefläktar, oljefyllda element och motorvärmare ligger nära gränsen och belastar uttaget hårt under lång tid. Läs tillverkarens maxeffekt och välj hellre ett annat sätt att styra om apparaten drar mer än 2 000 watt i timmar. Fast anslutna saker som varmvattenberedare passar inte alls – där behövs ett smart relä i elcentralen."
+        },
+        {
+          "h": "Wi-Fi, Zigbee, Thread eller Matter?",
+          "p": "Wi-Fi-uttag är enklast: du kopplar in dem och styr från tillverkarens app. Har du många uttag kan det bli mycket trafik i routern, och då är Zigbee eller Thread bättre. De kräver en hubb, till exempel en Aqara-hubb, en Home Assistant-dongel eller en Apple-enhet som fungerar som Thread-gränsrouter. Matter är en gemensam standard som gör att samma uttag kan styras från Apple Hem, Google Home och Home Assistant. Välj efter det system du redan har hemma, inte efter vilket uttag som är billigast just nu."
+        },
+        {
+          "h": "Så låter du uttaget följa elpriset",
+          "p": "Ett schema räcker långt: låt avfuktaren, poolpumpen eller motorvärmaren gå nattetid när elen brukar vara billig. Vill du att uttaget ska följa det faktiska elpriset behövs ett smart hem-system som Home Assistant eller Homey, som hämtar morgondagens priser och slår på uttaget under de billigaste timmarna. Det kräver ett elavtal med timpris eller kvartspris för att ge något. Läs mer i guiden om att flytta elförbrukningen."
+        }
       ]
     },
     {
@@ -61,6 +79,24 @@
         {
           "q": "Hur mycket kan jag spara?",
           "a": "Varje grad lägre inomhustemperatur ger ungefär fem procent lägre uppvärmningskostnad. Störst nytta gör termostaterna i rum som ofta står tomma och i sovrum som kan vara svalare på natten."
+        }
+      ],
+      "advice": [
+        {
+          "h": "Räkna med rätt besparing",
+          "p": "Energimyndighetens tumregel är att en grad lägre inomhustemperatur ger ungefär fem procent mindre energi till uppvärmningen. Smarta termostater sparar inte el av sig själva – de gör det enkelt att sänka i rum som står tomma, sänka på natten och höja igen innan ni vaknar. Störst skillnad gör de i hus där värmen i dag står på samma nivå dygnet runt i alla rum."
+        },
+        {
+          "h": "Kontrollera ventilen först",
+          "p": "Ta av ett befintligt termostathuvud och titta på ventilen. De flesta ventiler i Sverige har gängan M30 × 1,5, och då passar termostaterna här direkt. Äldre ventiler från till exempel Danfoss eller TA kan kräva en adapter, som ofta följer med eller kostar några tiotals kronor. Gör det här innan du köper ett helt paket – det är det vanligaste skälet till att installationen stannar."
+        },
+        {
+          "h": "Hubb, app och ekosystem",
+          "p": "Tado och Netatmo använder en egen brygga eller gateway och en egen app med scheman rum för rum. Tado X bygger på Matter över Thread. Aqara E1 kräver en Aqara-hubb och passar dig som redan har Aqara-prylar eller Home Assistant. Tänk på var du vill styra värmen i framtiden: en termostat som fungerar med Apple Hem, Google Home eller Home Assistant gör det lättare att samköra värmen med annan styrning."
+        },
+        {
+          "h": "Var börjar man?",
+          "p": "Börja med två till tre rum, gärna sovrum och rum som sällan används. Där är skillnaden mellan önskad och faktisk temperatur oftast störst. Låt termostaterna gå några veckor, kontrollera att det är tillräckligt varmt när ni behöver det och bygg sedan ut. Har du värmepump med vattenburen värme kan det också löna sig att justera värmekurvan – läs guiden om att styra bergvärmepumpen."
         }
       ]
     },
@@ -94,6 +130,24 @@
           "q": "Behöver jag öppna värmepumpen för att installera?",
           "a": "Nej. Styrenheten skickar IR-signaler som fjärrkontrollen, så den behöver bara stå med fri sikt till inomhusdelen."
         }
+      ],
+      "advice": [
+        {
+          "h": "Därför lönar det sig att styra värmepumpen",
+          "p": "En luft-luft-värmepump ger flera kilowattimmar värme för varje kilowattimme el. Låter du värmepumpen sköta grundvärmen och elementen bara ta topparna blir hela huset billigare att värma. En smart styrenhet gör det lätt att hålla jämn temperatur, sänka när huset står tomt och höja innan ni kommer hem – utan att springa efter fjärrkontrollen."
+        },
+        {
+          "h": "IR-styrning eller tillverkarens Wi-Fi",
+          "p": "Sensibo och tado styr värmepumpen genom att härma fjärrkontrollen med infraröda signaler. Det fungerar med de flesta märken, men styrenheten måste ha fri sikt mot inomhusdelen och vet inte alltid om ett kommando gick fram. Har din värmepump inbyggd Wi-Fi eller en officiell Wi-Fi-modul från tillverkaren är det oftast ett stabilare val, eftersom den kan läsa av pumpens verkliga läge."
+        },
+        {
+          "h": "Kontrollera modellen",
+          "p": "Både Sensibo och tado har listor över värmepumpsmodeller som stöds. Leta upp din modell innan du köper. Står den inte med fungerar styrningen ofta ändå, men inte alltid alla lägen. Kontrollera också hur du vill styra: Båda fungerar med Apple Hem och Google Home. Sensibo går dessutom att koppla till Tibber och Home Assistant."
+        },
+        {
+          "h": "Sänk inte för mycket",
+          "p": "En luft-luft-värmepump jobbar mest effektivt när den får gå jämnt. Att stänga av den helt när ni åker till jobbet och sedan köra den för fullt på kvällen kostar ofta mer än det sparar, och huset blir kallt. En sänkning på ett par grader under dagen eller natten är oftast en bättre affär. Räkna på ditt eget hus i kalkylatorn."
+        }
       ]
     },
     {
@@ -125,6 +179,24 @@
         {
           "q": "Kan jag se förbrukningen per fas?",
           "a": "Ja. Både HAN-porten och trefasmätare som Shelly Pro 3EM visar förbrukningen fas för fas, vilket är bra om du laddar elbil eller har en liten huvudsäkring."
+        }
+      ],
+      "advice": [
+        {
+          "h": "Vad du får av en mätare i elcentralen",
+          "p": "En energimätare i elcentralen mäter hela husets förbrukning fas för fas, flera gånger i sekunden. Det gör det lätt att se vad som händer när värmepumpen startar, när elbilen laddar eller när varmvattenberedaren går. Du kan också upptäcka om en fas är hårt belastad, vilket är bra att veta inför en ny laddbox eller om du har effektavgift."
+        },
+        {
+          "h": "HAN-läsare eller mätare i elcentralen?",
+          "p": "Sedan 2025 ska alla elmätare ha ett kundgränssnitt, ofta kallat HAN-port, som ger förbrukningen i nära realtid. En HAN-läsare som Tibber Pulse kopplas in på några minuter utan elinstallatör och räcker för de flesta. En mätare i elcentralen behövs om du vill mäta enskilda grupper, till exempel bara värmepumpen, eller om du vill ha mätvärdena lokalt i ett smart hem-system utan att gå via ett moln."
+        },
+        {
+          "h": "Installation",
+          "p": "Allt arbete i elcentralen ska göras av ett registrerat elinstallationsföretag. Be elinstallatören montera strömtransformatorerna på rätt faser och ge dig en enkel skiss över vad som mäts var. Det tar ofta kortare tid om mätaren monteras samtidigt som annat arbete i elcentralen, till exempel när en laddbox installeras."
+        },
+        {
+          "h": "Välj efter hur du vill använda datan",
+          "p": "Shelly Pro 3EM visar förbrukningen i Shellys app och fungerar lokalt med Home Assistant. Tibber Pulse passar dig som har eller funderar på elavtal hos Tibber och vill använda Effektkontroll eller smartladdning. Tänk på att en mätare bara visar förbrukningen – besparingen kommer från det du gör med informationen. Läs guiden om att mäta elförbrukningen för att komma igång."
         }
       ]
     },
@@ -158,6 +230,24 @@
           "q": "Vilken passar Apple Hem?",
           "a": "Aqara Floor Heating Thermostat W500 fungerar med Apple Hem via Matter. För scheman och avancerade funktioner behövs en Aqara-hubb."
         }
+      ],
+      "advice": [
+        {
+          "h": "Golvvärme drar mer än man tror",
+          "p": "Elektrisk golvvärme i badrum och hall står ofta på dygnet runt, året om, på en nivå som ingen har ändrat sedan den installerades. Med en uppkopplad termostat kan du sänka på natten och dagtid när ingen är hemma, stänga av på sommaren och – med rätt system – flytta värmen till de billigaste timmarna. Enligt Energimyndighetens tumregel ger varje grad lägre ungefär fem procent mindre energi till uppvärmningen."
+        },
+        {
+          "h": "Välj efter systemet du vill styra från",
+          "p": "Ebeco EB-Therm 500 kan med WiFi-modulen EB Connect styras från Tibber-appen efter elpriset. Plejd TRM-01 passar dig som redan har eller planerar Plejd för belysningen. Aqara W500 fungerar med Apple Hem, Google Home och Home Assistant via Matter. Tänk på var du vill se och styra värmen om ett par år, inte bara i dag."
+        },
+        {
+          "h": "Kontrollera effekt och givare",
+          "p": "Kontrollera att termostaten klarar golvvärmens effekt – de flesta klarar 16 ampere, vilket räcker för vanliga badrumsgolv. Behåll golvgivaren när termostaten byts. Den skyddar golvet från att bli för varmt, vilket är särskilt viktigt under trägolv, vinylgolv och mattor. Har du vattenburen golvvärme är det en annan typ av termostat och styrning som gäller."
+        },
+        {
+          "h": "Installation och badrummet",
+          "p": "Att byta golvvärmetermostat är elinstallationsarbete och ska göras av ett registrerat elinstallationsföretag. Det går ofta snabbt eftersom den nya termostaten sitter i samma dosa. Sänk inte för mycket i badrummet under vintern – golvvärmen hjälper till att torka upp efter duschen. Några graders sänkning när ingen använder rummet räcker oftast."
+        }
       ]
     },
     {
@@ -189,6 +279,24 @@
         {
           "q": "Hur styr jag reläet efter elpriset?",
           "a": "Reläerna kan schemaläggas i Shellys app. För styrning efter morgondagens elpriser används ofta Home Assistant eller Homey."
+        }
+      ],
+      "advice": [
+        {
+          "h": "Därför ett relä och en kontaktor",
+          "p": "Varmvattenberedare, elpannor och motorvärmare är fast anslutna och drar för mycket för ett smart uttag. Lösningen är ett smart relä i elcentralen som styr en kontaktor – en kraftig brytare som i sin tur slår av och på strömmen till beredaren. Reläet sköter bara den svaga manöverströmmen, och kontaktorn tar den tunga lasten."
+        },
+        {
+          "h": "Vad du kan styra",
+          "p": "Varmvattenberedaren är det vanligaste: en full beredare håller värmen i många timmar, så den kan värma när elen är billig och vila under de dyra timmarna. Samma sak gäller elpannor, motorvärmare och ibland bastuaggregat. Har du solceller kan beredaren också värma när solen lyser. Tänk på legionellan – varmvattnet i beredaren ska hålla minst 60 grader, så schemat måste ge den tid att värma upp."
+        },
+        {
+          "h": "Välj relä",
+          "p": "Shelly Pro 1 och Pro 1PM monteras på DIN-skena i elcentralen och fungerar lokalt, så att styrningen fortsätter även om internet går ner. Pro 1PM mäter dessutom effekten, så du ser att beredaren faktiskt går när den ska. Har du Plejd i huset kan ett Plejd-relä göra samma jobb i Plejd-appen. Styrningen efter elpriset sköter du med ett smart hem-system som Home Assistant eller Homey."
+        },
+        {
+          "h": "Installation",
+          "p": "Allt arbete i elcentralen ska göras av ett registrerat elinstallationsföretag. Be elinstallatören dimensionera kontaktorn efter beredarens effekt och märka upp den i elcentralen. Läs guiden om att styra varmvattenberedaren med kontaktor för hela upplägget, från schema till mätning."
         }
       ]
     }

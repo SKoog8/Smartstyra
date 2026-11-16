@@ -35,6 +35,10 @@ export default function Page() {
       </p>
 
       <h2>Var finns besparingen?</h2>
+      <p>
+        Golvvärme är uppvärmning som allt annat, och Energimyndighetens tumregel gäller: varje grad lägre ger ungefär
+        fem procent mindre energi till uppvärmningen. Med en uppkopplad termostat kan du sänka när ingen märker det.
+      </p>
       <ul>
         <li>
           <strong>Nattsänkning.</strong> Ingen står på badrumsgolvet klockan tre på natten.
@@ -92,6 +96,22 @@ export default function Page() {
 
       <h2>Termostaterna vi rekommenderar</h2>
       <Products ids={["ebeco-eb-therm-500", "plejd-trm-01", "aqara-w500"]} />
+
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Aqara: <a href="https://www.aqara.com/en/product/floor-heating-thermostat-w500/">Floor Heating Thermostat W500</a>
+        </li>
+        <li>
+          Plejd: <a href="https://www.plejd.com/sv-se/produkter/trm-01">TRM-01</a>
+        </li>
+        <li>
+          Elsäkerhetsverket: <a href="https://elsakerhetsverket.se/privatpersoner/anlita-ett-elinstallationsforetag">Anlita ett elinstallationsföretag</a>
+        </li>
+        <li>
+          Energimyndigheten: <a href="https://www.energimyndigheten.se/effektiv-energianvandning/hushall/spara-energi-enkla-tips/">Spara energi – enkla tips</a>
+        </li>
+      </ul>
 
       <Faq
         title="Vanliga frågor"

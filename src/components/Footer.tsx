@@ -4,6 +4,15 @@ import { amazonTag } from "@/lib/products";
 
 const COLUMNS: [string, [string, string][]][] = [
   [
+    "Ämnen",
+    [
+      ["/amnen/tibber", "Tibber"],
+      ["/amnen/varme", "Värme och värmepumpar"],
+      ["/amnen/elavtal-och-elnat", "Elavtal och elnät"],
+      ["/amnen/smarta-hem", "Smarta hem"],
+    ],
+  ],
+  [
     "Läs",
     [
       ["/guider", "Alla guider"],
@@ -26,7 +35,7 @@ export default function Footer() {
   return (
     <footer className="bg-ink text-white/70 mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-14 pb-10">
-        <div className="grid gap-10 sm:grid-cols-[2fr_1fr_1fr]">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
           <div>
             <Logo dark />
             <p className="mt-4 max-w-sm leading-relaxed">

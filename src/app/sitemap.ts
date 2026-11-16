@@ -3,6 +3,7 @@ import { SITE_URL } from "@/lib/site";
 import { GUIDES } from "@/lib/guides";
 import { CATEGORIES } from "@/lib/products";
 import { TESTS } from "@/lib/tests";
+import { TOPICS } from "@/lib/topics";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -14,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
+    ...TOPICS.map((t) => ({ url: `${SITE_URL}/amnen/${t.slug}`, changeFrequency: "monthly" as const, priority: 0.7 })),
     { url: `${SITE_URL}/produkter`, changeFrequency: "monthly", priority: 0.7 },
     ...CATEGORIES.map((c) => ({
       url: `${SITE_URL}/produkter/${c.slug}`,
@@ -30,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     { url: `${SITE_URL}/kalkylator`, changeFrequency: "yearly", priority: 0.6 },
     { url: `${SITE_URL}/om`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE_URL}/om/martin`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/kontakt`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${SITE_URL}/integritet`, changeFrequency: "yearly", priority: 0.2 },
   ];

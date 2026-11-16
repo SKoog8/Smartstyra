@@ -5,6 +5,7 @@ import JsonLd from "./JsonLd";
 import GuideCard from "./GuideCard";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { relatedGuides, type GuideMeta } from "@/lib/guides";
+import { topicsForGuide } from "@/lib/topics";
 
 interface Props {
   title: string;
@@ -47,6 +48,19 @@ export default function ArticlePage({ title, subtitle, path, guide, imageAlt, ch
           <p className="mt-6 text-sm text-ink/60">
             Senast uppdaterad <time dateTime={guide.updated}>{formatDate(guide.updated)}</time> · {guide.minutes} min
             läsning
+          </p>
+        )}
+        {guide && topicsForGuide(guide.slug).length > 0 && (
+          <p className="mt-3 text-sm text-ink/60">
+            Ämne:{" "}
+            {topicsForGuide(guide.slug).map((t, i) => (
+              <span key={t.slug}>
+                {i > 0 && ", "}
+                <Link href={`/amnen/${t.slug}`} className="font-semibold text-leaf-dark hover:underline">
+                  {t.name}
+                </Link>
+              </span>
+            ))}
           </p>
         )}
         {alt && (

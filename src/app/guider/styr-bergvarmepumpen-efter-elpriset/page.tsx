@@ -88,6 +88,25 @@ export default function Page() {
         temperatur kan du lägga in var för sig.
       </p>
 
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          NIBE: <a href="https://professional.nibe.eu/en-se/products/software-solutions/s-series/smart-price-adaption">Smart Price Adaption</a>
+        </li>
+        <li>
+          Tibber: <a href="https://tibber.com/se/store/produkt/nibe-myuplink">NIBE myUplink i Tibber Store</a>
+        </li>
+        <li>
+          Tibber: <a href="https://tibber.com/se/varmestyrning">Värmestyrning</a>
+        </li>
+        <li>
+          Ngenic: <a href="https://ngenic.se/en/tune">Ngenic Tune</a>
+        </li>
+        <li>
+          Energimyndigheten: <a href="https://www.energimyndigheten.se/effektiv-energianvandning/hushall/spara-energi-enkla-tips/">Spara energi – enkla tips</a>
+        </li>
+      </ul>
+
       <Faq
         title="Vanliga frågor"
         items={[
