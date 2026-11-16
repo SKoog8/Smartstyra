@@ -24,7 +24,7 @@ export const GUIDES: GuideMeta[] = [
     description:
       "Kravet på effektavgift upphävdes i juni 2026. Så ser du om ditt nätbolag har kvar den – och hur du håller nere avgiften om det har det.",
     published: "2026-11-12",
-    updated: "2026-11-12",
+    updated: "2026-11-16",
     minutes: 6,
     tone: "clay",
     theme: "Flytta i tid",
@@ -36,7 +36,7 @@ export const GUIDES: GuideMeta[] = [
     description:
       "Sedan oktober 2025 sätts elpriset per kvart. Så skiljer sig kvartspris från timpris och rörligt månadspris, och så ser du om det lönar sig för dig.",
     published: "2026-11-12",
-    updated: "2026-11-12",
+    updated: "2026-11-16",
     minutes: 6,
     tone: "butter",
     theme: "Flytta i tid",

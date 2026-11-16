@@ -53,11 +53,12 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-20 grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-center">
             <div>
               <h1 className="text-[2.75rem] leading-[1] sm:text-7xl font-extrabold tracking-[-0.04em]">
-                Samma hus.
-                <br />
-                <span className="text-volt">Lägre elräkning.</span>
+                Sänk elräkningen i villan
               </h1>
-              <p className="mt-6 text-lg sm:text-xl text-white/75 leading-relaxed max-w-lg">
+              <p className="mt-5 text-2xl sm:text-3xl font-extrabold tracking-[-0.03em]">
+                Samma hus. <span className="text-volt">Lägre elräkning.</span>
+              </p>
+              <p className="mt-5 text-lg sm:text-xl text-white/75 leading-relaxed max-w-lg">
                 Guider och smarta prylar som hjälper dig att använda mindre el – och att använda den när den är billig.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">

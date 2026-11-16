@@ -8,15 +8,16 @@ import { pageMetadata } from "@/lib/metadata";
 const meta = guide("effektavgift");
 const path = `/guider/${meta.slug}`;
 
-export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true);
+export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true, meta);
 
 export default function Page() {
   return (
     <ArticlePage title={meta.title} subtitle={meta.description} path={path} guide={meta}>
       <p>
-        I flera år var planen att alla elnätsbolag i Sverige skulle ta betalt för hur mycket el du använder samtidigt –
-        inte bara hur mycket du använder totalt. Under 2026 vände det. Kravet är borttaget, och nu är det upp till varje
-        nätbolag om det vill ha en effektavgift. Det betyder att det som gäller för dig beror helt på var du bor.
+        <strong>En effektavgift är en del av elnätsavgiften där nätbolaget tar betalt för din högsta effekt</strong> –
+        hur många kilowatt huset drar på en gång – och inte bara för hur många kilowattimmar du använder totalt.
+        Kravet på att alla elnätsbolag skulle införa en effektavgift upphävdes i juni 2026. Nu är det upp till varje
+        nätbolag, så det som gäller för dig beror på var du bor.
       </p>
 
       <h2>Vad är en effektavgift?</h2>
@@ -38,12 +39,15 @@ export default function Page() {
           effektavgift senast 1 januari 2027.
         </li>
         <li>
-          <strong>I mars 2026</strong> gav regeringen Ei i uppdrag att upphäva kravet. Motiveringen var att modellerna
-          skilde sig för mycket mellan nätbolagen och slog för hårt mot vanliga hushåll.
+          <strong>I mars 2026</strong>{" "}
+          <a href="https://www.regeringen.se/pressmeddelanden/2026/03/krav-pa-inforande-av-effektavgifter-stoppas/">gav regeringen Ei i uppdrag att upphäva kravet</a>. Motiveringen var
+          att modellerna skilde sig för mycket mellan nätbolagen och slog för hårt mot vanliga hushåll.
         </li>
         <li>
-          <strong>I juni 2026</strong> upphävde Ei föreskrifterna. Det finns alltså inget krav längre – men inte heller
-          något förbud. Ei ska ta fram förslag på en ny, gemensam modell till april 2027.
+          <strong>I juni 2026</strong>{" "}
+          <a href="https://ei.se/konsument/el/elnatsavgiften-och-elnatsreglering/effektavgifter">upphävde Ei föreskrifterna</a>. Det finns
+          alltså inget krav längre – men inte heller något förbud. Ei ska ta fram förslag på en ny, gemensam modell till
+          april 2027.
         </li>
       </ul>
 
@@ -98,6 +102,16 @@ export default function Page() {
         <Link href="/guider/flytta-elforbrukningen-till-billiga-timmar">Så flyttar du elförbrukningen</Link>. Men tänk på
         att en effektavgift kan komma tillbaka i en ny form när Ei har lagt fram sin modell.
       </p>
+
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Energimarknadsinspektionen: <a href="https://ei.se/konsument/el/elnatsavgiften-och-elnatsreglering/effektavgifter">Effektavgifter</a>
+        </li>
+        <li>
+          Regeringen: <a href="https://www.regeringen.se/pressmeddelanden/2026/03/krav-pa-inforande-av-effektavgifter-stoppas/">Krav på införande av effektavgifter stoppas</a> (13 mars 2026)
+        </li>
+      </ul>
 
       <Faq
         title="Vanliga frågor"

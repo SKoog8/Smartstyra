@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/metadata";
 const meta = guide("styr-bergvarmepumpen-efter-elpriset");
 const path = `/guider/${meta.slug}`;
 
-export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true);
+export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true, meta);
 
 export default function Page() {
   return (

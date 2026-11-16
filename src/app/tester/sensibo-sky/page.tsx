@@ -7,11 +7,11 @@ import { pageMetadata } from "@/lib/metadata";
 const meta = test("sensibo-sky");
 const path = `/tester/${meta.slug}`;
 
-export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true);
+export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true, meta);
 
 export default function Page() {
   return (
-    <ArticlePage title={meta.title} subtitle={meta.description} path={path}>
+    <ArticlePage title={meta.title} subtitle={meta.description} path={path} imageAlt={`Smartstyras testbild: ${meta.product}, testat hemma av Martin`}>
       <TestBox meta={meta} />
       <p>
         Sensibo Sky har styrt min luft-luft-värmepump från Panasonic i ett år. Den har fungerat bra, och den

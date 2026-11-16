@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
           {COLUMNS.map(([heading, links]) => (
             <div key={heading}>
-              <h2 className="text-white font-semibold mb-3">{heading}</h2>
+              <p className="text-white font-semibold mb-3">{heading}</p>
               <ul className="space-y-2">
                 {links.map(([href, label]) => (
                   <li key={href}>

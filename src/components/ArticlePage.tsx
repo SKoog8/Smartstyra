@@ -12,6 +12,8 @@ interface Props {
   path: string;
   /** Sätts för guider: ger brödsmulor, lästid, fler guider att läsa och artikelmärkning för sökmotorer. */
   guide?: GuideMeta;
+  /** Alt-text för sidans bild (sidans opengraph-image). Guider får en automatiskt. */
+  imageAlt?: string;
   children: React.ReactNode;
 }
 
@@ -26,7 +28,8 @@ const ORGANIZATION = {
 };
 
 // Gemensam ram för guider och informationssidor.
-export default function ArticlePage({ title, subtitle, path, guide, children }: Props) {
+export default function ArticlePage({ title, subtitle, path, guide, imageAlt, children }: Props) {
+  const alt = imageAlt ?? (guide ? `Smartstyras guidebild: ${title}` : undefined);
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -42,8 +45,20 @@ export default function ArticlePage({ title, subtitle, path, guide, children }: 
         <p className="mt-5 text-lg sm:text-xl text-ink/70 leading-relaxed">{subtitle}</p>
         {guide && (
           <p className="mt-6 text-sm text-ink/60">
-            Uppdaterad {formatDate(guide.updated)} · {guide.minutes} min läsning
+            Senast uppdaterad <time dateTime={guide.updated}>{formatDate(guide.updated)}</time> · {guide.minutes} min
+            läsning
           </p>
+        )}
+        {alt && (
+          // Sidans delningsbild visas också överst på sidan, så att varje guide och test har en bild med alt-text.
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={`${path}/opengraph-image`}
+            alt={alt}
+            width={1200}
+            height={630}
+            className="mt-8 w-full h-auto rounded-3xl"
+          />
         )}
       </div>
       <main className="flex-1 max-w-3xl mx-auto w-full px-4 sm:px-6 py-8">

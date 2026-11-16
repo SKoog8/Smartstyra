@@ -8,15 +8,16 @@ import { pageMetadata } from "@/lib/metadata";
 const meta = guide("kvartspris");
 const path = `/guider/${meta.slug}`;
 
-export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true);
+export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true, meta);
 
 export default function Page() {
   return (
     <ArticlePage title={meta.title} subtitle={meta.description} path={path} guide={meta}>
       <p>
-        Den 1 oktober 2025 slutade elbörsen sätta ett pris per timme. I stället sätts priset för varje kvart – 96 priser
-        per dygn i stället för 24. För de flesta märks det inte, men för dig som styr förbrukningen till billiga tider
-        öppnar det nya möjligheter.
+        <strong>Kvartspris är ett elavtal där du betalar elbörsens pris för varje kvart du använder el</strong> – 96
+        olika priser per dygn i stället för 24. Sedan 1 oktober 2025 sätts elpriset på elbörsen per kvart i stället för
+        per timme. För de flesta märks det inte, men för dig som styr förbrukningen till billiga tider öppnar det nya
+        möjligheter.
       </p>
 
       <h2>Vad är kvartspris?</h2>
@@ -26,7 +27,8 @@ export default function Page() {
         använder under respektive kvart, plus elhandlarens påslag och avgifter.
       </p>
       <p>
-        Elhandlare med fler än 200 000 kunder måste erbjuda kvartsprisavtal. Timprisavtal finns fortfarande hos vissa
+        Elhandlare med fler än 200 000 kunder måste erbjuda kvartsprisavtal. Energimarknadsinspektionen förklarar hur
+        avtalen fungerar på sidan <a href="https://ei.se/konsument/anvand-el-smartare/elhandelsavtal-med-kvartspris">Elhandelsavtal med kvartspris</a>. Timprisavtal finns fortfarande hos vissa
         elhandlare, och en del har gjort om befintliga timprisavtal till kvartspris. Kontrollera ditt avtal hos din
         elhandlare.
       </p>
@@ -114,6 +116,17 @@ export default function Page() {
         Hur mycket det kan ge beror på hur mycket du kan flytta och hur stora prisskillnaderna är i ditt elområde. Prova
         med dina egna siffror i <Link href="/kalkylator">kalkylatorn</Link>.
       </p>
+
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Energimarknadsinspektionen: <a href="https://ei.se/konsument/anvand-el-smartare/elhandelsavtal-med-kvartspris">Elhandelsavtal med kvartspris</a>
+        </li>
+        <li>
+          Energimarknadsinspektionen:{" "}
+          <a href="https://ei.se/om-oss/nyheter/2025/2025-09-29-elborserna-gar-over-till-att-handla-el-per-kvart">Elbörserna går över till att handla el per kvart</a> (29 september 2025)
+        </li>
+      </ul>
 
       <Faq
         title="Vanliga frågor"

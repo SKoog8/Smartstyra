@@ -8,11 +8,11 @@ import { pageMetadata } from "@/lib/metadata";
 const meta = test("controlmyspa");
 const path = `/tester/${meta.slug}`;
 
-export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true);
+export const metadata = pageMetadata(meta.seoTitle ?? meta.title, meta.description, path, true, meta);
 
 export default function Page() {
   return (
-    <ArticlePage title={meta.title} subtitle={meta.description} path={path}>
+    <ArticlePage title={meta.title} subtitle={meta.description} path={path} imageAlt={`Smartstyras testbild: ${meta.product}, testat hemma av Martin`}>
       <TestBox meta={meta} />
       <p>
         Mitt spabad drar ungefär 4 000 kWh om året om det står igång hela tiden. Det är mycket el, och därför styr

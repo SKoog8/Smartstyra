@@ -4,9 +4,16 @@ import { SITE_NAME } from "./site";
 /**
  * Titel, beskrivning och canonical-adress för en sida, även i de uppgifter som visas när sidan delas
  * (Open Graph). Utan dem ärver delningarna startsidans titel från layout.tsx. Sidor med en egen
- * opengraph-image i sin mapp (guiderna) sätter `ownImage`, övriga får sajtens standardbild.
+ * opengraph-image i sin mapp (guider och tester) sätter `ownImage`, övriga får sajtens standardbild.
+ * Guider och tester skickar med sina datum i `article` och märks då som artiklar.
  */
-export function pageMetadata(title: string, description: string, path: string, ownImage = false): Metadata {
+export function pageMetadata(
+  title: string,
+  description: string,
+  path: string,
+  ownImage = false,
+  article?: { published: string; updated: string }
+): Metadata {
   // Ett images-fält, även ett tomt, tar över sidans egen opengraph-image – så det får bara finnas utan en sådan.
   const image = ownImage
     ? {}
@@ -16,7 +23,9 @@ export function pageMetadata(title: string, description: string, path: string, o
     description,
     alternates: { canonical: path },
     openGraph: {
-      type: "website",
+      ...(article
+        ? { type: "article", publishedTime: article.published, modifiedTime: article.updated }
+        : { type: "website" }),
       siteName: SITE_NAME,
       locale: "sv_SE",
       title,
