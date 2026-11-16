@@ -40,6 +40,8 @@ Kopiera en befintlig guide som mall, t.ex. `src/app/guider/effektavgift/page.tsx
 - Minst ett räkneexempel eller en tabell där det passar (`<Callout>` eller `<div className="table-wrap"><table>`).
 - `<Faq>` med tre vanliga frågor och korta svar.
 - Minst två länkar till befintliga guider (`<Link href="/guider/...">`), och gärna till `/kalkylator`.
+- En definition av ämnet i första stycket, i fetstil – "**X är …**" – så att sökmotorer kan citera den.
+- En `<h2>Källor</h2>` sist före `<Faq>`, med länkar till förstahandskällorna du använt (myndigheter och tillverkare).
 - Elinstallationsarbete: skriv alltid att det ska göras av ett registrerat elinstallationsföretag.
 
 **Ärlighet – viktigt**

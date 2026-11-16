@@ -16,6 +16,12 @@ export default function TestBox({ meta }: { meta: TestMeta }) {
           </dd>
           <dt className="font-semibold text-ink">Hemma i</dt>
           <dd className="text-ink/80">En {TESTER.home}</dd>
+          <dt className="font-semibold text-ink">Senast uppdaterad</dt>
+          <dd className="text-ink/80">
+            <time dateTime={meta.updated}>
+              {new Date(meta.updated).toLocaleDateString("sv-SE", { dateStyle: "long", timeZone: "Europe/Stockholm" })}
+            </time>
+          </dd>
           <dt className="font-semibold text-ink">Om testaren</dt>
           <dd className="text-ink/80">{TESTER.about}. Ingen tillverkare har betalat eller lånat ut något.</dd>
         </dl>
