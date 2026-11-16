@@ -14,6 +14,7 @@ export interface Category {
   guides: string[];
   /** Vanliga frågor som visas under topplistan */
   faq: { q: string; a: string }[];
+  advice: { h: string; p: string }[];
   /** Datum då urvalet senast gicks igenom (ÅÅÅÅ-MM-DD) */
   checkedAt: string;
 }

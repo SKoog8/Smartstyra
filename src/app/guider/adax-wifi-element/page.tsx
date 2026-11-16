@@ -57,6 +57,10 @@ export default function Page() {
       </Callout>
 
       <h2>Tips för lägre elräkning med elelement</h2>
+      <p>
+        Med direktverkande el går nästan all förbrukning till värme. Enligt Energimyndigheten minskar energin för
+        uppvärmning med ungefär fem procent för varje grad du sänker inomhus.
+      </p>
       <ul>
         <li>Håll sovrummen svalare, gärna 16–18 grader på natten.</li>
         <li>Sänk några grader i rum som sällan används, men inte under 15–16 grader.</li>
@@ -64,7 +68,21 @@ export default function Page() {
         <li>
           Kombinera med en luft-luft-värmepump om du har en. Låt värmepumpen sköta grundvärmen och elementen ta toppar –
           värmepumpen ger flera gånger mer värme per kWh. Se{" "}
-          <Link href="/produkter/varmepumpsstyrning">styrning för värmepumpen</Link>.
+          <Link href="/produkter/varmepumpsstyrning">styrning för värmepumpen</Link> och vårt{" "}
+          <Link href="/tester/sensibo-sky">test av Sensibo Sky</Link>.
+        </li>
+      </ul>
+
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Tibber: <a href="https://tibber.com/se/powerup/adax-tibber">Adax och Tibber</a>
+        </li>
+        <li>
+          Home Assistant: <a href="https://www.home-assistant.io/integrations/adax">Adax-integrationen</a>
+        </li>
+        <li>
+          Energimyndigheten: <a href="https://www.energimyndigheten.se/effektiv-energianvandning/hushall/spara-energi-enkla-tips/">Spara energi – enkla tips</a>
         </li>
       </ul>
 

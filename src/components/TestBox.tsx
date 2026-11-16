@@ -1,3 +1,4 @@
+import Link from "next/link";
 import JsonLd from "./JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { TESTER, type TestMeta } from "@/lib/tests";
@@ -12,7 +13,10 @@ export default function TestBox({ meta }: { meta: TestMeta }) {
         <dl className="mt-4 grid gap-x-6 gap-y-3 text-[0.95rem] sm:grid-cols-[8rem_1fr]">
           <dt className="font-semibold text-ink">Testat av</dt>
           <dd className="text-ink/80">
-            {TESTER.name}, {meta.used}
+            <Link href="/om/martin" className="underline decoration-leaf/40 underline-offset-[3px] hover:decoration-leaf">
+              {TESTER.name}
+            </Link>
+            , {meta.used}
           </dd>
           <dt className="font-semibold text-ink">Hemma i</dt>
           <dd className="text-ink/80">En {TESTER.home}</dd>
@@ -39,7 +43,7 @@ export default function TestBox({ meta }: { meta: TestMeta }) {
               dateModified: meta.updated,
               inLanguage: "sv-SE",
               mainEntityOfPage: `${SITE_URL}${path}`,
-              author: { "@type": "Person", name: TESTER.name },
+              author: { "@type": "Person", "@id": `${SITE_URL}/om/martin#person`, name: TESTER.name, jobTitle: "Elektriker", url: `${SITE_URL}/om/martin` },
               publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL, logo: `${SITE_URL}/apple-icon` },
             },
             {

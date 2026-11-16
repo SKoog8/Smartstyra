@@ -107,6 +107,19 @@ export default function Page() {
         inte flytta, men den är liten jämfört med själva laddningen.
       </p>
 
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Tibber: <a href="https://tibber.com/se/smartladdning">Smartladdning</a>
+        </li>
+        <li>
+          Tibbers kundtjänst: <a href="https://support.tibber.com/hc/sv/articles/48351672784401-Grid-Rewards-f%C3%B6r-elbilar">Grid Rewards för elbilar</a>
+        </li>
+        <li>
+          Skatteverket: <a href="https://www.skatteverket.se/privat/fastigheterochbostad/gronteknik.4.676f4884175c97df4192860.html">Skattereduktion för installation av grön teknik</a>
+        </li>
+      </ul>
+
       <Faq
         title="Vanliga frågor"
         items={[

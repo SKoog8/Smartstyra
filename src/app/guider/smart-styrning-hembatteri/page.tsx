@@ -110,6 +110,22 @@ export default function Page() {
         Skatteverket.
       </p>
 
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Tibber: <a href="https://tibber.com/se/solcellsbatteri">Solcellsbatteri</a>
+        </li>
+        <li>
+          Skatteverket: <a href="https://www.skatteverket.se/privat/fastigheterochbostad/gronteknik.4.676f4884175c97df4192860.html">Skattereduktion för installation av grön teknik</a>
+        </li>
+        <li>
+          Skatteverket: <a href="https://www4.skatteverket.se/rattsligvagledning/edition/2026.14/420580.html">Rättslig vägledning om grön teknik</a>
+        </li>
+        <li>
+          Energimarknadsinspektionen: <a href="https://ei.se/konsument/el/elnatsavgiften-och-elnatsreglering/effektavgifter">Effektavgifter</a>
+        </li>
+      </ul>
+
       <Faq
         title="Vanliga frågor"
         items={[

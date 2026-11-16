@@ -53,10 +53,57 @@ export default function Page() {
 
       <h2>Har ditt nätbolag kvar effektavgiften?</h2>
       <p>
-        Det skiljer sig. Flera nätbolag tog bort effektavgiften för villor under 2026, bland andra Ellevio, Mälarenergi
-        Elnät och Jönköping Energi. Andra har valt att behålla den, till exempel Göteborg Energi. Vattenfall Eldistribution
-        hade inte hunnit införa någon effektavgift för hushåll när kravet stoppades.
+        Det skiljer sig. Flera av de stora nätbolagen tog bort effektavgiften för villor under 2026, medan andra har
+        valt att behålla den. Så här såg det ut hos några av dem när vi kontrollerade i november 2026:
       </p>
+      <div className="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Nätbolag</th>
+              <th>Effektavgift för villor (16–63 A)</th>
+              <th>Källa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ellevio</td>
+              <td>Borttagen från 1 juni 2026</td>
+              <td><a href="https://www.ellevio.se/abonnemang/prismodell-utan-effektavgift/">Ellevio</a></td>
+            </tr>
+            <tr>
+              <td>Mälarenergi Elnät</td>
+              <td>Borttagen från 1 juli 2026</td>
+              <td><a href="https://www.malarenergi.se/elnat/effektsmart/prismodellen/">Mälarenergi</a></td>
+            </tr>
+            <tr>
+              <td>Jönköping Energi Nät</td>
+              <td>Borttagen från 1 september 2026</td>
+              <td><a href="https://jonkopingenergi.se/privat/elnat/effekttariff">Jönköping Energi</a></td>
+            </tr>
+            <tr>
+              <td>Tekniska verken (Linköping, Katrineholm)</td>
+              <td>Kvar – säsongsindelad effektavgift sedan 2024</td>
+              <td><a href="https://tekniskaverken.se/privat/elnat/effektavgifter">Tekniska verken</a></td>
+            </tr>
+            <tr>
+              <td>Göteborg Energi</td>
+              <td>Kvar i sin nuvarande form – den planerade nya, tidsindelade modellen är stoppad</td>
+              <td><a href="https://www.goteborgenergi.se/i-var-stad/artikelbank/tidsindelade-effektavgifter-stoppas">Göteborg Energi</a></td>
+            </tr>
+            <tr>
+              <td>Vattenfall Eldistribution</td>
+              <td>Aldrig införd för hushåll – det planerade införandet är pausat</td>
+              <td><a href="https://www.vattenfalleldistribution.se/abonnemang-och-avgifter/avtal-och-avgifter/effektguiden/">Vattenfall</a></td>
+            </tr>
+            <tr>
+              <td>E.ON Energidistribution</td>
+              <td>Ingen ny effektavgift från 1 september 2026 som planerat – införandet är pausat</td>
+              <td><a href="https://www.eon.se/el/elnat/effekt">E.ON</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p>Så tar du reda på vad som gäller för dig:</p>
       <ol>
         <li>Titta på din senaste elnätsfaktura. En effektavgift redovisas som en egen rad, ofta i kronor per kW.</li>
@@ -65,7 +112,7 @@ export default function Page() {
       </ol>
       <Callout title="Kolla din egen tariff" tone="butter">
         <p>
-          Läget förändras fortfarande. Exemplen ovan bygger på nätbolagens besked hösten 2026. Ditt eget nätbolags
+          Läget förändras fortfarande. Tabellen bygger på nätbolagens egna sidor i november 2026. Ditt eget nätbolags
           prislista är det enda som säkert gäller för dig.
         </p>
       </Callout>
@@ -91,7 +138,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Mät.</strong> En realtidsmätare på elmätarens HAN-port visar direkt när huset drar mycket.{" "}
-          <Link href="/guider/tibber-pulse">Läs om Tibber Pulse</Link>.
+          <Link href="/guider/tibber-pulse">Läs om Tibber Pulse</Link> eller se{" "}
+          <Link href="/produkter/energimatare">energimätare för elcentralen</Link>.
         </li>
       </ul>
 

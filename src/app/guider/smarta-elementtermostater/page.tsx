@@ -51,7 +51,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Har du bergvärme eller frånluftsvärmepump</strong> sänker du hela husets temperatur bäst med
-          värmekurvan i pumpen. Smarta termostater är då ett komplement för enskilda rum, som sovrum och gästrum.
+          värmekurvan i pumpen. Smarta termostater är då ett komplement för enskilda rum, som sovrum och gästrum.{" "}
+          <Link href="/guider/styr-bergvarmepumpen-efter-elpriset">Så styr du bergvärmepumpen efter elpriset</Link>.
         </li>
       </ul>
 
@@ -113,6 +114,13 @@ export default function Page() {
         Fler alternativ och köpråd finns i <Link href="/produkter/elementtermostater">vår lista över elementtermostater</Link>.
       </p>
       <Products ids={["tado-x-radiator", "netatmo-valves", "aqara-e1"]} />
+
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Energimyndigheten: <a href="https://www.energimyndigheten.se/effektiv-energianvandning/hushall/spara-energi-enkla-tips/">Spara energi – enkla tips</a>
+        </li>
+      </ul>
 
       <Faq
         title="Vanliga frågor"

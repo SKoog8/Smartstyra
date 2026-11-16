@@ -99,6 +99,19 @@ export default function Page() {
         <Link href="/guider/sa-fungerar-tibber">via Tibber</Link>.
       </p>
 
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Boverket: <a href="https://www.boverket.se/sv/PBL-kunskapsbanken/regler-om-byggande/hygien-halsa-och-miljo/vatten-avlopp/legionella/">Legionella och annan mikrobiell tillväxt</a>
+        </li>
+        <li>
+          Elsäkerhetsverket: <a href="https://elsakerhetsverket.se/privatpersoner/anlita-ett-elinstallationsforetag">Anlita ett elinstallationsföretag</a>
+        </li>
+        <li>
+          Energimarknadsinspektionen: <a href="https://ei.se/konsument/anvand-el-smartare/elhandelsavtal-med-kvartspris">Elhandelsavtal med kvartspris</a>
+        </li>
+      </ul>
+
       <Faq
         title="Vanliga frågor"
         items={[

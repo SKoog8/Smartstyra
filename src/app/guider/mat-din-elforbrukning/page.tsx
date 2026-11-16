@@ -81,7 +81,8 @@ export default function Page() {
       <p>
         Vill du se allt i detalj kan en elinstallatör montera en energimätare i elcentralen. Den mäter varje fas för
         sig, så att du kan se om värmepumpen, laddboxen eller bastun belastar samma fas – vilket också är bra att veta
-        om du har en hög huvudsäkring eller betalar effektavgift.
+        om du har en hög huvudsäkring eller betalar effektavgift.{" "}
+        <Link href="/produkter/energimatare">Se energimätarna vi rekommenderar</Link>.
       </p>
 
       <h2>Vad gör jag med siffrorna?</h2>
@@ -102,6 +103,19 @@ export default function Page() {
 
       <h2>Prylarna för att mäta</h2>
       <Products ids={["tapo-p110", "shelly-pro-3em"]} />
+
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Energimarknadsinspektionen: <a href="https://ei.se/bransch/matning-av-el/funktionskrav-elmatare">Funktionskrav elmätare</a>
+        </li>
+        <li>
+          Tibber Store: <a href="https://tibber.com/se/store/produkt/pulse-p1">Tibber Pulse P1</a>
+        </li>
+        <li>
+          Elsäkerhetsverket: <a href="https://elsakerhetsverket.se/privatpersoner/anlita-ett-elinstallationsforetag">Anlita ett elinstallationsföretag</a>
+        </li>
+      </ul>
 
       <Faq
         title="Vanliga frågor"

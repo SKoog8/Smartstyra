@@ -99,6 +99,16 @@ export default function Page() {
         </li>
       </ol>
 
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Balboa Water Group: <a href="https://www.balboawater.com/controlmyspa/">ControlMySpa</a>
+        </li>
+        <li>
+          Homey: <a href="https://homey.app/sv-se/app/com.balboa/Balboa/">Balboa-appen</a>
+        </li>
+      </ul>
+
       <Faq
         title="Vanliga frågor"
         items={[

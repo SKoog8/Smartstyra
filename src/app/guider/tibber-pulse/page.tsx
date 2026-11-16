@@ -107,6 +107,16 @@ export default function Page() {
 
       <TibberInvite />
 
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Tibber Store: <a href="https://tibber.com/se/store/produkt/pulse-p1">Tibber Pulse P1</a>
+        </li>
+        <li>
+          Energimarknadsinspektionen: <a href="https://ei.se/bransch/matning-av-el/funktionskrav-elmatare">Funktionskrav elmätare</a>
+        </li>
+      </ul>
+
       <Faq
         title="Vanliga frågor"
         items={[

@@ -91,7 +91,9 @@ export default function Page() {
               <td>Använd maskinens fördröjda start eller ett smart uttag.</td>
             </tr>
             <tr>
-              <td>Värmepump och elvärme</td>
+              <td>
+                <Link href="/guider/styr-bergvarmepumpen-efter-elpriset">Värmepump</Link> och elvärme
+              </td>
               <td>Delvis</td>
               <td>
                 Huset är ett värmelager. Höj någon grad före de dyra timmarna och sänk under dem – inte mer, då
@@ -155,6 +157,22 @@ export default function Page() {
         <Link href="/produkter/smarta-uttag">vår lista över smarta uttag</Link>.
       </p>
       <Products ids={["shelly-plug-s-gen3", "tapo-p110"]} />
+
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Energimarknadsinspektionen: <a href="https://ei.se/konsument/anvand-el-smartare/elhandelsavtal-med-kvartspris">Elhandelsavtal med kvartspris</a>
+        </li>
+        <li>
+          Nord Pool: <a href="https://www.nordpoolgroup.com/en/trading/transition-to-15-minute-market-time-unit-mtu/">Transition to 15-minute Market Time Unit</a>
+        </li>
+        <li>
+          Energimarknadsinspektionen: <a href="https://ei.se/konsument/el/elnatsavgiften-och-elnatsreglering/effektavgifter">Effektavgifter</a>
+        </li>
+        <li>
+          Elsäkerhetsverket: <a href="https://elsakerhetsverket.se/privatpersoner/anlita-ett-elinstallationsforetag">Anlita ett elinstallationsföretag</a>
+        </li>
+      </ul>
 
       <Faq
         title="Vanliga frågor"

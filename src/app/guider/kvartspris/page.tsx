@@ -76,7 +76,8 @@ export default function Page() {
       <ul>
         <li>
           <strong>Du vinner</strong> om du använder en större del av elen när den är billig än genomsnittet gör, till
-          exempel om elbilen, varmvattnet eller värmepumpen går på natten.
+          exempel om elbilen, varmvattnet eller{" "}
+          <Link href="/guider/styr-bergvarmepumpen-efter-elpriset">värmepumpen</Link> går på natten.
         </li>
         <li>
           <strong>Du förlorar</strong> om du använder mest el på vardagsmorgnar och kvällar, när priserna toppar.

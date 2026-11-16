@@ -84,7 +84,9 @@ export default function Page() {
             </tr>
             <tr>
               <td>Luft-luft-värmepump</td>
-              <td>Sensibo, Mitsubishi via MELCloud (i Tibber Labs)</td>
+              <td>
+                <Link href="/tester/sensibo-sky">Sensibo</Link>, Mitsubishi via MELCloud (i Tibber Labs)
+              </td>
             </tr>
             <tr>
               <td>Elelement</td>
@@ -130,7 +132,8 @@ export default function Page() {
 
       <h2>Det här kan Tibber inte styra (än)</h2>
       <p>
-        Fast installerade förbrukare som varmvattenberedaren, elpatronen och spabadet har ingen egen integration. De
+        Fast installerade förbrukare som varmvattenberedaren, elpatronen och{" "}
+        <Link href="/guider/controlmyspa-spabad">spabadet</Link> har ingen egen integration. De
         kan du styra med ett smart relä och ett smart hem-system som läser elpriset.{" "}
         <Link href="/guider/styr-varmvattenberedaren-med-kontaktor">Så styr du varmvattenberedaren</Link>.
       </p>
@@ -152,6 +155,25 @@ export default function Page() {
       </p>
 
       <TibberInvite />
+
+      <h2>Källor</h2>
+      <ul>
+        <li>
+          Tibber: <a href="https://tibber.com/se/sammanfattning-avtalsvillkor">Sammanfattning av avtalsvillkor</a>
+        </li>
+        <li>
+          Tibber: <a href="https://tibber.com/se/varmestyrning">Värmestyrning</a>
+        </li>
+        <li>
+          Tibber: <a href="https://tibber.com/se/smartladdning">Smartladdning</a>
+        </li>
+        <li>
+          Tibber: <a href="https://tibber.com/se/grid-rewards">Grid Rewards</a>
+        </li>
+        <li>
+          Tibber Store: <a href="https://tibber.com/se/store/produkt/pulse-p1">Tibber Pulse P1</a>
+        </li>
+      </ul>
 
       <Faq
         title="Vanliga frågor"

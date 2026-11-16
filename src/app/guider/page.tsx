@@ -4,6 +4,8 @@ import PageIntro from "@/components/PageIntro";
 import GuideCard from "@/components/GuideCard";
 import { GUIDES, type GuideMeta } from "@/lib/guides";
 import { pageMetadata } from "@/lib/metadata";
+import Link from "next/link";
+import { TOPICS } from "@/lib/topics";
 
 const THEMES: GuideMeta["theme"][] = ["Flytta i tid", "Styr automatiskt", "Använd mindre"];
 
@@ -17,6 +19,18 @@ export default function GuidesPage() {
         Raka guider för villaägare. Börja var du vill – eller med att mäta, så vet du var vinsten finns.
       </PageIntro>
       <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 space-y-16">
+        <nav aria-label="Ämnen">
+          <p className="font-semibold text-ink mb-3">Välj ämne</p>
+          <ul className="flex flex-wrap gap-2">
+            {TOPICS.map((t) => (
+              <li key={t.slug}>
+                <Link href={`/amnen/${t.slug}`} className="inline-flex rounded-full bg-white px-4 py-2 font-semibold text-ink hover:bg-mint transition-colors">
+                  {t.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
         {THEMES.map((theme) => (
           <section key={theme}>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-ink mb-6">{theme}</h2>
