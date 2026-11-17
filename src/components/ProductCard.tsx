@@ -30,13 +30,13 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
           {product.test && (
             <Link
               href={`/tester/${product.test}`}
-              className="rounded-full bg-forest px-3 py-1 text-sm font-semibold text-white hover:bg-forest-light"
+              className="rounded-[2px] bg-forest px-3 py-1 text-sm font-semibold text-white hover:bg-forest-light"
             >
               Testat hemma →
             </Link>
           )}
           {product.badge && (
-            <span className="rounded-full bg-volt px-3 py-1 text-sm font-semibold text-ink">{product.badge}</span>
+            <span className="rounded-[2px] bg-volt px-3 py-1 text-sm font-semibold text-ink">{product.badge}</span>
           )}
         </div>
       </div>

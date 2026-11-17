@@ -63,7 +63,7 @@ export default function ElavtalJamfor() {
                     <a href={p.url} target="_blank" rel="noopener" className="font-bold text-ink underline decoration-leaf/40 underline-offset-[3px]">
                       {p.name}
                     </a>
-                    {i === 0 && <span className="ml-2 rounded-full bg-volt px-2 py-0.5 text-xs font-semibold text-ink">Lägst</span>}
+                    {i === 0 && <span className="ml-2 rounded-[2px] bg-volt px-2 py-0.5 text-xs font-semibold text-ink">Lägst</span>}
                     {p.campaign && <p className="mt-1 text-sm text-leaf-dark">{p.campaign}</p>}
                   </td>
                   <td className="py-3 pr-4 tabular-nums">

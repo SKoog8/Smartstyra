@@ -194,7 +194,7 @@ export default function SavingsCalculator() {
       </div>
 
       {/* På mobil hamnar resultatet under reglagen, så summan visas också i en list längst ner. */}
-      <div className="lg:hidden fixed inset-x-3 bottom-3 z-10 flex items-center justify-between rounded-full bg-forest px-5 py-3 text-white shadow-lg">
+      <div className="lg:hidden fixed inset-x-3 bottom-3 z-10 flex items-center justify-between rounded-[2px] bg-forest px-5 py-3 text-white shadow-lg">
         <span className="text-sm text-white/75">Besparing per år</span>
         <span className="text-xl font-extrabold text-volt tabular-nums">{kr(total)}</span>
       </div>

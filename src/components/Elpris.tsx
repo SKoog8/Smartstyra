@@ -347,7 +347,7 @@ export default function Elpris({ outlook }: { outlook: WeekOutlook | null }) {
 
           {data.forecast && data.forecast.length > 0 && (
             <section className="rounded-3xl border-2 border-dashed border-sand-dark p-6 sm:p-8">
-              <p className="inline-flex rounded-full bg-butter px-3 py-1 text-sm font-semibold text-ink">Experimentell prognos</p>
+              <p className="inline-flex rounded-[2px] bg-butter px-3 py-1 text-sm font-semibold text-ink">Experimentell prognos</p>
               <h2 className="mt-3 text-2xl font-extrabold text-ink">Prognos för de kommande dagarna</h2>
               <p className="mt-2 text-ink/70">
                 Prognosen kommer från <a href="https://unagieel.net" className="underline">Unagi – unagieel.net</a>, som

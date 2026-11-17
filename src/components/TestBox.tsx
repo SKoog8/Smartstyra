@@ -9,7 +9,7 @@ export default function TestBox({ meta }: { meta: TestMeta }) {
   return (
     <>
       <aside className="not-prose mb-10 rounded-3xl border-2 border-ink bg-white p-6 sm:p-7">
-        <p className="inline-flex rounded-full bg-volt px-3 py-1 text-sm font-semibold text-ink">Testat hemma</p>
+        <p className="inline-flex rounded-[2px] bg-volt px-3 py-1 text-sm font-semibold text-ink">Testat hemma</p>
         <dl className="mt-4 grid gap-x-6 gap-y-3 text-[0.95rem] sm:grid-cols-[8rem_1fr]">
           <dt className="font-semibold text-ink">Testat av</dt>
           <dd className="flex items-center gap-2.5 text-ink/80">
