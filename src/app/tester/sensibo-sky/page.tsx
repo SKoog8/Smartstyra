@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
 import TestBox from "@/components/TestBox";
+import { Products } from "@/components/ProductCard";
 import { test } from "@/lib/tests";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -77,6 +78,9 @@ export default function Page() {
         <li>Sensibo vet inte säkert vad värmepumpen gör – tar någon i fjärrkontrollen kan appen visa fel läge</li>
         <li>Bara 2,4 GHz-wifi</li>
       </ul>
+
+      <h2>Här köper du den</h2>
+      <Products ids={["sensibo-sky"]} />
     </ArticlePage>
   );
 }
