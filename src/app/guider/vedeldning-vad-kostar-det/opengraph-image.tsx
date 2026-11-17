@@ -8,5 +8,5 @@ export const size = OG_SIZE;
 export const contentType = "image/png";
 
 export default function Image() {
-  return ogImage({ eyebrow: "Guide", title: meta.title, subtitle: meta.theme });
+  return ogImage({ eyebrow: "Guide", title: meta.title, subtitle: meta.theme, art: meta.art });
 }
