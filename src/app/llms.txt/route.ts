@@ -21,6 +21,8 @@ export function GET() {
     "",
     "## Verktyg och produkter",
     "",
+    `- [Elpris](${SITE_URL}/elpris): elpriset timme för timme i SE1–SE4 i dag och i morgon, billigaste laddfönstret och hur veckan brukar se ut.`,
+    `- [Elplan för ditt hus](${SITE_URL}/ditt-hus): fem frågor om huset ger en plan med guider, tester och produkter.`,
     `- [Kalkylator](${SITE_URL}/kalkylator): uppskatta besparingen av lägre temperatur, flyttad förbrukning och mindre standby.`,
     `- [Produkter](${SITE_URL}/produkter): smarta uttag, elementtermostater, golvtermostater, värmepumpsstyrning, smarta reläer och energimätare.`,
     "",

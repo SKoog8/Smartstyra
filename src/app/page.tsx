@@ -62,11 +62,11 @@ export default function Home() {
                 Guider och smarta prylar som hjälper dig att använda mindre el – och att använda den när den är billig.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
-                <Link href="/kalkylator" className="btn-volt">
-                  Räkna på din besparing
+                <Link href="/ditt-hus" className="btn-volt">
+                  Gör en plan för ditt hus
                 </Link>
-                <Link href="/guider" className="btn-ghost-dark">
-                  Läs guiderna
+                <Link href="/elpris" className="btn-ghost-dark">
+                  Se dagens elpris
                 </Link>
               </div>
             </div>
