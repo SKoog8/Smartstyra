@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { AREAS, type AreaId, type Day, type ElprisData } from "@/lib/elpris";
 import week47 from "../../data/veckoprognos.json";
+import { REFERRALS } from "@/lib/referrals";
 
 type WeekOutlook = typeof week47;
 
@@ -297,6 +298,17 @@ export default function Elpris({ outlook }: { outlook: WeekOutlook | null }) {
                 </a>
                 . Det är en bedömning, inte satta priser.
               </p>
+              <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-ink/10 pt-5">
+                <a href={REFERRALS.tibber.url} target="_blank" rel="sponsored noopener" className="btn-leaf py-2.5 text-[0.95rem]">
+                  Teckna Tibber via inbjudan <span aria-hidden="true">→</span>
+                </a>
+                <p className="text-sm text-ink/70 max-w-md">
+                  Du får {REFERRALS.tibber.bonus}. Smartstyra får samma bonus, och det påverkar inte vad vi skriver.{" "}
+                  <a href="/om#finansiering" className="underline">
+                    Läs mer
+                  </a>
+                </p>
+              </div>
             </section>
           )}
 
