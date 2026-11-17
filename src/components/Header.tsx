@@ -3,6 +3,8 @@ import Logo from "./Logo";
 
 const NAV = [
   ["/guider", "Guider"],
+  ["/elpris", "Elpris"],
+  ["/ditt-hus", "Ditt hus"],
   ["/produkter", "Produkter"],
   ["/tester", "Tester"],
   ["/kalkylator", "Räkna på det"],
