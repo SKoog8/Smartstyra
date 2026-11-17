@@ -3,6 +3,7 @@ import ArticlePage from "@/components/ArticlePage";
 import TestLink from "@/components/TestLink";
 import Callout from "@/components/Callout";
 import Faq from "@/components/Faq";
+import { Products } from "@/components/ProductCard";
 import { guide } from "@/lib/guides";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -55,6 +56,8 @@ export default function Page() {
           och kostar mycket energi att ta igen.
         </p>
       </Callout>
+
+      <Products ids={["adax-neo-wifi"]} />
 
       <h2>Tips för lägre elräkning med elelement</h2>
       <p>

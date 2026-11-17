@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
 import TestBox from "@/components/TestBox";
+import { Products } from "@/components/ProductCard";
 import { test } from "@/lib/tests";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -69,6 +70,9 @@ export default function Page() {
         blir de smarta utan att man behöver tänka på det.{" "}
         <Link href="/guider/adax-wifi-element">Läs guiden om Adax WiFi-element</Link>.
       </p>
+
+      <h2>Här köper du dem</h2>
+      <Products ids={["adax-neo-wifi"]} />
     </ArticlePage>
   );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
 import TestBox from "@/components/TestBox";
+import { Products } from "@/components/ProductCard";
 import { test } from "@/lib/tests";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -91,6 +92,9 @@ export default function Page() {
         som fungerar direkt kan en app från elbolaget räcka långt.{" "}
         <Link href="/guider/sa-fungerar-tibber">Så fungerar Tibber</Link>.
       </p>
+
+      <h2>Här köper du den</h2>
+      <Products ids={["home-assistant-green"]} />
     </ArticlePage>
   );
 }

@@ -693,6 +693,54 @@
         "Home Assistant"
       ],
       "amazon": "https://www.amazon.se/dp/B0G23137YW"
+    },
+    {
+      "id": "home-assistant-green",
+      "name": "Home Assistant Green",
+      "brand": "Nabu Casa",
+      "category": "smarta-hem",
+      "summary": "Färdig dator för Home Assistant från Nabu Casa. Koppla in nätverkskabel och ström, så startar Home Assistant direkt.",
+      "bestFor": "Dig som vill samla husets smarta prylar och styra dem efter elpriset",
+      "pros": [
+        "Färdig att köra – inget att installera",
+        "Styrs lokalt i huset, utan moln",
+        "Integrationer för de flesta smarta prylar"
+      ],
+      "cons": [
+        "Kräver att du lär dig Home Assistant",
+        "Zigbee eller Thread kräver en extra dongel"
+      ],
+      "works": [
+        "Ethernet",
+        "Home Assistant",
+        "Matter"
+      ],
+      "amazon": "https://www.amazon.se/dp/B0CXVKSG19",
+      "test": "home-assistant"
+    },
+    {
+      "id": "adax-neo-wifi",
+      "name": "Adax Neo WiFi",
+      "brand": "Adax",
+      "category": "elelement",
+      "summary": "Elelement med inbyggd WiFi-termostat som styrs från Adax app och kan kopplas till Tibber, som styr värmen efter elpriset.",
+      "bestFor": "Dig med direktverkande el som byter element",
+      "pros": [
+        "Integration med Tibber",
+        "Officiell integration i Home Assistant",
+        "Finns i flera storlekar och effekter"
+      ],
+      "cons": [
+        "Fast anslutna modeller ska installeras av elinstallatör",
+        "Välj rätt effekt för rummet"
+      ],
+      "works": [
+        "Wi-Fi",
+        "Tibber",
+        "Home Assistant"
+      ],
+      "amazon": "https://www.amazon.se/s?k=Adax+Neo+WiFi",
+      "test": "adax-neo-wifi"
     }
   ]
 }
