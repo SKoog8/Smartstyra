@@ -24,6 +24,18 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "stall-in-varmekurvan-nibe",
+    title: "Ställ in värmekurvan på NIBE-värmepumpen – sänk förbrukningen utan att frysa",
+    seoTitle: "Ställ in värmekurvan på NIBE",
+    description:
+      "Kurvlutning eller förskjutning? Så hittar du rätt värmekurva på din NIBE-värmepump, steg för steg – och slipper värma huset mer än det behöver.",
+    published: "2026-11-17",
+    updated: "2026-11-17",
+    minutes: 6,
+    tone: "mint",
+    theme: "Använd mindre",
+  },
+  {
     slug: "effektavgift",
     title: "Effektavgift 2026: kravet är borta – så vet du vad som gäller för dig",
     seoTitle: "Effektavgift 2026 – vad gäller nu?",

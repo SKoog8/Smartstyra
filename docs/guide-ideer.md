@@ -7,7 +7,7 @@ Google – där har en tydlig guide störst chans att ranka.
 
 ## Att skriva
 
-- [ ] Ställ in värmekurvan på NIBE-värmepumpen – så sänker du förbrukningen utan att frysa (sökord: "ställa in värmekurva NIBE")
+- [x] Ställ in värmekurvan på NIBE-värmepumpen – så sänker du förbrukningen utan att frysa (sökord: "ställa in värmekurva NIBE") – stall-in-varmekurvan-nibe
 - [ ] Styr varmvattenberedaren med Shelly efter elpriset (sökord: "Shelly varmvattenberedare")
 - [ ] Elpriset från Nord Pool i Home Assistant – och automationer som följer det (sökord: "Home Assistant elpris Nord Pool")
 - [ ] Tibber Pulse i Home Assistant: realtidsförbrukning och automationer (sökord: "Tibber Pulse Home Assistant")
