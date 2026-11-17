@@ -39,6 +39,7 @@ export const TOPICS: Topic[] = [
       "stall-in-varmekurvan-nibe",
       "styr-bergvarmepumpen-efter-elpriset",
       "smarta-elementtermostater",
+      "vedeldning-vad-kostar-det",
       "adax-wifi-element",
       "uppkopplade-golvtermostater",
       "styr-varmvattenberedaren-med-kontaktor",
