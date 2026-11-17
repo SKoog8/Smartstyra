@@ -5,6 +5,10 @@ import PageIntro from "@/components/PageIntro";
 import Elpris from "@/components/Elpris";
 import Faq from "@/components/Faq";
 import { pageMetadata } from "@/lib/metadata";
+import outlook from "../../../data/veckoprognos.json";
+
+// Veckoprognosen visas bara medan veckan pågår. Sidan byggs om var timme så att en gammal prognos försvinner.
+export const revalidate = 3600;
 
 export const metadata = pageMetadata(
   "Elpris i dag och i morgon – SE1, SE2, SE3, SE4",
@@ -13,6 +17,7 @@ export const metadata = pageMetadata(
 );
 
 export default function ElprisPage() {
+  const today = new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Stockholm" }).format(new Date());
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -20,7 +25,7 @@ export default function ElprisPage() {
         Välj ditt elområde och se när elen är billigast – så vet du när elbilen, varmvattnet och tvätten ska gå.
       </PageIntro>
       <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6">
-        <Elpris />
+        <Elpris outlook={outlook.to >= today && outlook.from <= today ? outlook : null} />
 
         <section className="article max-w-3xl mt-16">
           <h2>Så använder du elpriset</h2>
@@ -68,7 +73,7 @@ export default function ElprisPage() {
               },
               {
                 q: "Finns det en prognos för hela veckan?",
-                a: "Priset är bara bestämt för i dag och i morgon. Under rubriken Så brukar veckan se ut visar vi snittet för varje veckodag de senaste veckorna, vilket ger en bra bild av mönstret men inte är en prognos.",
+                a: "Priset är bara bestämt för i dag och i morgon. Längre fram finns bara bedömningar. Vi sammanfattar Tibbers veckoprognos per elområde, och under rubriken Så brukar veckan se ut visar vi snittet för varje veckodag de senaste veckorna.",
               },
               {
                 q: "Lönar det sig att flytta förbrukningen?",

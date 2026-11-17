@@ -2,6 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { AREAS, type AreaId, type Day, type ElprisData } from "@/lib/elpris";
+import week47 from "../../data/veckoprognos.json";
+
+type WeekOutlook = typeof week47;
 
 const WEEKDAYS = ["måndag", "tisdag", "onsdag", "torsdag", "fredag", "lördag", "söndag"];
 const STORAGE_KEY = "smartstyra-elomrade";
@@ -112,7 +115,7 @@ function PriceChart({ day, vat, nowHour, title }: { day: Day; vat: number; nowHo
   );
 }
 
-export default function Elpris() {
+export default function Elpris({ outlook }: { outlook: WeekOutlook | null }) {
   const [area, setArea] = useState<AreaId>("SE3");
   const [vatOn, setVatOn] = useState(true);
   const [data, setData] = useState<ElprisData | null>(null);
@@ -270,6 +273,32 @@ export default function Elpris() {
               förbrukningen i stället för att lägga allt på samma timme.
             </p>
           </section>
+
+          {outlook && (
+            <section className="rounded-3xl bg-mint p-6 sm:p-8">
+              <p className="text-sm font-semibold text-ink/60">
+                Vecka {outlook.week} · {Number(outlook.from.slice(8))}–{Number(outlook.to.slice(8))}{" "}
+                {new Date(`${outlook.to}T12:00:00Z`).toLocaleDateString("sv-SE", { month: "long" })}
+              </p>
+              <h2 className="mt-1 text-2xl font-extrabold text-ink">Veckans prognos från Tibber</h2>
+              <p className="mt-3 text-lg text-ink">
+                Tibber räknar med ett snitt runt{" "}
+                <strong>
+                  {fmt(outlook.areas[area].avg * vat)} öre/kWh i {area}
+                </strong>{" "}
+                den här veckan{vatOn ? " (omräknat inklusive moms)" : " (exklusive moms)"}.
+              </p>
+              <p className="mt-2 text-ink/75">{outlook.areas[area].note}</p>
+              <p className="mt-3 text-ink/75">{outlook.summary}</p>
+              <p className="mt-4 text-sm text-ink/60">
+                Sammanfattat med egna ord från{" "}
+                <a href={outlook.source} className="underline">
+                  Tibbers elprisprognos vecka {outlook.week}
+                </a>
+                . Det är en bedömning, inte satta priser.
+              </p>
+            </section>
+          )}
 
           {week.length > 0 && (
             <section>
