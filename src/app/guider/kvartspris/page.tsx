@@ -112,6 +112,12 @@ export default function Page() {
         </p>
       </Callout>
 
+      <h2>Vilket elbolag?</h2>
+      <p>
+        Spotpriset är detsamma hos alla, men avgifter och smarta funktioner skiljer.{" "}
+        <Link href="/elavtal">Jämför elbolagen med kvartspris</Link>.
+      </p>
+
       <h2>Räkna på det</h2>
       <p>
         Hur mycket det kan ge beror på hur mycket du kan flytta och hur stora prisskillnaderna är i ditt elområde. Prova

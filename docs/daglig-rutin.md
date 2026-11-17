@@ -24,6 +24,13 @@ https://tibber.com/se/elprisprognos:
 - Har Tibber inte publicerat en ny prognos än: ändra ingenting. Sidan döljer en gammal prognos av sig själv.
 - Committa den här ändringen separat ("Elprisprognos vecka NN"), även om ingen guide publiceras.
 
+## 1c. Kontrollera elavtalsjämförelsen (om `checkedAt` är äldre än 30 dagar)
+
+Om `checkedAt` i `data/elavtal.json` är mer än 30 dagar gammalt: kontrollera månadsavgift, påslag, kampanjer och
+funktioner på varje elbolags egen sida (länkarna finns i filen). Uppdatera bara det du kan bekräfta på bolagets
+sida, lämna `null` eller tom sträng annars, och sätt `checkedAt` till i dag. Committa separat
+("Elavtal kontrollerade ÅÅÅÅ-MM-DD").
+
 ## 2. Välj ämne
 
 Ta den första punkten i `docs/guide-ideer.md` som inte är avbockad. Kontrollera i `src/lib/guides.ts` att

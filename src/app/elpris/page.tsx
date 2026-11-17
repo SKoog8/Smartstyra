@@ -82,7 +82,8 @@ export default function ElprisPage() {
             ]}
           />
           <p>
-            Vill du veta vad som passar just ditt hus? <Link href="/ditt-hus">Gör en elplan för ditt hus</Link> eller{" "}
+            Funderar du på elavtal? <Link href="/elavtal">Jämför elbolagen med kvartspris</Link>. Vill du veta vad som
+            passar just ditt hus? <Link href="/ditt-hus">Gör en elplan för ditt hus</Link> eller{" "}
             <Link href="/kalkylator">räkna på besparingen</Link>.
           </p>
         </section>

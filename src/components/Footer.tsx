@@ -18,6 +18,7 @@ const COLUMNS: [string, [string, string][]][] = [
       ["/guider", "Alla guider"],
       ["/elpris", "Elpriset i dag och i morgon"],
       ["/ditt-hus", "Elplan för ditt hus"],
+      ["/elavtal", "Jämför elavtal med kvartspris"],
       ["/produkter", "Produkter vi rekommenderar"],
       ["/tester", "Testat hemma"],
       ["/kalkylator", "Räkna på din besparing"],

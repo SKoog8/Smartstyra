@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-11-17",
+  "note": "Påslag anges inklusive moms där bolaget anger det exklusive moms. Kontrollera alltid aktuellt pris hos bolaget innan du byter.",
+  "providers": [
+    {
+      "id": "tibber",
+      "name": "Tibber",
+      "url": "https://tibber.com/se/sammanfattning-avtalsvillkor",
+      "monthlyFee": 49,
+      "markup": 7.5,
+      "markupNote": "6 öre exkl. moms",
+      "variable": 4.975,
+      "variableNote": "Rörlig kostnad för inköp, ca 4 öre exkl. moms",
+      "binding": "Ingen",
+      "campaign": "",
+      "features": {
+        "elbil": "Smartladdning av elbilen",
+        "varme": "Styr värmepumpar, termostater och element",
+        "batteri": "Styr hembatteri",
+        "stodtjanster": "Grid Rewards – betalt när elbilen eller batteriet hjälper elnätet",
+        "matare": "Tibber Pulse"
+      },
+      "guide": "/guider/sa-fungerar-tibber"
+    },
+    {
+      "id": "greenely",
+      "name": "Greenely",
+      "url": "https://greenely.se/sv/smart-elavtal/",
+      "monthlyFee": 69,
+      "markup": 0,
+      "markupNote": "Inget påslag, små avgifter för elcertifikat och miljömärkning tillkommer",
+      "variable": null,
+      "binding": "Ingen",
+      "campaign": "Fri månadsavgift i 18 månader för nya kunder",
+      "features": {
+        "elbil": "Smart elbilsladdning",
+        "varme": "",
+        "batteri": "",
+        "stodtjanster": "Betalt för att balansera elnätet",
+        "matare": "Realtidsmätare",
+        "solel": "5 öre extra per kWh för såld solel i 12 månader"
+      }
+    },
+    {
+      "id": "bixia",
+      "name": "Bixia",
+      "url": "https://bixia.se/privat/elavtal/kvartspris",
+      "monthlyFee": 59,
+      "markup": 2,
+      "markupNote": "Enligt Bixia (det framgår inte om moms ingår), rörliga kostnader för inköp och förnybar el tillkommer",
+      "variable": null,
+      "binding": "Ingen",
+      "campaign": "",
+      "features": {
+        "elbil": "Smart laddning i appen Mitt Bixia",
+        "varme": "",
+        "batteri": "",
+        "stodtjanster": "",
+        "matare": "Realtidsmätare med lastbalansering"
+      }
+    },
+    {
+      "id": "vattenfall",
+      "name": "Vattenfall",
+      "url": "https://www.vattenfall.se/elavtal/elpriser/prislista/",
+      "monthlyFee": 55,
+      "monthlyFeeNote": "Årsavgift 660 kr",
+      "markup": 8.75,
+      "markupNote": "7 öre exkl. moms, rörliga kostnader för inköp tillkommer",
+      "variable": null,
+      "binding": "Ingen",
+      "campaign": "",
+      "features": {
+        "elbil": "",
+        "varme": "",
+        "batteri": "",
+        "stodtjanster": "",
+        "matare": ""
+      }
+    },
+    {
+      "id": "eon",
+      "name": "E.ON",
+      "url": "https://www.eon.se/el/elpriser/kvartspris",
+      "monthlyFee": null,
+      "markup": null,
+      "binding": "Ingen",
+      "campaign": "",
+      "features": {
+        "elbil": "Smartladdning",
+        "varme": "Smart värmestyrning",
+        "batteri": "",
+        "stodtjanster": "",
+        "matare": ""
+      }
+    },
+    {
+      "id": "fortum",
+      "name": "Fortum",
+      "url": "https://www.fortum.com/se/el/teckna-elavtal/kvartspris",
+      "monthlyFee": null,
+      "markup": null,
+      "binding": "",
+      "campaign": "",
+      "features": {
+        "elbil": "Smartladdning",
+        "varme": "",
+        "batteri": "",
+        "stodtjanster": "",
+        "matare": ""
+      }
+    }
+  ]
+}
