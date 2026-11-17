@@ -17,6 +17,19 @@ export default function AboutPage() {
       </p>
       {OWNER_NAME && <p>Sajten drivs av {OWNER_NAME}.</p>}
 
+      <h2>Teamet</h2>
+      <div className="not-prose my-6 grid gap-4 sm:grid-cols-2">
+        <Link
+          href="/om/martin"
+          className="group flex flex-col items-center rounded-2xl bg-sand-dark/60 px-6 py-8 text-center transition-colors hover:bg-sand-dark"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/martin.jpg" alt="Martin, elektriker och testare på Smartstyra" width={96} height={96} className="h-24 w-24 rounded-full object-cover" />
+          <span className="mt-4 text-lg font-extrabold text-ink">Martin</span>
+          <span className="mt-1 text-sm text-ink/60">Elektriker · testar och faktagranskar</span>
+        </Link>
+      </div>
+
       <h2>Hur vi väljer produkter</h2>
       <p>
         Vi rekommenderar bara produkter som hjälper dig att använda mindre el eller styra den smartare, och vi skriver

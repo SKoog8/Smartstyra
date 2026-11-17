@@ -51,7 +51,9 @@ export default function ArticlePage({ title, subtitle, path, guide, imageAlt, ch
           </p>
         )}
         {guide?.reviewed && (
-          <p className="mt-3 text-sm text-ink/60">
+          <p className="mt-3 flex flex-wrap items-center gap-x-1 text-sm text-ink/60">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/martin-liten.jpg" alt="" width={24} height={24} className="mr-1.5 h-6 w-6 rounded-full" />
             Faktagranskad av{" "}
             <Link href="/om/martin" className="font-semibold text-leaf-dark hover:underline">
               Martin, elektriker
@@ -120,6 +122,7 @@ export default function ArticlePage({ title, subtitle, path, guide, imageAlt, ch
                           name: "Martin",
                           jobTitle: "Elektriker",
                           url: `${SITE_URL}/om/martin`,
+                          image: `${SITE_URL}/martin.jpg`,
                         },
                       }
                     : `${SITE_URL}${path}`,

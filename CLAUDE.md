@@ -14,6 +14,3 @@ Ta bort en punkt när den är klar.
 - Den dagliga guiden publiceras inte: den schemalagda uppgiften "Smartstyra – daglig guide" saknar repot
   SKoog8/Smartstyra som källa, så pushen till main nekas (403). Martin behöver skapa om den i claude.ai → Routines
   med repot valt, och sedan pausa den gamla.
-- Bild på Martin: han ska skicka en bild på sig själv (gärna i arbetskläder eller hemma, inget som avslöjar adressen).
-  Den ska in på /om/martin, i "Testat hemma"-rutan på testerna, vid "Faktagranskad av" på guiderna och som `image`
-  på Person i strukturerad data. Fråga också om efternamnet ska stå med.
