@@ -9,6 +9,12 @@ export interface GuideMeta {
   /** Datum då innehållet senast gicks igenom (ÅÅÅÅ-MM-DD) */
   updated: string;
   minutes: number;
+  /**
+   * Datum då Martin (elektriker) läste igenom och godkände guiden (ÅÅÅÅ-MM-DD). Sätts bara när han faktiskt har
+   * gjort det – då visas "Faktagranskad av Martin, elektriker" på guiden. Nya guider från den dagliga rutinen har
+   * inget sådant datum förrän Martin har läst dem.
+   */
+  reviewed?: string;
   /** Bakgrundsfärg på kortet i guidelistan */
   tone: "mint" | "sky" | "butter" | "clay";
   /** Vilken av de tre vägarna till lägre elräkning guiden handlar om */
@@ -25,6 +31,7 @@ export const GUIDES: GuideMeta[] = [
       "Kravet på effektavgift upphävdes i juni 2026. Så ser du om ditt nätbolag har kvar den – och hur du håller nere avgiften om det har det.",
     published: "2026-11-12",
     updated: "2026-11-16",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "clay",
     theme: "Flytta i tid",
@@ -37,6 +44,7 @@ export const GUIDES: GuideMeta[] = [
       "Sedan oktober 2025 sätts elpriset per kvart. Så skiljer sig kvartspris från timpris och rörligt månadspris, och så ser du om det lönar sig för dig.",
     published: "2026-11-12",
     updated: "2026-11-16",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "butter",
     theme: "Flytta i tid",
@@ -49,6 +57,7 @@ export const GUIDES: GuideMeta[] = [
       "Tibber Pulse visar elförbrukningen i realtid och skyddar säkringen när elbilen laddar. Så väljer du rätt modell och det här kan den – med och utan Tibber.",
     published: "2026-11-12",
     updated: "2026-11-12",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "mint",
     theme: "Använd mindre",
@@ -60,6 +69,7 @@ export const GUIDES: GuideMeta[] = [
       "Så flyttar du bergvärmepumpens värme till billiga timmar med NIBE myUplink, Tibber eller Ngenic Tune – utan att det blir kallt inne.",
     published: "2026-11-12",
     updated: "2026-11-12",
+    reviewed: "2026-11-17",
     minutes: 7,
     tone: "sky",
     theme: "Styr automatiskt",
@@ -72,6 +82,7 @@ export const GUIDES: GuideMeta[] = [
       "60-öringen är borta och grönt avdrag har ändrats. Så räknar du på solceller och batteri nu – och varför smart styrning gör störst skillnad.",
     published: "2026-11-12",
     updated: "2026-11-12",
+    reviewed: "2026-11-17",
     minutes: 7,
     tone: "butter",
     theme: "Flytta i tid",
@@ -83,6 +94,7 @@ export const GUIDES: GuideMeta[] = [
       "Kvartspris, appen, Pulse och Power-ups: en genomgång av hur Tibber fungerar och vilka värmepumpar, element, laddboxar och batterier som går att styra.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 8,
     tone: "sky",
     theme: "Flytta i tid",
@@ -95,6 +107,7 @@ export const GUIDES: GuideMeta[] = [
       "Så fungerar Grid Rewards, vad som krävs, hur mycket det kan ge och vad det betyder för laddningen av din bil.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "butter",
     theme: "Flytta i tid",
@@ -106,6 +119,7 @@ export const GUIDES: GuideMeta[] = [
       "Koppla bilen eller laddboxen till Tibber, ställ in avresetid och låt laddningen hamna på dygnets billigaste timmar – utan att säkringen går.",
     published: "2026-10-28",
     updated: "2026-11-12",
+    reviewed: "2026-11-17",
     minutes: 7,
     tone: "mint",
     theme: "Flytta i tid",
@@ -118,6 +132,7 @@ export const GUIDES: GuideMeta[] = [
       "Varmvattenberedaren är en av husets största elförbrukare och perfekt att flytta i tid. Så fungerar styrning med kontaktor och smart relä.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 7,
     tone: "clay",
     theme: "Flytta i tid",
@@ -129,6 +144,7 @@ export const GUIDES: GuideMeta[] = [
       "Ett batteri som bara lagrar solel står still halva året. Med smart styrning laddar det när elen är billig och tjänar pengar på att stötta elnätet.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 7,
     tone: "sky",
     theme: "Flytta i tid",
@@ -141,6 +157,7 @@ export const GUIDES: GuideMeta[] = [
       "Elektrisk golvvärme går ofta dygnet runt, året om. Så byter du till en uppkopplad termostat och styr värmen efter schema och elpris.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "butter",
     theme: "Styr automatiskt",
@@ -153,6 +170,7 @@ export const GUIDES: GuideMeta[] = [
       "Så fungerar Adax WiFi-element, vad appen kan, och hur du kopplar dem till Tibber eller Home Assistant för att värma på billiga timmar.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "clay",
     theme: "Styr automatiskt",
@@ -165,6 +183,7 @@ export const GUIDES: GuideMeta[] = [
       "Så fungerar Plejd, vilka produkter som finns, vad gatewayen behövs till – och hur mycket el smart belysning egentligen sparar.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "mint",
     theme: "Styr automatiskt",
@@ -177,6 +196,7 @@ export const GUIDES: GuideMeta[] = [
       "Ett spabad kan dra lika mycket el som en elbil. Så använder du ControlMySpa för att schemalägga värmen och vilka vägar som finns till elprisstyrning.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "sky",
     theme: "Flytta i tid",
@@ -189,6 +209,7 @@ export const GUIDES: GuideMeta[] = [
       "Med timpris kan samma kilowattimme kosta helt olika mycket under dygnet. Så tar du vara på det – med och utan smarta prylar.",
     published: "2026-10-28",
     updated: "2026-11-12",
+    reviewed: "2026-11-17",
     minutes: 7,
     tone: "butter",
     theme: "Flytta i tid",
@@ -201,6 +222,7 @@ export const GUIDES: GuideMeta[] = [
       "En grad lägre inomhus ger ungefär fem procent lägre uppvärmningskostnad. Så får du det att hända rum för rum – utan att frysa.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "clay",
     theme: "Styr automatiskt",
@@ -213,6 +235,7 @@ export const GUIDES: GuideMeta[] = [
       "Elmätarens HAN-port, smarta uttag och ett enkelt nattest visar var elen tar vägen – innan du lägger pengar på åtgärder.",
     published: "2026-10-28",
     updated: "2026-10-28",
+    reviewed: "2026-11-17",
     minutes: 6,
     tone: "mint",
     theme: "Använd mindre",

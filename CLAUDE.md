@@ -11,4 +11,6 @@ En ny guide publiceras automatiskt varje morgon enligt `docs/daglig-rutin.md`, m
 Ta upp de här punkterna med användaren i början av nästa samtal om sajten, tills de är åtgärdade.
 Ta bort en punkt när den är klar.
 
-Inga öppna påminnelser just nu.
+- Den dagliga guiden publiceras inte: den schemalagda uppgiften "Smartstyra – daglig guide" saknar repot
+  SKoog8/Smartstyra som källa, så pushen till main nekas (403). Martin behöver skapa om den i claude.ai → Routines
+  med repot valt, och sedan pausa den gamla.

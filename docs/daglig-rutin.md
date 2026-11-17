@@ -43,6 +43,7 @@ Kopiera en befintlig guide som mall, t.ex. `src/app/guider/effektavgift/page.tsx
 - En definition av ämnet i första stycket, i fetstil – "**X är …**" – så att sökmotorer kan citera den.
 - En `<h2>Källor</h2>` sist före `<Faq>`, med länkar till förstahandskällorna du använt (myndigheter och tillverkare).
 - Lägg till guidens slug i rätt ämne i `src/lib/topics.ts` (Tibber, värme, elavtal och elnät, smarta hem), så att den syns på ämnessidan.
+- Sätt aldrig fältet `reviewed` i `src/lib/guides.ts` på en ny guide. Det betyder att Martin har faktagranskat guiden, och det gör han själv i efterhand.
 - Elinstallationsarbete: skriv alltid att det ska göras av ett registrerat elinstallationsföretag.
 
 **Ärlighet – viktigt**

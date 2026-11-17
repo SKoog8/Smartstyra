@@ -50,6 +50,15 @@ export default function ArticlePage({ title, subtitle, path, guide, imageAlt, ch
             läsning
           </p>
         )}
+        {guide?.reviewed && (
+          <p className="mt-3 text-sm text-ink/60">
+            Faktagranskad av{" "}
+            <Link href="/om/martin" className="font-semibold text-leaf-dark hover:underline">
+              Martin, elektriker
+            </Link>{" "}
+            <time dateTime={guide.reviewed}>{formatDate(guide.reviewed)}</time>
+          </p>
+        )}
         {guide && topicsForGuide(guide.slug).length > 0 && (
           <p className="mt-3 text-sm text-ink/60">
             Ämne:{" "}
@@ -100,7 +109,20 @@ export default function ArticlePage({ title, subtitle, path, guide, imageAlt, ch
                   datePublished: guide.published,
                   dateModified: guide.updated,
                   inLanguage: "sv-SE",
-                  mainEntityOfPage: `${SITE_URL}${path}`,
+                  mainEntityOfPage: guide.reviewed
+                    ? {
+                        "@type": "WebPage",
+                        "@id": `${SITE_URL}${path}`,
+                        lastReviewed: guide.reviewed,
+                        reviewedBy: {
+                          "@type": "Person",
+                          "@id": `${SITE_URL}/om/martin#person`,
+                          name: "Martin",
+                          jobTitle: "Elektriker",
+                          url: `${SITE_URL}/om/martin`,
+                        },
+                      }
+                    : `${SITE_URL}${path}`,
                   author: ORGANIZATION,
                   publisher: ORGANIZATION,
                 },

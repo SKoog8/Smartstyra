@@ -19,8 +19,8 @@ export default function MartinPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <PageIntro eyebrow="Skribent" title="Martin, elektriker">
-        Martin skriver Smartstyras tester. Han är elektriker och använder produkterna i sin egen villa – köpta för egna
-        pengar.
+        Martin skriver Smartstyras tester och faktagranskar guiderna. Han är elektriker och använder produkterna i sin
+        egen villa – köpta för egna pengar.
       </PageIntro>
       <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6">
         <section className="article max-w-3xl">
@@ -37,6 +37,12 @@ export default function MartinPage() {
             göra det själv: arbete i den fasta elinstallationen ska göras av ett{" "}
             <a href="https://elsakerhetsverket.se/privatpersoner/anlita-ett-elinstallationsforetag">registrerat elinstallationsföretag</a>.
             I testerna står det alltid vad du kan göra själv och vad som kräver en elinstallatör.
+          </p>
+          <h2>Faktagranskning av guiderna</h2>
+          <p>
+            Martin läser igenom guiderna innan de märks som faktagranskade, med särskilt fokus på det som rör
+            elinstallationer, styrning och säkerhet. På varje granskad guide står det när den senast granskades. Nya
+            guider märks först när Martin har läst dem.
           </p>
           <h2>Så går testerna till</h2>
           <ul>
