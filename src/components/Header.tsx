@@ -7,7 +7,7 @@ const NAV = [
   ["/ditt-hus", "Ditt hus"],
   ["/produkter", "Produkter"],
   ["/tester", "Tester"],
-  ["/kalkylator", "Räkna på det"],
+  ["/elavtal", "Elavtal"],
   ["/om", "Om oss"],
 ];
 

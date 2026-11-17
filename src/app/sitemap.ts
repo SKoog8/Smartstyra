@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     { url: `${SITE_URL}/elpris`, changeFrequency: "daily", priority: 0.8 },
     { url: `${SITE_URL}/ditt-hus`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/elavtal`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/kalkylator`, changeFrequency: "yearly", priority: 0.6 },
     { url: `${SITE_URL}/om`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/om/martin`, changeFrequency: "yearly", priority: 0.3 },
