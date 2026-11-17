@@ -24,6 +24,18 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "vedeldning-vad-kostar-det",
+    title: "Vedeldning: vad kostar värmen per kWh – och när lönar det sig?",
+    seoTitle: "Vad kostar vedeldning per kWh?",
+    description:
+      "Så mycket kostar en kWh värme från björkved jämfört med el och värmepump, och när det är smart att elda – särskilt när elpriset är högt.",
+    published: "2026-11-17",
+    updated: "2026-11-17",
+    minutes: 7,
+    tone: "butter",
+    theme: "Använd mindre",
+  },
+  {
     slug: "stall-in-varmekurvan-nibe",
     title: "Ställ in värmekurvan på NIBE-värmepumpen – sänk förbrukningen utan att frysa",
     seoTitle: "Ställ in värmekurvan på NIBE",
