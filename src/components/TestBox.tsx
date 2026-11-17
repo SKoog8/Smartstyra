@@ -12,11 +12,15 @@ export default function TestBox({ meta }: { meta: TestMeta }) {
         <p className="inline-flex rounded-full bg-volt px-3 py-1 text-sm font-semibold text-ink">Testat hemma</p>
         <dl className="mt-4 grid gap-x-6 gap-y-3 text-[0.95rem] sm:grid-cols-[8rem_1fr]">
           <dt className="font-semibold text-ink">Testat av</dt>
-          <dd className="text-ink/80">
-            <Link href="/om/martin" className="underline decoration-leaf/40 underline-offset-[3px] hover:decoration-leaf">
-              {TESTER.name}
-            </Link>
-            , {meta.used}
+          <dd className="flex items-center gap-2.5 text-ink/80">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/martin-liten.jpg" alt="" width={28} height={28} className="h-7 w-7 rounded-full" />
+            <span>
+              <Link href="/om/martin" className="underline decoration-leaf/40 underline-offset-[3px] hover:decoration-leaf">
+                {TESTER.name}
+              </Link>
+              , {meta.used}
+            </span>
           </dd>
           <dt className="font-semibold text-ink">Hemma i</dt>
           <dd className="text-ink/80">En {TESTER.home}</dd>
@@ -43,7 +47,7 @@ export default function TestBox({ meta }: { meta: TestMeta }) {
               dateModified: meta.updated,
               inLanguage: "sv-SE",
               mainEntityOfPage: `${SITE_URL}${path}`,
-              author: { "@type": "Person", "@id": `${SITE_URL}/om/martin#person`, name: TESTER.name, jobTitle: "Elektriker", url: `${SITE_URL}/om/martin` },
+              author: { "@type": "Person", "@id": `${SITE_URL}/om/martin#person`, name: TESTER.name, jobTitle: "Elektriker", url: `${SITE_URL}/om/martin`, image: `${SITE_URL}/martin.jpg` },
               publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL, logo: `${SITE_URL}/apple-icon` },
             },
             {

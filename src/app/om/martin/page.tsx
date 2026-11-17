@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PageIntro from "@/components/PageIntro";
 import TestCard from "@/components/TestCard";
 import JsonLd from "@/components/JsonLd";
 import { TESTS, TESTER } from "@/lib/tests";
@@ -18,15 +17,29 @@ export default function MartinPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <PageIntro eyebrow="Skribent" title="Martin, elektriker">
-        Martin skriver Smartstyras tester och faktagranskar guiderna. Han är elektriker och använder produkterna i sin
-        egen villa – köpta för egna pengar.
-      </PageIntro>
+      <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 pt-8 sm:pt-14 pb-10 flex flex-col-reverse gap-8 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="text-sm font-semibold text-leaf mb-3">Skribent</p>
+          <h1 className="text-4xl sm:text-6xl font-extrabold leading-[1.02] text-ink max-w-3xl">Martin, elektriker</h1>
+          <p className="mt-5 text-lg sm:text-xl text-ink/70 leading-relaxed max-w-2xl">
+            Martin skriver Smartstyras tester och faktagranskar guiderna. Han är elektriker och använder produkterna i
+            sin egen villa – köpta för egna pengar.
+          </p>
+        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/martin.jpg"
+          alt="Martin, elektriker och testare på Smartstyra"
+          width={224}
+          height={224}
+          className="h-36 w-36 sm:h-56 sm:w-56 shrink-0 rounded-full object-cover"
+        />
+      </div>
       <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6">
         <section className="article max-w-3xl">
           <h2>Huset där testerna görs</h2>
           <p>
-            Martin bor i en {TESTER.home}. Huset har ett elavtal med kvartspris, så det spelar roll när elen används.
+            Martin bor i en {TESTER.home}. Med kvartspris spelar det roll när elen används.
             Det är därför mycket av förbrukningen styrs till billigare timmar – och därför testerna handlar om vad som
             fungerar i vardagen, inte i ett labb.
           </p>
@@ -75,6 +88,7 @@ export default function MartinPage() {
                 name: TESTER.name,
                 jobTitle: "Elektriker",
                 url: `${SITE_URL}/om/martin`,
+                image: `${SITE_URL}/martin.jpg`,
                 worksFor: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
               },
             },
