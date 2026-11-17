@@ -49,7 +49,7 @@ export default function Home() {
       <Header />
 
       <section className="px-2 sm:px-4">
-        <div className="max-w-[90rem] mx-auto bg-forest text-white rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden">
+        <div className="max-w-[90rem] mx-auto bg-forest text-white overflow-hidden">
           <div className="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-20 grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-center">
             <div>
               <h1 className="text-[2.75rem] leading-[1] sm:text-7xl font-extrabold tracking-[-0.04em]">
@@ -144,7 +144,7 @@ export default function Home() {
                 <Link
                   key={c.slug}
                   href={`/produkter/${c.slug}`}
-                  className="group bg-white rounded-3xl p-6 flex items-start gap-4 hover:ring-2 hover:ring-leaf/30 transition-shadow"
+                  className="group bg-white rounded-3xl border-2 border-ink p-6 flex items-start gap-4 hover:ring-2 hover:ring-leaf/30 transition-shadow"
                 >
                   <span className="rounded-2xl bg-mint p-2.5 text-leaf">
                     <CategoryIcon slug={c.slug} className="w-8 h-8" />
@@ -160,7 +160,7 @@ export default function Home() {
         </section>
 
         <section className="px-2 sm:px-4 pt-20 sm:pt-28">
-          <div className="max-w-[90rem] mx-auto bg-ink text-white rounded-[2rem] sm:rounded-[2.5rem]">
+          <div className="max-w-[90rem] mx-auto bg-ink text-white">
             <div className="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-20 grid gap-10 md:grid-cols-[1.3fr_1fr] md:items-center">
               <div>
                 <p className="text-volt font-semibold">Kalkylator</p>

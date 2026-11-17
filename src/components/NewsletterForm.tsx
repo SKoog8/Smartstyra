@@ -44,7 +44,7 @@ export default function NewsletterForm() {
           maxLength={200}
           autoComplete="email"
           placeholder="din@epost.se"
-          className="flex-1 rounded-full bg-white px-5 py-3 text-ink outline-none ring-1 ring-ink/10 focus:ring-2 focus:ring-leaf"
+          className="flex-1 rounded-[2px] border-2 border-ink bg-white px-5 py-3 text-ink outline-none ring-1 ring-ink/10 focus:ring-2 focus:ring-leaf"
         />
         {/* Fälla för botar: dold för människor, så ett ifyllt värde betyder spam. */}
         <div aria-hidden="true" className="absolute -left-[9999px]">

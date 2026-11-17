@@ -62,7 +62,7 @@ function PriceChart({ day, vat, nowHour, title }: { day: Day; vat: number; nowHo
   const shown = hover ?? nowHour ?? null;
 
   return (
-    <figure className="rounded-3xl bg-white p-5 sm:p-7">
+    <figure className="rounded-3xl border-2 border-ink bg-white p-5 sm:p-7">
       <figcaption className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
         <span className="text-lg font-extrabold text-ink">{title}</span>
         <span className="text-sm text-ink/60 tabular-nums">
@@ -197,7 +197,7 @@ export default function Elpris({ outlook }: { outlook: WeekOutlook | null }) {
               role="radio"
               aria-checked={area === a.id}
               onClick={() => choose(a.id)}
-              className={`rounded-full px-4 py-2 font-semibold transition-colors ${
+              className={`rounded-[2px] px-4 py-2 font-semibold transition-colors ${
                 area === a.id ? "bg-forest text-white" : "bg-white text-ink hover:bg-mint"
               }`}
             >
@@ -219,19 +219,19 @@ export default function Elpris({ outlook }: { outlook: WeekOutlook | null }) {
       {error && (
         <p className="rounded-3xl bg-clay p-6 text-ink">Elpriserna gick inte att hämta just nu. Försök igen om en stund.</p>
       )}
-      {!data && !error && <p className="rounded-3xl bg-white p-6 text-ink/60">Hämtar elpriserna …</p>}
+      {!data && !error && <p className="rounded-3xl border-2 border-ink bg-white p-6 text-ink/60">Hämtar elpriserna …</p>}
 
       {data && (
         <>
           {today ? (
             <PriceChart day={today} vat={vat} nowHour={now?.hour} title={`I dag, ${WEEKDAYS[weekdayOf(today.date)]}`} />
           ) : (
-            <p className="rounded-3xl bg-white p-6 text-ink/70">Dagens priser saknas just nu.</p>
+            <p className="rounded-3xl border-2 border-ink bg-white p-6 text-ink/70">Dagens priser saknas just nu.</p>
           )}
           {tomorrow ? (
             <PriceChart day={tomorrow} vat={vat} title={`I morgon, ${WEEKDAYS[weekdayOf(tomorrow.date)]}`} />
           ) : (
-            <p className="rounded-3xl bg-white p-6 text-ink/70">
+            <p className="rounded-3xl border-2 border-ink bg-white p-6 text-ink/70">
               Morgondagens priser publiceras av elbörsen strax efter lunch, oftast runt klockan 13. Titta in igen i
               eftermiddag.
             </p>
@@ -327,7 +327,7 @@ export default function Elpris({ outlook }: { outlook: WeekOutlook | null }) {
                     3
                   );
                   return (
-                    <li key={p.weekday} className="rounded-3xl bg-white p-5">
+                    <li key={p.weekday} className="rounded-3xl border-2 border-ink bg-white p-5">
                       <p className="text-sm font-semibold text-ink/60">{i === 0 ? "I dag" : i === 1 ? "I morgon" : ""}</p>
                       <p className="text-lg font-extrabold capitalize text-ink">{WEEKDAYS[p.weekday]}</p>
                       <p className="mt-2 tabular-nums text-ink/80">
@@ -347,7 +347,7 @@ export default function Elpris({ outlook }: { outlook: WeekOutlook | null }) {
 
           {data.forecast && data.forecast.length > 0 && (
             <section className="rounded-3xl border-2 border-dashed border-sand-dark p-6 sm:p-8">
-              <p className="inline-flex rounded-full bg-butter px-3 py-1 text-sm font-semibold text-ink">Experimentell prognos</p>
+              <p className="inline-flex rounded-[2px] bg-butter px-3 py-1 text-sm font-semibold text-ink">Experimentell prognos</p>
               <h2 className="mt-3 text-2xl font-extrabold text-ink">Prognos för de kommande dagarna</h2>
               <p className="mt-2 text-ink/70">
                 Prognosen kommer från <a href="https://unagieel.net" className="underline">Unagi – unagieel.net</a>, som

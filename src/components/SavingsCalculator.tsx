@@ -78,7 +78,7 @@ export default function SavingsCalculator() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_24rem] items-start">
-      <div className="bg-white rounded-3xl p-6 sm:p-8 space-y-10">
+      <div className="bg-white rounded-3xl border-2 border-ink p-6 sm:p-8 space-y-10">
         <section className="space-y-6">
           <h2 className="text-xl font-extrabold text-ink">Ditt hus</h2>
           <Slider
@@ -194,7 +194,7 @@ export default function SavingsCalculator() {
       </div>
 
       {/* På mobil hamnar resultatet under reglagen, så summan visas också i en list längst ner. */}
-      <div className="lg:hidden fixed inset-x-3 bottom-3 z-10 flex items-center justify-between rounded-full bg-forest px-5 py-3 text-white shadow-lg">
+      <div className="lg:hidden fixed inset-x-3 bottom-3 z-10 flex items-center justify-between rounded-[2px] bg-forest px-5 py-3 text-white shadow-lg">
         <span className="text-sm text-white/75">Besparing per år</span>
         <span className="text-xl font-extrabold text-volt tabular-nums">{kr(total)}</span>
       </div>

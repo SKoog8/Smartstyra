@@ -8,12 +8,12 @@ function Logo() {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
       <svg width="64" height="64" viewBox="0 0 32 32">
-        <rect width="32" height="32" rx="9" fill="#18794a" />
+        <rect width="32" height="32" rx="2" fill="#ff5a1f" />
         <circle cx="16" cy="16" r="8.5" fill="none" stroke="#fff" strokeWidth="3" />
-        <path d="M16 16l5.2-5.2" stroke="#c8f169" strokeWidth="3.2" strokeLinecap="round" />
-        <circle cx="16" cy="16" r="2" fill="#c8f169" />
+        <path d="M16 16l5.2-5.2" stroke="#16213a" strokeWidth="3.2" strokeLinecap="round" />
+        <circle cx="16" cy="16" r="2" fill="#16213a" />
       </svg>
-      <span style={{ fontSize: 44, fontWeight: 800, color: "#fff", letterSpacing: -1.5 }}>smartstyra</span>
+      <span style={{ fontSize: 44, fontWeight: 700, color: "#fff", letterSpacing: -2, fontFamily: "monospace" }}>smartstyra</span>
     </div>
   );
 }
@@ -30,7 +30,7 @@ export function ogImage({ eyebrow, title, subtitle, art }: { eyebrow?: string; t
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 72,
-          background: "#143d2b",
+          background: "#16213a",
           color: "#fff",
           fontFamily: "sans-serif",
         }}
@@ -42,7 +42,7 @@ export function ogImage({ eyebrow, title, subtitle, art }: { eyebrow?: string; t
         )}
         <Logo />
         <div style={{ display: "flex", flexDirection: "column", gap: 20, ...(art ? { maxWidth: 820 } : {}) }}>
-          {eyebrow && <span style={{ fontSize: 32, color: "#c8f169" }}>{eyebrow}</span>}
+          {eyebrow && <span style={{ fontSize: 32, color: "#ffb21f" }}>{eyebrow}</span>}
           <span style={{ fontSize: title.length > 40 ? 60 : 76, fontWeight: 800, lineHeight: 1.05, letterSpacing: -2 }}>
             {title}
           </span>

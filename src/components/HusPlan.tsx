@@ -150,12 +150,12 @@ export default function HusPlan() {
         {ready && (
           <ol className="mt-4 space-y-4" aria-live="polite">
             {plan.map((s, i) => (
-              <li key={s.id} className="rounded-3xl bg-white p-6">
+              <li key={s.id} className="rounded-3xl border-2 border-ink bg-white p-6">
                 <div className="flex items-center gap-3">
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-ink text-sm font-bold text-white">
                     {i + 1}
                   </span>
-                  <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold text-ink ${THEME_STYLE[s.theme]}`}>{s.theme}</span>
+                  <span className={`rounded-[2px] px-2.5 py-0.5 text-xs font-semibold text-ink ${THEME_STYLE[s.theme]}`}>{s.theme}</span>
                 </div>
                 <h3 className="mt-3 text-xl font-extrabold text-ink">{s.title}</h3>
                 <p className="mt-2 text-ink/75 leading-relaxed">{s.why}</p>
@@ -170,7 +170,7 @@ export default function HusPlan() {
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {s.links.map((l) => (
                     <li key={l.href}>
-                      <Link href={l.href} className="inline-flex items-center gap-2 rounded-full bg-sand px-3 py-1.5 text-sm font-semibold text-ink hover:bg-mint">
+                      <Link href={l.href} className="inline-flex items-center gap-2 rounded-[2px] bg-sand px-3 py-1.5 text-sm font-semibold text-ink hover:bg-mint">
                         <span className="text-xs font-medium text-ink/60">{l.kind}</span>
                         {l.label} →
                       </Link>
