@@ -12,6 +12,18 @@ npm install
 
 All publicering sker direkt på `main` – det är den grenen Vercel publicerar.
 
+## 1b. Uppdatera veckans elprisprognos (om det behövs)
+
+Kolla `data/veckoprognos.json`. Om dagens datum ligger efter `to`, och Tibber har publicerat en ny prognos på
+https://tibber.com/se/elprisprognos:
+
+- Fyll i `week`, `from`, `to` (måndag–söndag), `checkedAt` (i dag) och snittpriset per elområde i öre/kWh
+  exklusive skatter (`areas.SE1.avg` osv.), precis som Tibber anger dem.
+- Skriv `summary` och varje `note` **med egna ord** – kopiera aldrig Tibbers meningar. Bara fakta: vad som
+  påverkar priset (vind, kärnkraft, överföring, gaspriser) och var.
+- Har Tibber inte publicerat en ny prognos än: ändra ingenting. Sidan döljer en gammal prognos av sig själv.
+- Committa den här ändringen separat ("Elprisprognos vecka NN"), även om ingen guide publiceras.
+
 ## 2. Välj ämne
 
 Ta den första punkten i `docs/guide-ideer.md` som inte är avbockad. Kontrollera i `src/lib/guides.ts` att
