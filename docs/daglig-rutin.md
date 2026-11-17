@@ -84,6 +84,7 @@ Lägg till guiden **först** i `GUIDES` i `src/lib/guides.ts`:
 - `seoTitle`: bara om titeln är längre än ca 50 tecken – en kortare variant för sökresultaten
 - `description`: 100–160 tecken, säljande och konkret
 - `published` och `updated`: dagens datum (ÅÅÅÅ-MM-DD)
+- `art`: välj den illustration i `src/components/GuideArt.tsx` (`ART_KEYS`) som passar ämnet bäst, t.ex. `elbil`, `varmepump`, `sol`, `pris` eller `hus`. Skicka också `art: meta.art` till `ogImage` i guidens `opengraph-image.tsx`.
 - `minutes`: ungefärlig lästid (ord / 130)
 - `tone`: `mint`, `sky`, `butter` eller `clay` – välj en annan än guiden som ligger närmast under
 - `theme`: `Använd mindre`, `Flytta i tid` eller `Styr automatiskt`

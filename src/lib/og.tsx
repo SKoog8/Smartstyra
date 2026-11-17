@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import GuideArt, { type ArtKey } from "@/components/GuideArt";
 
 // Delningsbilder (Open Graph) som visas när en länk delas i sociala medier och chattar.
 export const OG_SIZE = { width: 1200, height: 630 };
@@ -17,13 +18,14 @@ function Logo() {
   );
 }
 
-export function ogImage({ eyebrow, title, subtitle }: { eyebrow?: string; title: string; subtitle: string }) {
+export function ogImage({ eyebrow, title, subtitle, art }: { eyebrow?: string; title: string; subtitle: string; art?: ArtKey }) {
   return new ImageResponse(
     (
       <div
         style={{
           width: "100%",
           height: "100%",
+          position: "relative",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -33,8 +35,13 @@ export function ogImage({ eyebrow, title, subtitle }: { eyebrow?: string; title:
           fontFamily: "sans-serif",
         }}
       >
+        {art && (
+          <div style={{ position: "absolute", top: 40, right: 56, display: "flex" }}>
+            <GuideArt art={art} size={300} />
+          </div>
+        )}
         <Logo />
-        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 20, ...(art ? { maxWidth: 820 } : {}) }}>
           {eyebrow && <span style={{ fontSize: 32, color: "#c8f169" }}>{eyebrow}</span>}
           <span style={{ fontSize: title.length > 40 ? 60 : 76, fontWeight: 800, lineHeight: 1.05, letterSpacing: -2 }}>
             {title}

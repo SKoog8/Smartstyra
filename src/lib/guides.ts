@@ -15,6 +15,8 @@ export interface GuideMeta {
    * inget sådant datum förrän Martin har läst dem.
    */
   reviewed?: string;
+  /** Illustration på kortet och i delningsbilden (se src/components/GuideArt.tsx) */
+  art?: import("@/components/GuideArt").ArtKey;
   /** Bakgrundsfärg på kortet i guidelistan */
   tone: "mint" | "sky" | "butter" | "clay";
   /** Vilken av de tre vägarna till lägre elräkning guiden handlar om */
@@ -25,6 +27,7 @@ export interface GuideMeta {
 export const GUIDES: GuideMeta[] = [
   {
     slug: "vedeldning-vad-kostar-det",
+    art: "ved",
     title: "Vedeldning: vad kostar värmen per kWh – och när lönar det sig?",
     seoTitle: "Vad kostar vedeldning per kWh?",
     description:
@@ -37,6 +40,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "stall-in-varmekurvan-nibe",
+    art: "kurva",
     title: "Ställ in värmekurvan på NIBE-värmepumpen – sänk förbrukningen utan att frysa",
     seoTitle: "Ställ in värmekurvan på NIBE",
     description:
@@ -49,6 +53,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "effektavgift",
+    art: "effekt",
     title: "Effektavgift 2026: kravet är borta – så vet du vad som gäller för dig",
     seoTitle: "Effektavgift 2026 – vad gäller nu?",
     description:
@@ -62,6 +67,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "kvartspris",
+    art: "pris",
     title: "Kvartspris på el: så fungerar det – och när det lönar sig",
     seoTitle: "Kvartspris på el – så fungerar det",
     description:
@@ -75,6 +81,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "tibber-pulse",
+    art: "matare",
     title: "Tibber Pulse: så fungerar den – och behöver du en?",
     seoTitle: "Tibber Pulse – så fungerar den",
     description:
@@ -88,6 +95,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "styr-bergvarmepumpen-efter-elpriset",
+    art: "varmepump",
     title: "Styr bergvärmepumpen efter elpriset",
     description:
       "Så flyttar du bergvärmepumpens värme till billiga timmar med NIBE myUplink, Tibber eller Ngenic Tune – utan att det blir kallt inne.",
@@ -100,6 +108,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "solceller-och-batteri",
+    art: "sol",
     title: "Solceller och batteri 2026: så får du ut mest av solelen",
     seoTitle: "Solceller och batteri 2026 – lönar det sig?",
     description:
@@ -113,6 +122,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "sa-fungerar-tibber",
+    art: "app",
     title: "Så fungerar Tibber – och allt du kan koppla in",
     description:
       "Kvartspris, appen, Pulse och Power-ups: en genomgång av hur Tibber fungerar och vilka värmepumpar, element, laddboxar och batterier som går att styra.",
@@ -125,6 +135,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "tibber-grid-rewards",
+    art: "natet",
     title: "Tibber Grid Rewards: få betalt för att elbilen och batteriet hjälper elnätet",
     seoTitle: "Tibber Grid Rewards – så fungerar det",
     description:
@@ -138,6 +149,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "smart-laddning-elbil-tibber",
+    art: "elbil",
     title: "Smart laddning av elbilen med Tibber",
     description:
       "Koppla bilen eller laddboxen till Tibber, ställ in avresetid och låt laddningen hamna på dygnets billigaste timmar – utan att säkringen går.",
@@ -150,6 +162,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "styr-varmvattenberedaren-med-kontaktor",
+    art: "beredare",
     title: "Styr varmvattenberedaren efter elpriset med en kontaktor",
     seoTitle: "Styr varmvattenberedaren efter elpriset",
     description:
@@ -163,6 +176,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "smart-styrning-hembatteri",
+    art: "batteri",
     title: "Koppla hembatteriet till smart styrning",
     description:
       "Ett batteri som bara lagrar solel står still halva året. Med smart styrning laddar det när elen är billig och tjänar pengar på att stötta elnätet.",
@@ -175,6 +189,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "uppkopplade-golvtermostater",
+    art: "golvvarme",
     title: "Uppkopplade golvtermostater: sluta värma badrumsgolvet i onödan",
     seoTitle: "Uppkopplad golvtermostat – styr golvvärmen smart",
     description:
@@ -188,6 +203,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "adax-wifi-element",
+    art: "element",
     title: "Adax WiFi-element: styr elementen från mobilen och efter elpriset",
     seoTitle: "Adax WiFi-element: styr efter elpriset",
     description:
@@ -201,6 +217,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "plejd-smart-belysning",
+    art: "lampa",
     title: "Plejd: smart belysning som installeras som vanlig el",
     seoTitle: "Plejd smart belysning – så fungerar det",
     description:
@@ -214,6 +231,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "controlmyspa-spabad",
+    art: "spa",
     title: "Styr spabadet med ControlMySpa – och värm vattnet när elen är billig",
     seoTitle: "ControlMySpa: styr spabadet efter elpriset",
     description:
@@ -227,6 +245,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "flytta-elforbrukningen-till-billiga-timmar",
+    art: "pris",
     title: "Så flyttar du elförbrukningen till billigare timmar",
     seoTitle: "Flytta elförbrukningen till billiga timmar",
     description:
@@ -240,6 +259,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "smarta-elementtermostater",
+    art: "radiator",
     title: "Smarta elementtermostater: sänk värmen där ingen är",
     seoTitle: "Smarta elementtermostater – sänk värmen rum för rum",
     description:
@@ -253,6 +273,7 @@ export const GUIDES: GuideMeta[] = [
   },
   {
     slug: "mat-din-elforbrukning",
+    art: "matare",
     title: "Mät först: så hittar du det som drar mest el i huset",
     seoTitle: "Mät elförbrukningen och hitta eltjuvarna",
     description:
