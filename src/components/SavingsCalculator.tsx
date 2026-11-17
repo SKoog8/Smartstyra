@@ -78,7 +78,7 @@ export default function SavingsCalculator() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_24rem] items-start">
-      <div className="bg-white rounded-3xl p-6 sm:p-8 space-y-10">
+      <div className="bg-white rounded-3xl border-2 border-ink p-6 sm:p-8 space-y-10">
         <section className="space-y-6">
           <h2 className="text-xl font-extrabold text-ink">Ditt hus</h2>
           <Slider

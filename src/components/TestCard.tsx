@@ -6,7 +6,7 @@ export default function TestCard({ test }: { test: TestMeta }) {
   return (
     <Link
       href={`/tester/${test.slug}`}
-      className={`${TONE[test.tone]} group flex flex-col rounded-3xl p-6 sm:p-7 min-h-[14rem] transition-transform hover:-translate-y-1`}
+      className={`${TONE[test.tone]} group flex flex-col rounded-3xl border-2 border-ink p-6 sm:p-7 min-h-[14rem] transition-transform hover:-translate-y-1`}
     >
       <span className="self-start rounded-full bg-white/70 px-2.5 py-0.5 text-xs font-semibold text-ink">Testat hemma</span>
       <h3 className="mt-3 text-2xl font-extrabold leading-tight text-ink">{test.product}</h3>

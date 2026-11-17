@@ -6,10 +6,10 @@ export default function GuideCard({ guide }: { guide: GuideMeta }) {
   return (
     <Link
       href={`/guider/${guide.slug}`}
-      className={`${TONE[guide.tone]} group flex flex-col rounded-3xl p-6 sm:p-7 min-h-[16rem] transition-transform hover:-translate-y-1`}
+      className={`${TONE[guide.tone]} group flex flex-col rounded-3xl border-2 border-ink p-6 sm:p-7 min-h-[16rem] transition-transform hover:-translate-y-1`}
     >
       <div className="flex items-start justify-between gap-4">
-        <span className="text-sm font-semibold text-ink/60">{guide.theme}</span>
+        <span className="eyebrow">{guide.theme}</span>
         <GuideArt
           art={guide.art ?? "hus"}
           size={96}

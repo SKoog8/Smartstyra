@@ -36,7 +36,7 @@ export default function VedKalkyl() {
   ].sort((a, b) => a.value - b.value);
 
   return (
-    <div className="not-prose my-10 rounded-3xl bg-white p-6 sm:p-8">
+    <div className="not-prose my-10 rounded-3xl border-2 border-ink bg-white p-6 sm:p-8">
       <p className="text-sm font-semibold text-leaf">Räkna själv</p>
       <h3 className="mt-1 text-2xl font-extrabold text-ink">Vad kostar en kWh värme från veden?</h3>
 
@@ -64,7 +64,7 @@ export default function VedKalkyl() {
                   type="button"
                   aria-pressed={measure === x.id}
                   onClick={() => setMeasure(x.id)}
-                  className={`rounded-full px-4 py-2 text-sm font-semibold ${measure === x.id ? "bg-forest text-white" : "bg-sand text-ink hover:bg-mint"}`}
+                  className={`rounded-[2px] px-4 py-2 text-sm font-semibold ${measure === x.id ? "bg-forest text-white" : "bg-sand text-ink hover:bg-mint"}`}
                 >
                   {x.label}
                 </button>

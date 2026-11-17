@@ -38,7 +38,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="not-prose space-y-4 my-6 bg-white rounded-3xl p-6">
+    <form onSubmit={handleSubmit} className="not-prose space-y-4 my-6 bg-white rounded-3xl border-2 border-ink p-6">
       <div>
         <label htmlFor="contact-name" className="block text-sm font-medium text-ink mb-1">
           Namn <span className="text-ink/50 font-normal">(valfritt)</span>

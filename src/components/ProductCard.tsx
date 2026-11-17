@@ -17,7 +17,7 @@ function Check({ ok }: { ok: boolean }) {
 export default function ProductCard({ product, rank }: { product: Product; rank?: number }) {
   const buy = buyLink(product);
   return (
-    <div className="not-prose bg-white rounded-3xl p-6 sm:p-7">
+    <div className="not-prose bg-white rounded-3xl border-2 border-ink p-6 sm:p-7">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <p className="text-sm text-ink/60">
@@ -69,7 +69,7 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
       <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
         <ul className="flex flex-wrap gap-1.5" aria-label="Fungerar med">
           {product.works.map((w) => (
-            <li key={w} className="rounded-full bg-sand px-2.5 py-1 text-xs font-medium text-ink/70">
+            <li key={w} className="rounded-[2px] bg-sand px-2.5 py-1 text-xs font-medium text-ink/70">
               {w}
             </li>
           ))}

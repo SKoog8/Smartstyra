@@ -23,13 +23,13 @@ export const ART_KEYS = [
 ] as const;
 export type ArtKey = (typeof ART_KEYS)[number];
 
-const INK = "#0d1f16";
-const LEAF = "#18794a";
-const VOLT = "#c8f169";
-const FOREST = "#143d2b";
+const INK = "#16213a";
+const LEAF = "#ff5a1f";
+const VOLT = "#ffb21f";
+const FOREST = "#16213a";
 const WHITE = "#ffffff";
-const CLAY = "#e8a58f";
-const SKY = "#9cc7e3";
+const CLAY = "#ff8a5c";
+const SKY = "#a9bde3";
 
 const s = { stroke: INK, strokeWidth: 4, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
 

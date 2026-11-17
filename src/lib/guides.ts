@@ -294,10 +294,11 @@ export function guide(slug: string): GuideMeta {
 }
 
 export const TONE: Record<GuideMeta["tone"], string> = {
-  mint: "bg-mint",
-  sky: "bg-sky",
-  butter: "bg-butter",
-  clay: "bg-clay",
+  // Korten är vita med ram i den tekniska designen; tonen syns som en tunn färgad list överst.
+  mint: "bg-white border-t-[6px] border-t-[#16213a]",
+  sky: "bg-white border-t-[6px] border-t-[#a9bde3]",
+  butter: "bg-white border-t-[6px] border-t-[#ffb21f]",
+  clay: "bg-white border-t-[6px] border-t-[#ff5a1f]",
 };
 
 /** Andra guider att läsa härnäst: först de med samma tema, sedan övriga. */

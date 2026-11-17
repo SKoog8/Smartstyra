@@ -24,7 +24,7 @@ export default function GuidesPage() {
           <ul className="flex flex-wrap gap-2">
             {TOPICS.map((t) => (
               <li key={t.slug}>
-                <Link href={`/amnen/${t.slug}`} className="inline-flex rounded-full bg-white px-4 py-2 font-semibold text-ink hover:bg-mint transition-colors">
+                <Link href={`/amnen/${t.slug}`} className="inline-flex rounded-[2px] border-2 border-ink bg-white px-4 py-2 font-semibold text-ink hover:bg-mint transition-colors">
                   {t.name}
                 </Link>
               </li>

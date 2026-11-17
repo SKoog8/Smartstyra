@@ -27,7 +27,7 @@ export default function ElavtalJamfor() {
 
   return (
     <div className="space-y-12">
-      <section className="rounded-3xl bg-white p-6 sm:p-8">
+      <section className="rounded-3xl border-2 border-ink bg-white p-6 sm:p-8">
         <h2 className="text-2xl font-extrabold text-ink">Vad kostar elbolaget per år?</h2>
         <p className="mt-2 text-ink/70">
           Elpriset från elbörsen är detsamma hos alla. Det som skiljer är månadsavgiften och påslaget. Dra i reglaget
@@ -107,7 +107,7 @@ export default function ElavtalJamfor() {
           Med kvartspris tjänar du mest när förbrukningen flyttas automatiskt. Här är det som elbolagen själva säger att
           de erbjuder. Ett streck betyder att vi inte hittade det på bolagets sida – inte att det säkert saknas.
         </p>
-        <div className="table-wrap mt-6 rounded-3xl bg-white p-2 sm:p-4">
+        <div className="table-wrap mt-6 rounded-3xl border-2 border-ink bg-white p-2 sm:p-4">
           <table className="w-full text-left text-[0.95rem]">
             <thead>
               <tr className="border-b border-sand-dark text-ink/60">

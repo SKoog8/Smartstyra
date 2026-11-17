@@ -90,7 +90,7 @@ export default async function TopicPage({ params }: Props) {
           <ul className="flex flex-wrap gap-2">
             {TOPICS.filter((o) => o.slug !== t.slug).map((o) => (
               <li key={o.slug}>
-                <Link href={`/amnen/${o.slug}`} className="inline-flex rounded-full bg-white px-4 py-2 font-semibold text-ink hover:bg-mint transition-colors">
+                <Link href={`/amnen/${o.slug}`} className="inline-flex rounded-[2px] border-2 border-ink bg-white px-4 py-2 font-semibold text-ink hover:bg-mint transition-colors">
                   {o.name}
                 </Link>
               </li>
