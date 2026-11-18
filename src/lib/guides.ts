@@ -26,6 +26,18 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "styr-varmvattenberedaren-med-shelly",
+    art: "beredare",
+    title: "Styr varmvattenberedaren med Shelly efter elpriset",
+    description:
+      "Så styr du varmvattenberedaren med ett Shelly-relä och en kontaktor – med schema, med ett elprisskript direkt i reläet eller via Home Assistant.",
+    published: "2026-11-18",
+    updated: "2026-11-18",
+    minutes: 7,
+    tone: "sky",
+    theme: "Styr automatiskt",
+  },
+  {
     slug: "vedeldning-vad-kostar-det",
     art: "ved",
     title: "Vedeldning: vad kostar värmen per kWh – och när lönar det sig?",
