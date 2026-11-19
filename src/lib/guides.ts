@@ -26,6 +26,19 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "nord-pool-elpris-i-home-assistant",
+    art: "pris",
+    title: "Elpriset från Nord Pool i Home Assistant – och automationer som följer det",
+    seoTitle: "Nord Pool-elpris i Home Assistant",
+    description:
+      "Så lägger du in spotpriset från Nord Pool i Home Assistant, räknar fram vad elen kostar med moms och låter automationer gå när elen är billig.",
+    published: "2026-11-19",
+    updated: "2026-11-19",
+    minutes: 7,
+    tone: "mint",
+    theme: "Styr automatiskt",
+  },
+  {
     slug: "styr-varmvattenberedaren-med-shelly",
     art: "beredare",
     title: "Styr varmvattenberedaren med Shelly efter elpriset",
