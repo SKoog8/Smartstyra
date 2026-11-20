@@ -104,6 +104,9 @@ export default function Page() {
           </tbody>
         </table>
       </div>
+      <p>
+        Se också vår <Link href="/guider/effektavgift-natbolag">sammanställning av hur nätbolagen räknar</Link>.
+      </p>
       <p>Så tar du reda på vad som gäller för dig:</p>
       <ol>
         <li>Titta på din senaste elnätsfaktura. En effektavgift redovisas som en egen rad, ofta i kronor per kW.</li>
@@ -126,7 +129,8 @@ export default function Page() {
         <li>
           <strong>Sprid ut elbilsladdningen.</strong> Ladda med lägre effekt under fler timmar i stället för full effekt
           under en timme. Många laddboxar och appar kan sätta ett tak, till exempel Tibbers Effektkontroll.{" "}
-          <Link href="/guider/smart-laddning-elbil-tibber">Så laddar du smart</Link>.
+          <Link href="/guider/smart-laddning-elbil-tibber">Så laddar du smart</Link> eller{" "}
+          <Link href="/guider/sank-effektavgiften-tibber-hembatteri">sänk effektavgiften med Tibber eller hembatteriet</Link>.
         </li>
         <li>
           <strong>Låt inte varmvattenberedaren starta samtidigt som laddningen.</strong> Ett smart relä kan spärra den
