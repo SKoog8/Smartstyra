@@ -26,6 +26,32 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "sank-effektavgiften-tibber-hembatteri",
+    art: "batteri",
+    title: "Sänk effektavgiften med Tibber eller hembatteriets egen styrning",
+    seoTitle: "Sänk effektavgiften med Tibber eller batteri",
+    description:
+      "Så håller du nere effekttopparna automatiskt – med Tibbers Effektkontroll för elbilen eller med peak shaving i hembatteriet från Ferroamp, Huawei eller Sungrow.",
+    published: "2026-11-20",
+    updated: "2026-11-20",
+    minutes: 8,
+    tone: "mint",
+    theme: "Styr automatiskt",
+  },
+  {
+    slug: "effektavgift-natbolag",
+    art: "natet",
+    title: "Effektavgift: nätbolagen som har kvar den – och hur de räknar",
+    seoTitle: "Vilka nätbolag har kvar effektavgiften?",
+    description:
+      "Göteborg Energi, Tekniska verken, Kraftringen, Nacka Energi och fler har kvar effektavgiften för villor. Så räknar varje bolag – och vilka som har pausat den.",
+    published: "2026-11-20",
+    updated: "2026-11-20",
+    minutes: 7,
+    tone: "clay",
+    theme: "Flytta i tid",
+  },
+  {
     slug: "tibber-pulse-i-home-assistant",
     art: "matare",
     title: "Tibber Pulse i Home Assistant: realtidsförbrukning och automationer",
