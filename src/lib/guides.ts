@@ -26,6 +26,19 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "tibber-pulse-i-home-assistant",
+    art: "matare",
+    title: "Tibber Pulse i Home Assistant: realtidsförbrukning och automationer",
+    seoTitle: "Tibber Pulse i Home Assistant",
+    description:
+      "Så kopplar du Tibber Pulse till Home Assistant, ser grundlasten och låter automationer pausa elpatronen när huset drar mycket eller elen är dyr.",
+    published: "2026-11-20",
+    updated: "2026-11-20",
+    minutes: 7,
+    tone: "butter",
+    theme: "Styr automatiskt",
+  },
+  {
     slug: "nord-pool-elpris-i-home-assistant",
     art: "pris",
     title: "Elpriset från Nord Pool i Home Assistant – och automationer som följer det",
