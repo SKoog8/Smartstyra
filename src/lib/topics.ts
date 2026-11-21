@@ -45,6 +45,7 @@ export const TOPICS: Topic[] = [
       "styr-varmvattenberedaren-med-kontaktor",
       "styr-varmvattenberedaren-med-shelly",
       "controlmyspa-spabad",
+      "spabad-elkostnad",
     ],
     tests: ["sensibo-sky", "adax-neo-wifi", "plejd-golvtermostat-och-rela", "controlmyspa"],
     categories: ["varmepumpsstyrning", "elementtermostater", "golvtermostater", "smarta-relaer"],

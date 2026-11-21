@@ -11,7 +11,7 @@ Google – där har en tydlig guide störst chans att ranka.
 - [x] Styr varmvattenberedaren med Shelly efter elpriset (sökord: "Shelly varmvattenberedare") – styr-varmvattenberedaren-med-shelly
 - [x] Elpriset från Nord Pool i Home Assistant – och automationer som följer det (sökord: "Home Assistant elpris Nord Pool") – nord-pool-elpris-i-home-assistant
 - [x] Tibber Pulse i Home Assistant: realtidsförbrukning och automationer (sökord: "Tibber Pulse Home Assistant") – tibber-pulse-i-home-assistant
-- [ ] Lönar sig spabad? Så mycket el drar ett spabad och så sänker du kostnaden (sökord: "spabad elkostnad")
+- [x] Lönar sig spabad? Så mycket el drar ett spabad och så sänker du kostnaden (sökord: "spabad elkostnad") – spabad-elkostnad
 - [ ] Luft-luft-värmepump på vintern: rätt inställningar för lägst elräkning
 - [ ] Välj laddbox till elbilen: lastbalansering, appar och smart laddning
 - [ ] Ladda elbilen smart utan Tibber: laddboxens egna appar och elprisstyrning

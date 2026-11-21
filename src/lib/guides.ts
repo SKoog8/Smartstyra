@@ -26,6 +26,19 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "spabad-elkostnad",
+    art: "spa",
+    title: "Lönar sig spabad? Så mycket el drar det och så sänker du kostnaden",
+    seoTitle: "Spabad elkostnad: så mycket el drar det",
+    description:
+      "Mätningar hos RISE visar runt 2 200–2 500 kWh om året för ett välisolerat spabad. Så räknar du ut din kostnad och sänker den med lock, temperatur och tid.",
+    published: "2026-11-21",
+    updated: "2026-11-21",
+    minutes: 6,
+    tone: "sky",
+    theme: "Använd mindre",
+  },
+  {
     slug: "sank-effektavgiften-tibber-hembatteri",
     art: "batteri",
     title: "Sänk effektavgiften med Tibber eller hembatteriets egen styrning",
