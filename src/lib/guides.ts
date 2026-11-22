@@ -26,6 +26,19 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "luft-luft-varmepump-pa-vintern",
+    art: "varmepump",
+    title: "Luft-luft-värmepump på vintern: rätt inställningar för lägst elräkning",
+    seoTitle: "Luft-luft-värmepump på vintern: rätt inställningar",
+    description:
+      "Värmeläge i stället för auto, elementen två grader lägre och rena filter. Så ställer du in luft-luftvärmepumpen i vinter, enligt Boverket och tillverkaren.",
+    published: "2026-11-22",
+    updated: "2026-11-22",
+    minutes: 7,
+    tone: "butter",
+    theme: "Använd mindre",
+  },
+  {
     slug: "spabad-elkostnad",
     art: "spa",
     title: "Lönar sig spabad? Så mycket el drar det och så sänker du kostnaden",

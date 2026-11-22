@@ -36,6 +36,7 @@ export const TOPICS: Topic[] = [
       "Guiderna här handlar om två saker: att använda mindre värme där den inte behövs, och att flytta värmen till billiga timmar. Huset håller värmen i flera timmar, så en värmepump, elelement eller golvvärme kan ofta vila under de dyraste timmarna utan att du märker det.",
     ],
     guides: [
+      "luft-luft-varmepump-pa-vintern",
       "stall-in-varmekurvan-nibe",
       "styr-bergvarmepumpen-efter-elpriset",
       "smarta-elementtermostater",
