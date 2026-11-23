@@ -21,7 +21,7 @@ export const TOPICS: Topic[] = [
       "Tibber är en elhandlare som säljer el till inköpspris per kvart mot en fast månadsavgift, och vars app kan styra en hel del av det som drar el i huset: elbilens laddning, värmepumpen, elementen och hembatteriet.",
       "Här har vi samlat allt vi har skrivit om Tibber. Börja med hur Tibber fungerar om du funderar på att byta elavtal. Har du redan Tibber hittar du guiderna om Pulse, Smartladdning och Grid Rewards nedan – och tester av prylar som Martin styr via Tibber-appen hemma.",
     ],
-    guides: ["sa-fungerar-tibber", "tibber-pulse", "tibber-pulse-i-home-assistant", "smart-laddning-elbil-tibber", "tibber-grid-rewards", "sank-effektavgiften-tibber-hembatteri", "adax-wifi-element", "smart-styrning-hembatteri"],
+    guides: ["sa-fungerar-tibber", "tibber-pulse", "tibber-pulse-i-home-assistant", "smart-laddning-elbil-tibber", "valj-laddbox", "tibber-grid-rewards", "sank-effektavgiften-tibber-hembatteri", "adax-wifi-element", "smart-styrning-hembatteri"],
     tests: ["adax-neo-wifi", "sensibo-sky"],
     categories: ["energimatare", "varmepumpsstyrning"],
   },

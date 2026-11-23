@@ -26,6 +26,19 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "valj-laddbox",
+    art: "elbil",
+    title: "Välj laddbox till elbilen: lastbalansering, appar och smart laddning",
+    seoTitle: "Välj laddbox till elbilen: det här ska du titta på",
+    description:
+      "Hur mycket effekt behöver du, vad gör lastbalansering och vilken styrning stöds? Så väljer du laddbox, enligt Elsäkerhetsverket och Skatteverket.",
+    published: "2026-11-23",
+    updated: "2026-11-23",
+    minutes: 7,
+    tone: "sky",
+    theme: "Styr automatiskt",
+  },
+  {
     slug: "luft-luft-varmepump-pa-vintern",
     art: "varmepump",
     title: "Luft-luft-värmepump på vintern: rätt inställningar för lägst elräkning",
