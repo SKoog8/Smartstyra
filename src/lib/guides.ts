@@ -26,6 +26,19 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "ladda-elbilen-smart-utan-tibber",
+    art: "elbil",
+    title: "Ladda elbilen smart utan Tibber: laddboxens egna appar och elprisstyrning",
+    seoTitle: "Ladda elbilen smart utan Tibber",
+    description:
+      "Zaptec Eco Mode, Easee Smart Charging eller elbolagets app: så låter du elbilen ladda på billiga timmar utan Tibber – och undviker att två system krockar.",
+    published: "2026-11-24",
+    updated: "2026-11-24",
+    minutes: 7,
+    tone: "mint",
+    theme: "Flytta i tid",
+  },
+  {
     slug: "valj-laddbox",
     art: "elbil",
     title: "Välj laddbox till elbilen: lastbalansering, appar och smart laddning",

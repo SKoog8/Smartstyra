@@ -76,6 +76,7 @@ export const TOPICS: Topic[] = [
       "Här har vi samlat guider och tester om smarta hem-system och prylarna som kopplas till dem. Martin har styrt sitt hus med Home Assistant i flera år, och testerna beskriver hur det fungerar i vardagen.",
     ],
     guides: [
+      "ladda-elbilen-smart-utan-tibber",
       "nord-pool-elpris-i-home-assistant",
       "tibber-pulse-i-home-assistant",
       "flytta-elforbrukningen-till-billiga-timmar",

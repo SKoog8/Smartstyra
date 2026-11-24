@@ -14,7 +14,7 @@ Google – där har en tydlig guide störst chans att ranka.
 - [x] Lönar sig spabad? Så mycket el drar ett spabad och så sänker du kostnaden (sökord: "spabad elkostnad") – spabad-elkostnad
 - [x] Luft-luft-värmepump på vintern: rätt inställningar för lägst elräkning – luft-luft-varmepump-pa-vintern
 - [x] Välj laddbox till elbilen: lastbalansering, appar och smart laddning – valj-laddbox
-- [ ] Ladda elbilen smart utan Tibber: laddboxens egna appar och elprisstyrning
+- [x] Ladda elbilen smart utan Tibber: laddboxens egna appar och elprisstyrning – ladda-elbilen-smart-utan-tibber
 - [ ] Lastbalansering och effektvakt: så slipper du byta till större huvudsäkring
 - [ ] Kan du sänka huvudsäkringen? Så ser du om det lönar sig
 - [ ] Home Assistant för elstyrning: kom igång med elpris och smarta prylar
