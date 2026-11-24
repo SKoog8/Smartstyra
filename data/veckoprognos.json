@@ -1,14 +1,14 @@
 {
-  "week": 47,
-  "from": "2026-11-16",
-  "to": "2026-11-22",
+  "week": 48,
+  "from": "2026-11-23",
+  "to": "2026-11-29",
   "source": "https://tibber.com/se/elprisprognos",
-  "checkedAt": "2026-11-17",
-  "summary": "Stor skillnad mellan norr och söder den här veckan. I norr blåser det bra och elen är billig. I söder står fyra kärnkraftsreaktorer still, vilket både höjer priset i SE3 och begränsar hur mycket el som kan skickas vidare till SE4. Höga gaspriser i Europa bidrar också.",
+  "checkedAt": "2026-11-24",
+  "summary": "Högtryck och kyla över hela landet. När vinden avtar mitt i veckan stiger priset överallt, för att sedan gå ner igen mot helgen när det börjar blåsa igen. Södra Sverige påverkas också av höga gaspriser i Europa och av att kärnkraften ännu inte går för fullt.",
   "areas": {
-    "SE1": { "avg": 50, "note": "Vindkraften producerar normalt eller mer för årstiden." },
-    "SE2": { "avg": 50, "note": "Vindkraften producerar normalt eller mer för årstiden." },
-    "SE3": { "avg": 175, "note": "Forsmark 1, Ringhals 3 och 4 har planerat underhåll och Forsmark 3 står still efter ett fel." },
-    "SE4": { "avg": 235, "note": "Begränsad överföring söderut gör att SE4 får de högsta priserna." }
+    "SE1": { "avg": 60, "note": "Ovanligt kallt och allt mindre vind. Dyrast torsdag och fredag, när det nästan är vindstilla." },
+    "SE2": { "avg": 60, "note": "Samma läge som i SE1. Långvarig frost kan dessutom ge is i älvarna och minska vattenkraften." },
+    "SE3": { "avg": 170, "note": "En reaktor i Ringhals är avställd till mitten av december. Två andra block väntas nå full effekt under veckan." },
+    "SE4": { "avg": 255, "note": "Fortsatt begränsad överföring från SE3 gör att SE4 får de högsta priserna och följer kontinenten." }
   }
 }
