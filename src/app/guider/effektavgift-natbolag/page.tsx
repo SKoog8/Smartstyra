@@ -15,11 +15,12 @@ export default function Page() {
     <ArticlePage title={meta.title} subtitle={meta.description} path={path} guide={meta}>
       <p>
         <strong>
-          Flera nätbolag har kvar effektavgiften för villor, men de räknar på helt olika sätt
+          Per den 20 november 2026 har 8 av de 17 nätbolag vi har gått igenom kvar effektavgiften för villor – och 9 har
+          tagit bort eller pausat den.
         </strong>{" "}
-        – vissa tar betalt för månadens högsta timme dygnet runt, andra bara för vardagar dagtid på vintern. Kravet på
-        effektavgift försvann i juni 2026, så nu bestämmer varje nätbolag själv. Här är läget hos några av de större
-        bolagen och hur de räknar fram din avgift.
+        De som har kvar den räknar på helt olika sätt: vissa tar betalt för månadens högsta timme dygnet runt, andra
+        bara för vardagar dagtid på vintern. Kravet på effektavgift försvann i juni 2026, så nu bestämmer varje
+        nätbolag själv. Här är läget hos några av de större bolagen och hur de räknar fram din avgift.
       </p>
       <p>
         Vill du veta vad som hände med kravet och hur effektavgiften fungerar i grunden? Läs först{" "}
@@ -125,6 +126,14 @@ export default function Page() {
           </tbody>
         </table>
       </div>
+      <p className="text-sm">
+        Källor: nätbolagens prislistor, länkade i tabellen. Vill du se alla elnätsföretag finns{" "}
+        <a href="https://ei.se/om-oss/statistik-och-oppna-data/natavgifter---elnat/elnatsforetagens-inrapporterade-natavgifter-med-effektavgift-for-ovriga-forbrukare">
+          Energimarknadsinspektionens öppna data om nätavgifter med effektavgift
+        </a>
+        . Den visar vilka bolag som hade rapporterat in en effektavgift per 1 januari 2026 – alltså innan flera av dem
+        tog bort eller pausade den.
+      </p>
       <Callout title="Kontrollera din egen prislista" tone="butter">
         <p>
           Nätbolagen ändrar sina prismodeller med några månaders varsel, och flera väntar på Energimarknadsinspektionens
@@ -266,6 +275,13 @@ export default function Page() {
             Krav på införande av effektavgifter stoppas
           </a>{" "}
           (13 mars 2026)
+        </li>
+        <li>
+          Energimarknadsinspektionen:{" "}
+          <a href="https://ei.se/om-oss/statistik-och-oppna-data/natavgifter---elnat/elnatsforetagens-inrapporterade-natavgifter-med-effektavgift-for-ovriga-forbrukare">
+            Elnätsföretagens inrapporterade nätavgifter med effektavgift
+          </a>{" "}
+          (öppna data, per 1 januari 2026)
         </li>
         <li>Nätbolagens egna sidor och prislistor, länkade i tabellerna ovan (kontrollerade november 2026)</li>
       </ul>

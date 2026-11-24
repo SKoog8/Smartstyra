@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ArticlePage from "@/components/ArticlePage";
-import { OWNER_NAME } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { OWNER_NAME, SITE_NAME, SITE_URL } from "@/lib/site";
 import { pageMetadata } from "@/lib/metadata";
 
 const subtitle = "Vem som står bakom sajten, hur vi väljer produkter och hur sajten finansieras.";
@@ -65,6 +66,42 @@ export default function AboutPage() {
       <p>
         Frågor, tips och rättelser är välkomna via <Link href="/kontakt">kontaktformuläret</Link>.
       </p>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "AboutPage",
+              "@id": `${SITE_URL}/om`,
+              url: `${SITE_URL}/om`,
+              name: "Om Smartstyra",
+              description: subtitle,
+              inLanguage: "sv-SE",
+              about: { "@id": `${SITE_URL}/#organization` },
+              mainEntity: { "@id": `${SITE_URL}/#organization` },
+            },
+            {
+              "@type": "Organization",
+              "@id": `${SITE_URL}/#organization`,
+              name: SITE_NAME,
+              url: SITE_URL,
+              logo: `${SITE_URL}/apple-icon`,
+              description:
+                "Svenska guider för villaägare som vill sänka elförbrukningen och flytta den till billigare timmar.",
+              member: { "@id": `${SITE_URL}/om/martin#person` },
+            },
+            {
+              "@type": "Person",
+              "@id": `${SITE_URL}/om/martin#person`,
+              name: "Martin",
+              jobTitle: "Elektriker",
+              url: `${SITE_URL}/om/martin`,
+              image: `${SITE_URL}/martin.jpg`,
+              worksFor: { "@id": `${SITE_URL}/#organization` },
+            },
+          ],
+        }}
+      />
     </ArticlePage>
   );
 }

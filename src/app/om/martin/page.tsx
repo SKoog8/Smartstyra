@@ -89,7 +89,7 @@ export default function MartinPage() {
                 jobTitle: "Elektriker",
                 url: `${SITE_URL}/om/martin`,
                 image: `${SITE_URL}/martin.jpg`,
-                worksFor: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+                worksFor: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL },
               },
             },
             {
