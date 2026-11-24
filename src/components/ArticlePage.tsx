@@ -21,8 +21,20 @@ interface Props {
 const formatDate = (d: string) =>
   new Date(d).toLocaleDateString("sv-SE", { dateStyle: "long", timeZone: "Europe/Stockholm" });
 
+// Martin, elektriker – skribent och faktagranskare. Samma @id används på /om och /om/martin.
+const MARTIN = {
+  "@type": "Person",
+  "@id": `${SITE_URL}/om/martin#person`,
+  name: "Martin",
+  jobTitle: "Elektriker",
+  url: `${SITE_URL}/om/martin`,
+  image: `${SITE_URL}/martin.jpg`,
+  worksFor: { "@id": `${SITE_URL}/#organization` },
+};
+
 const ORGANIZATION = {
   "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
   url: SITE_URL,
   logo: `${SITE_URL}/apple-icon`,
@@ -116,19 +128,13 @@ export default function ArticlePage({ title, subtitle, path, guide, imageAlt, ch
                         "@type": "WebPage",
                         "@id": `${SITE_URL}${path}`,
                         lastReviewed: guide.reviewed,
-                        reviewedBy: {
-                          "@type": "Person",
-                          "@id": `${SITE_URL}/om/martin#person`,
-                          name: "Martin",
-                          jobTitle: "Elektriker",
-                          url: `${SITE_URL}/om/martin`,
-                          image: `${SITE_URL}/martin.jpg`,
-                        },
+                        reviewedBy: { "@id": `${SITE_URL}/om/martin#person` },
                       }
                     : `${SITE_URL}${path}`,
-                  author: ORGANIZATION,
+                  author: { "@id": `${SITE_URL}/om/martin#person` },
                   publisher: ORGANIZATION,
                 },
+                MARTIN,
                 {
                   "@type": "BreadcrumbList",
                   itemListElement: [

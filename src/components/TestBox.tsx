@@ -48,7 +48,7 @@ export default function TestBox({ meta }: { meta: TestMeta }) {
               inLanguage: "sv-SE",
               mainEntityOfPage: `${SITE_URL}${path}`,
               author: { "@type": "Person", "@id": `${SITE_URL}/om/martin#person`, name: TESTER.name, jobTitle: "Elektriker", url: `${SITE_URL}/om/martin`, image: `${SITE_URL}/martin.jpg` },
-              publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL, logo: `${SITE_URL}/apple-icon` },
+              publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL, logo: `${SITE_URL}/apple-icon` },
             },
             {
               "@type": "BreadcrumbList",
