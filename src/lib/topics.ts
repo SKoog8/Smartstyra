@@ -61,7 +61,7 @@ export const TOPICS: Topic[] = [
       "Elräkningen består av två delar: elhandeln, där du väljer avtal själv, och elnätet, där du har det nätbolag som äger ledningarna där du bor. Båda har ändrats de senaste åren. Sedan oktober 2025 sätts elpriset per kvart, och 2026 stoppades kravet på att alla nätbolag ska ha effektavgift.",
       "Guiderna här förklarar vad som gäller nu och vad det betyder för dig som villaägare – från valet mellan kvartspris och månadspris till hur solelen räknas när 60-öringen är borta.",
     ],
-    guides: ["kvartspris", "effektavgift", "effektavgift-natbolag", "sank-effektavgiften-tibber-hembatteri", "flytta-elforbrukningen-till-billiga-timmar", "solceller-och-batteri", "sa-fungerar-tibber", "mat-din-elforbrukning"],
+    guides: ["kvartspris", "effektavgift", "lastbalansering-och-effektvakt", "effektavgift-natbolag", "sank-effektavgiften-tibber-hembatteri", "flytta-elforbrukningen-till-billiga-timmar", "solceller-och-batteri", "sa-fungerar-tibber", "mat-din-elforbrukning"],
     tests: [],
     categories: ["energimatare"],
   },
@@ -76,6 +76,7 @@ export const TOPICS: Topic[] = [
       "Här har vi samlat guider och tester om smarta hem-system och prylarna som kopplas till dem. Martin har styrt sitt hus med Home Assistant i flera år, och testerna beskriver hur det fungerar i vardagen.",
     ],
     guides: [
+      "lastbalansering-och-effektvakt",
       "ladda-elbilen-smart-utan-tibber",
       "nord-pool-elpris-i-home-assistant",
       "tibber-pulse-i-home-assistant",

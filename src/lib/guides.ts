@@ -26,6 +26,19 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "lastbalansering-och-effektvakt",
+    art: "effekt",
+    title: "Lastbalansering och effektvakt: så slipper du byta till större huvudsäkring",
+    seoTitle: "Lastbalansering och effektvakt i villan",
+    description:
+      "En effektvakt pausar elpatronen och laddboxen när huset drar för mycket. Så fungerar det – och vad en större huvudsäkring kostar per år.",
+    published: "2026-11-25",
+    updated: "2026-11-25",
+    minutes: 6,
+    tone: "butter",
+    theme: "Styr automatiskt",
+  },
+  {
     slug: "ladda-elbilen-smart-utan-tibber",
     art: "elbil",
     title: "Ladda elbilen smart utan Tibber: laddboxens egna appar och elprisstyrning",
