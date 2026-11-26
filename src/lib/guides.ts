@@ -26,6 +26,19 @@ export interface GuideMeta {
 // Alla guider, i den ordning de visas på /guider. Varje guide har sin egen sida i src/app/guider/<slug>/page.tsx.
 export const GUIDES: GuideMeta[] = [
   {
+    slug: "sanka-huvudsakringen",
+    art: "natet",
+    title: "Kan du sänka huvudsäkringen? Så ser du om det lönar sig",
+    seoTitle: "Sänka huvudsäkringen: lönar det sig?",
+    description:
+      "En för stor huvudsäkring kostar varje månad. Så räknar du ut hur stor säkring huset behöver, vad du sparar och hur bytet går till.",
+    published: "2026-11-26",
+    updated: "2026-11-26",
+    minutes: 6,
+    tone: "sky",
+    theme: "Använd mindre",
+  },
+  {
     slug: "lastbalansering-och-effektvakt",
     art: "effekt",
     title: "Lastbalansering och effektvakt: så slipper du byta till större huvudsäkring",

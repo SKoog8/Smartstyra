@@ -16,7 +16,7 @@ Google – där har en tydlig guide störst chans att ranka.
 - [x] Välj laddbox till elbilen: lastbalansering, appar och smart laddning – valj-laddbox
 - [x] Ladda elbilen smart utan Tibber: laddboxens egna appar och elprisstyrning – ladda-elbilen-smart-utan-tibber
 - [x] Lastbalansering och effektvakt: så slipper du byta till större huvudsäkring – lastbalansering-och-effektvakt
-- [ ] Kan du sänka huvudsäkringen? Så ser du om det lönar sig
+- [x] Kan du sänka huvudsäkringen? Så ser du om det lönar sig – sanka-huvudsakringen
 - [ ] Home Assistant för elstyrning: kom igång med elpris och smarta prylar
 - [ ] Zigbee, Z-Wave, Thread och Matter: vilket smart hem-system ska du välja?
 - [ ] Shelly: styr apparater efter elpriset utan Home Assistant
